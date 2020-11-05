@@ -1,0 +1,32 @@
+.assetvaluation-wrap {
+    width: 100%;
+    height: 70px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(41,50,79,0.05);
+    border-radius: 2px;
+    padding-left: 20px;
+    span {
+        font-size: 14px;
+        color: #9b9b9b;
+        letter-spacing: 0;
+    }
+    b {
+        font-size: 24px;
+        color: #4a4a4a;
+        letter-spacing: -1.2px;
+        margin-right: 4px;
+        line-height: 70px;
+        font-weight: 400;
+    }
+    i {
+        font-size: 14px;
+        color: #9b9b9b;
+        letter-spacing: 0;
+        margin-left: 8px;
+        span {
+            color: #4a4a4a;
+        }
+    }
+}

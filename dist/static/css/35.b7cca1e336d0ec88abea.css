@@ -1,0 +1,2335 @@
+.loadingBall {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 23%;
+  margin-left: 5px;
+  display: inline-block; }
+  .loadingBall span {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 2px;
+    background-color: #fff;
+    opacity: .5;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center; }
+  .loadingBall .one {
+    animation: wave .8s linear 0s infinite; }
+  .loadingBall .two {
+    animation: wave .8s linear .12s infinite; }
+  .loadingBall .three {
+    animation: wave .8s linear .24s infinite; }
+
+@keyframes wave {
+  10% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  25% {
+    transform: scale(0.8, 1.2); }
+  35% {
+    transform: translateY(-5px); }
+  50% {
+    opacity: 1; }
+  65% {
+    transform: translateY(-5px) scale(1, 1); }
+  80% {
+    transform: scale(0.8, 1.2); }
+  90% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  100% {
+    opacity: .5;
+    transform: translateY(0) scale(1, 1); } }
+
+.ft-button {
+  font-size: 16px;
+  height: 36px;
+  color: #3D79EC;
+  border: 2px solid #3D79EC;
+  border-radius: 100px;
+  padding: 0 24px;
+  position: relative; }
+
+.ft-color-primary {
+  background: #3D79EC;
+  color: #FFFFFF; }
+
+.ft-color-primary:hover {
+  background: #306AD9; }
+
+.ft-size-small {
+  height: 28px; }
+
+.ft-size-medium {
+  height: 40px; }
+
+.ft-button:disabled {
+  background: #E7EbF2;
+  border: none;
+  color: #aaafb9;
+  cursor: not-allowed; }
+
+.fota-loading-main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.fota-loading-main1 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute; }
+
+.fota-loading {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 3000;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: .5;
+  transition: opacity .3s;
+  zoom: 1; }
+  .fota-loading .fota-spin {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .fota-loading .fota-loader {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    animation: spins 2s linear infinite; }
+  .fota-loading .fota-loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    animation: spins 3s linear infinite; }
+  .fota-loading .fota-loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    animation: spins 1.5s linear infinite; }
+
+@keyframes spins {
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+  .fota-loading .funcoin-loading {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: Center;
+    align-items: Center;
+    min-height: 50px; }
+    .fota-loading .funcoin-loading .funcoin-item {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #bbb;
+      margin-right: 6px;
+      opacity: 0.5;
+      animation: load 1.8s ease-in-out infinite; }
+
+@keyframes load {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1;
+    transform: scale(1.3); }
+  100% {
+    opacity: 0.5; } }
+
+.tabPane {
+  min-height: 500px; }
+  .tabPane .tabPane-header {
+    height: 41px;
+    display: -ms-flexbox;
+    display: flex;
+    color: #2b2b2d;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased; }
+    .tabPane .tabPane-header .tabPane-header-nav {
+      -ms-flex: 7;
+      flex: 7;
+      height: 100%; }
+      .tabPane .tabPane-header .tabPane-header-nav ul {
+        list-style: none;
+        width: 100%;
+        margin-bottom: 0; }
+        .tabPane .tabPane-header .tabPane-header-nav ul li {
+          display: inline-block;
+          width: 90px;
+          line-height: 40px;
+          vertical-align: middle;
+          text-align: center;
+          margin-left: 20px;
+          cursor: pointer;
+          transition: background 0.2s linear; }
+          .tabPane .tabPane-header .tabPane-header-nav ul li:hover {
+            border-bottom: 1px solid #fff; }
+          .tabPane .tabPane-header .tabPane-header-nav ul li .iconfont {
+            font-size: 20px;
+            margin: 0 0 0 10px;
+            float: left; }
+          .tabPane .tabPane-header .tabPane-header-nav ul li img {
+            margin: 10px 0 0 10px;
+            float: left; }
+          .tabPane .tabPane-header .tabPane-header-nav ul li .icontable-btc {
+            color: burlywood; }
+        .tabPane .tabPane-header .tabPane-header-nav ul .active {
+          background: #fff;
+          border-bottom: 1px solid #2963C7; }
+    .tabPane .tabPane-header .tabPane-header-search {
+      -ms-flex: 1;
+      flex: 1;
+      height: 26px;
+      margin: 6px 0;
+      position: relative; }
+      .tabPane .tabPane-header .tabPane-header-search input {
+        line-height: 26px;
+        background: transparent;
+        border: 1px solid #e8e8e8;
+        border-radius: 4px;
+        padding-left: 30px; }
+      .tabPane .tabPane-header .tabPane-header-search .iconfont {
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        font-size: 18px;
+        color: #9e9e9e87; }
+  .tabPane .tabPane-content {
+    width: 100%;
+    background: #fff;
+    table-layout: fixed; }
+    .tabPane .tabPane-content tr {
+      display: -ms-flexbox;
+      display: flex;
+      cursor: pointer;
+      transition: all 0.2s linear;
+      text-align: left; }
+    .tabPane .tabPane-content th {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      font-weight: 500;
+      text-align: left;
+      line-height: 38px; }
+    .tabPane .tabPane-content th:first-child {
+      padding-left: 30px; }
+    .tabPane .tabPane-content thead tr:hover {
+      background: #fff; }
+    .tabPane .tabPane-content tbody tr {
+      height: 51px;
+      cursor: pointer; }
+      .tabPane .tabPane-content tbody tr td {
+        margin: auto 0;
+        font-size: 14px; }
+        .tabPane .tabPane-content tbody tr td .icontable-btc {
+          margin: auto 20px;
+          color: burlywood; }
+        .tabPane .tabPane-content tbody tr td img {
+          margin: 0 5px;
+          vertical-align: middle; }
+      .tabPane .tabPane-content tbody tr td:first-child {
+        padding-left: 30px; }
+    .tabPane .tabPane-content tbody .nodata {
+      text-align: center;
+      font-size: 12px;
+      color: #ccc;
+      min-height: 400px;
+      padding-top: 120px; }
+      .tabPane .tabPane-content tbody .nodata img {
+        height: 125px; }
+    .tabPane .tabPane-content tbody .red {
+      color: red; }
+    .tabPane .tabPane-content tbody .green {
+      color: green; }
+    .tabPane .tabPane-content tbody .tabPane-content-main {
+      padding-left: 30px; }
+      .tabPane .tabPane-content tbody .tabPane-content-main td {
+        height: 16px;
+        line-height: 16px;
+        padding-left: 10px !important;
+        border-left: 4px solid #036bc1; }
+    .tabPane .tabPane-content tbody div {
+      width: 100%; }
+
+.tabPane-trade {
+  background-color: #212838;
+  color: #fff;
+  display: block; }
+  .tabPane-trade ::-webkit-scrollbar {
+    display: none; }
+  .tabPane-trade .tabPane-header {
+    color: #7A87B0;
+    height: 24px;
+    border: none;
+    background: #191D27; }
+    .tabPane-trade .tabPane-header .tabPane-header-search {
+      bottom: 17px;
+      margin: 0; }
+      .tabPane-trade .tabPane-header .tabPane-header-search input {
+        border: 1px solid rgba(122, 135, 176, 0.6);
+        line-height: 20px;
+        font-size: 12px;
+        width: 100px; }
+      .tabPane-trade .tabPane-header .tabPane-header-search .iconfont {
+        top: 1px; }
+    .tabPane-trade .tabPane-header .tabPane-header-nav ul {
+      overflow: hidden; }
+    .tabPane-trade .tabPane-header .tabPane-header-nav ul li:hover {
+      background: rgba(53, 62, 80, 0.6); }
+    .tabPane-trade .tabPane-header .tabPane-header-nav ul li {
+      line-height: 24px;
+      float: left;
+      border: none;
+      width: 64px;
+      font-size: 12px;
+      margin-left: 0; }
+      .tabPane-trade .tabPane-header .tabPane-header-nav ul li .iconfont {
+        margin-left: 10px; }
+    .tabPane-trade .tabPane-header .tabPane-header-nav ul .active {
+      background: #323a4a; }
+    .tabPane-trade .tabPane-header .tabPane-header-nav ul li img {
+      margin: 2px 0 0 6px; }
+    .tabPane-trade .tabPane-header thead tr:hover {
+      background: gray; }
+  .tabPane-trade .tabPane-content {
+    background: #191D27; }
+    .tabPane-trade .tabPane-content thead, .tabPane-trade .tabPane-content tbody tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      border: none;
+      color: #7A87B0; }
+    .tabPane-trade .tabPane-content thead {
+      line-height: 40px; }
+    .tabPane-trade .tabPane-content thead tr:hover {
+      background: #212838; }
+    .tabPane-trade .tabPane-content th {
+      color: #C5CDE1;
+      text-align: right;
+      line-height: 30px; }
+    .tabPane-trade .tabPane-content tbody {
+      height: 150px;
+      overflow-y: scroll; }
+      .tabPane-trade .tabPane-content tbody tr {
+        text-align: center; }
+      .tabPane-trade .tabPane-content tbody tr:nth-child(even) {
+        background: rgba(53, 62, 80, 0.4); }
+      .tabPane-trade .tabPane-content tbody td {
+        text-align: right; }
+      .tabPane-trade .tabPane-content tbody td:first-child {
+        padding-left: 10px !important; }
+  .tabPane-trade .iconfont .iconjiantouxia {
+    color: #212838; }
+  .tabPane-trade .iconfont .iconjiantoushang {
+    color: #212838; }
+
+.market-loading {
+  position: absolute !important;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1; }
+  .market-loading .fota-loader {
+    opacity: .5; }
+
+.market-loadingNull {
+  position: absolute !important;
+  background: rgba(25, 29, 39, 0.8);
+  opacity: 1; }
+  .market-loadingNull .fota-loader {
+    opacity: .5; }
+
+.iconxingxing1 {
+  color: #FAB927; }
+
+#usdkBar {
+  width: 100%;
+  height: 54px;
+  display: -ms-flexbox;
+  display: flex;
+  background: #191D27;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.2); }
+  #usdkBar .leftBar {
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 54px;
+    position: relative;
+    min-width: 180px;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    flex-shrink: 0; }
+    #usdkBar .leftBar .dot {
+      width: 4px;
+      height: 4px;
+      background: #3D79EC;
+      border-radius: 50%;
+      transition: all 0.3s ease-out;
+      display: inline-block;
+      vertical-align: 10px; }
+    #usdkBar .leftBar .menuOpen {
+      height: 100%;
+      min-width: 180px;
+      padding: 0 0 0 10px;
+      display: inline-block;
+      background: #191D27;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 4px 4px;
+      line-height: 54px; }
+      #usdkBar .leftBar .menuOpen > i.iconfont {
+        font-size: 14px;
+        display: inline-block;
+        cursor: pointer;
+        vertical-align: 1px;
+        margin-left: 3px; }
+      #usdkBar .leftBar .menuOpen svg {
+        display: inline-block;
+        vertical-align: -8px; }
+      #usdkBar .leftBar .menuOpen h2 {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+        font-weight: 400; }
+    #usdkBar .leftBar .fuckingBox {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      height: 150px;
+      width: 300px;
+      will-change: visibility, height, width, opacity;
+      background: #191D27;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 2px 10px 10px;
+      transition: all 0.3s ease-out;
+      overflow: hidden; }
+      #usdkBar .leftBar .fuckingBox .title_box {
+        height: 54px;
+        line-height: 50px;
+        margin-bottom: 5px; }
+        #usdkBar .leftBar .fuckingBox .title_box > i.iconfont {
+          font-size: 14px;
+          display: inline-block;
+          cursor: pointer;
+          vertical-align: 1px;
+          margin-left: 3px; }
+        #usdkBar .leftBar .fuckingBox .title_box svg {
+          display: inline-block;
+          vertical-align: -8px; }
+        #usdkBar .leftBar .fuckingBox .title_box h2 {
+          font-size: 20px;
+          display: inline-block;
+          margin-left: 5px;
+          cursor: pointer;
+          font-weight: 400; }
+      #usdkBar .leftBar .fuckingBox .select_table {
+        width: 100%;
+        display: block; }
+        #usdkBar .leftBar .fuckingBox .select_table thead {
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          display: inline-block;
+          margin-top: -20px; }
+          #usdkBar .leftBar .fuckingBox .select_table thead tr {
+            width: 100%;
+            display: block;
+            padding: 0 8px; }
+            #usdkBar .leftBar .fuckingBox .select_table thead tr th {
+              display: inline-block;
+              font-size: 12px; }
+            #usdkBar .leftBar .fuckingBox .select_table thead tr th:nth-of-type(1) {
+              width: 30%;
+              text-align: left; }
+            #usdkBar .leftBar .fuckingBox .select_table thead tr th:nth-of-type(2) {
+              width: 36%;
+              text-align: center; }
+            #usdkBar .leftBar .fuckingBox .select_table thead tr th:nth-of-type(3) {
+              width: 34%;
+              text-align: right; }
+        #usdkBar .leftBar .fuckingBox .select_table tbody {
+          width: 100%;
+          display: inline-block;
+          margin-top: -20px; }
+          #usdkBar .leftBar .fuckingBox .select_table tbody tr {
+            width: 100%;
+            display: block;
+            padding: 0 8px;
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer; }
+            #usdkBar .leftBar .fuckingBox .select_table tbody tr td {
+              display: inline-block;
+              font-size: 12px; }
+            #usdkBar .leftBar .fuckingBox .select_table tbody tr td.green {
+              color: #24B647; }
+            #usdkBar .leftBar .fuckingBox .select_table tbody tr td.red {
+              color: #E74C4C; }
+            #usdkBar .leftBar .fuckingBox .select_table tbody tr td:nth-of-type(1) {
+              width: 30%;
+              text-align: left; }
+            #usdkBar .leftBar .fuckingBox .select_table tbody tr td:nth-of-type(2) {
+              width: 36%;
+              text-align: center; }
+            #usdkBar .leftBar .fuckingBox .select_table tbody tr td:nth-of-type(3) {
+              width: 34%;
+              text-align: right; }
+            #usdkBar .leftBar .fuckingBox .select_table tbody tr:hover {
+              padding: 0 8px 0 4px;
+              border-left: 4px solid #3D79EC; }
+    #usdkBar .leftBar .col_line {
+      width: 1px;
+      height: 32px;
+      display: inline-block;
+      float: right;
+      margin-top: 9px;
+      margin-left: 20px; }
+  #usdkBar .rightBar {
+    -ms-flex: auto;
+    flex: auto;
+    height: 54px; }
+    #usdkBar .rightBar #coinInfo {
+      width: 100%;
+      height: 100%;
+      line-height: 54px;
+      display: -ms-flexbox;
+      display: flex; }
+      #usdkBar .rightBar #coinInfo .otherTradeAreas {
+        color: #C5CDE1; }
+        #usdkBar .rightBar #coinInfo .otherTradeAreas span {
+          margin: 0px 5px 0px 10px;
+          cursor: pointer; }
+        #usdkBar .rightBar #coinInfo .otherTradeAreas i {
+          margin-right: 10px;
+          cursor: pointer; }
+        #usdkBar .rightBar #coinInfo .otherTradeAreas .dropDown {
+          position: relative;
+          display: inline-block; }
+        #usdkBar .rightBar #coinInfo .otherTradeAreas .dropDown-content {
+          display: none;
+          position: absolute;
+          left: -30px;
+          color: white;
+          background-color: #64707C;
+          width: 70px;
+          padding: 2px 5px;
+          margin: 0px 0px;
+          z-index: 1; }
+          #usdkBar .rightBar #coinInfo .otherTradeAreas .dropDown-content ul {
+            padding: 0px;
+            margin: 0px 5px 0px 0px;
+            padding-bottom: 10px; }
+          #usdkBar .rightBar #coinInfo .otherTradeAreas .dropDown-content li {
+            font-size: 14px;
+            cursor: pointer;
+            margin: 0px 2px 0px 2px;
+            padding: 0px;
+            height: 35px; }
+        #usdkBar .rightBar #coinInfo .otherTradeAreas .dropDown:hover .dropDown-content {
+          display: block; }
+      #usdkBar .rightBar #coinInfo .big_price {
+        color: #24B647;
+        float: left;
+        margin-left: 7px;
+        margin-right: 3%;
+        font-family: Helvetica Neue;
+        line-height: 54px;
+        display: -ms-flexbox;
+        display: flex; }
+        #usdkBar .rightBar #coinInfo .big_price h1 {
+          display: inline-block;
+          color: #24B647;
+          margin-bottom: 0;
+          font-size: 16px; }
+        #usdkBar .rightBar #coinInfo .big_price .iconfont {
+          font-size: 12px; }
+        #usdkBar .rightBar #coinInfo .big_price span {
+          font-size: 12px;
+          margin-left: 5px; }
+        #usdkBar .rightBar #coinInfo .big_price .red, #usdkBar .rightBar #coinInfo .big_price .iconjiantouxia {
+          color: #E74C4C; }
+        #usdkBar .rightBar #coinInfo .big_price .green, #usdkBar .rightBar #coinInfo .big_price .iconjiantoushang {
+          color: #24B647; }
+      #usdkBar .rightBar #coinInfo .cline {
+        width: 1px;
+        height: 36px;
+        display: inline-block;
+        background: rgba(216, 216, 216, 0.2);
+        margin-top: 9px; }
+      #usdkBar .rightBar #coinInfo .right_box {
+        -ms-flex: auto;
+        flex: auto;
+        height: 100%; }
+        #usdkBar .rightBar #coinInfo .right_box .right_list {
+          height: 100%;
+          padding-left: 40px; }
+          #usdkBar .rightBar #coinInfo .right_box .right_list li {
+            min-width: 100px;
+            height: 100%;
+            line-height: 20px;
+            text-align: left;
+            display: inline-block;
+            margin-right: 5%; }
+            #usdkBar .rightBar #coinInfo .right_box .right_list li span {
+              display: block;
+              font-size: 14px;
+              color: #fff;
+              font-family: Helvetica Neue;
+              margin-top: 7px; }
+            #usdkBar .rightBar #coinInfo .right_box .right_list li p {
+              display: inline-block;
+              font-size: 12px;
+              margin-right: 10px;
+              font-size: 12px;
+              color: #A39FBC;
+              cursor: pointer;
+              padding-bottom: 10px; }
+            #usdkBar .rightBar #coinInfo .right_box .right_list li #arrow {
+              margin-top: 5px; }
+          #usdkBar .rightBar #coinInfo .right_box .right_list li:nth-of-type(2) span {
+            margin-right: 20px; }
+      #usdkBar .rightBar #coinInfo ul, #usdkBar .rightBar #coinInfo p {
+        margin-bottom: 0; }
+  #usdkBar h2, #usdkBar ul, #usdkBar li, #usdkBar p {
+    margin-bottom: 0; }
+
+@media screen and (max-width: 1350px) {
+  #usdkBar .rightBar #coinInfo .right_box .right_list li {
+    margin-right: 5px; } }
+
+.USDTtradeTable {
+  overflow-x: hidden;
+  width: calc(100% - 20px);
+  height: 100%; }
+  .USDTtradeTable .ant-spin-nested-loading .ant-spin-blur {
+    overflow: visible !important;
+    background: transparent; }
+  .USDTtradeTable .TradeTable-title {
+    overflow: hidden;
+    padding: 10px 0 10px 30px;
+    margin-bottom: 0; }
+    .USDTtradeTable .TradeTable-title li {
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      float: left;
+      width: 64px;
+      height: 24px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 22px;
+      margin-right: 20px;
+      position: relative; }
+      .USDTtradeTable .TradeTable-title li .triangle {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #fff;
+        border-bottom: 1px solid #3D79EC;
+        border-right: 1px solid #3D79EC;
+        top: 20px;
+        left: 28px;
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      .USDTtradeTable .TradeTable-title li .triangleNight {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #3D79EC;
+        border-bottom: 1px solid #3D79EC;
+        border-right: 1px solid #3D79EC;
+        top: 20px;
+        left: 28px;
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .USDTtradeTable .TradeTable-title .hover:hover {
+      opacity: 0.6; }
+    .USDTtradeTable .TradeTable-title .liActive {
+      border: 1px solid #3D79EC;
+      background: #3D79EC;
+      color: #fff; }
+    .USDTtradeTable .TradeTable-title .TradeTable-FindList {
+      float: right;
+      border: none;
+      width: auto;
+      margin-right: 0; }
+      .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNone {
+        font-size: 12px;
+        color: #AAB8DF;
+        letter-spacing: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNone .ant-checkbox-inner {
+          width: 12px;
+          height: 12px;
+          background: #212838;
+          border: 1px solid #596b9f; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNone .ant-checkbox-inner:after {
+          left: 2.571429px;
+          top: 0.142857px; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNone svg {
+          width: 8px;
+          height: 8px;
+          float: right;
+          margin-left: -10px; }
+      .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNone:hover .ant-checkbox-inner {
+        border: 1px solid #3D79EC; }
+      .USDTtradeTable .TradeTable-title .TradeTable-FindList .ant-checkbox-checked .ant-checkbox-inner {
+        width: 12px;
+        height: 12px;
+        background: #3D79EC;
+        border: 1px solid #3D79EC; }
+      .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNonelight {
+        font-size: 12px;
+        color: #aaafb9;
+        letter-spacing: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNonelight .ant-checkbox-inner {
+          width: 12px;
+          height: 12px;
+          border: 1px solid #596b9f; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNonelight .ant-checkbox-inner:after {
+          left: 2.571429px;
+          top: 0.142857px; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .checkNonelight svg {
+          width: 8px;
+          height: 8px;
+          float: right;
+          margin-left: -10px; }
+      .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone {
+        margin-top: -1px; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone .ant-input {
+          width: 240px;
+          height: 24px;
+          border: 1px solid #596B9F;
+          border-radius: 4px;
+          background-color: #212838;
+          color: #AAB8DF;
+          padding: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone .ant-calendar-range-picker-input {
+          margin: -6px 0 0 -6px; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone .ant-calendar-range-picker-separator {
+          color: #AAB8DF; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone .ant-calendar-picker-icon {
+          color: #aab8df; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone .ant-calendar-picker-icon:after {
+          color: #aab8df; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone .ant-calendar-picker-clear {
+          color: #fff;
+          background: #212838; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone input::-webkit-input-placeholder {
+          font-size: 12px;
+          color: #aab8df;
+          letter-spacing: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone input::-moz-placeholder {
+          font-size: 12px;
+          color: #aab8df;
+          letter-spacing: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNone input:-ms-input-placeholder {
+          font-size: 12px;
+          color: #aab8df;
+          letter-spacing: 0; }
+      .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNonelight {
+        margin-top: -1px; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNonelight .ant-input {
+          width: 240px;
+          height: 24px;
+          border: 1px solid #aaafb9;
+          border-radius: 4px;
+          background-color: #fff;
+          color: #aaafb9;
+          padding: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNonelight .ant-calendar-range-picker-input {
+          margin: -6px 0 0 -6px; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNonelight .ant-calendar-range-picker-separator {
+          color: #aaafb9; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNonelight input::-webkit-input-placeholder {
+          font-size: 12px;
+          color: #aaafb9;
+          letter-spacing: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNonelight input::-moz-placeholder {
+          font-size: 12px;
+          color: #aaafb9;
+          letter-spacing: 0; }
+        .USDTtradeTable .TradeTable-title .TradeTable-FindList .timeNonelight input:-ms-input-placeholder {
+          font-size: 12px;
+          color: #aaafb9;
+          letter-spacing: 0; }
+      .USDTtradeTable .TradeTable-title .TradeTable-FindList button {
+        min-width: 70px;
+        height: 24px;
+        border: 1px solid #3D79EC;
+        background: transparent;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #3D79EC;
+        margin-left: 20px;
+        line-height: 24px;
+        float: right; }
+  .USDTtradeTable .TradeTab {
+    padding: 0 0 0 23px; }
+    .USDTtradeTable .TradeTab .Trade-table-tit {
+      line-height: 24px;
+      padding-right: 2px; }
+      .USDTtradeTable .TradeTab .Trade-table-tit .hide {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 12px;
+        letter-spacing: 0;
+        text-align: center;
+        width: 12.5%; }
+      .USDTtradeTable .TradeTab .Trade-table-tit .cursor {
+        cursor: pointer; }
+      .USDTtradeTable .TradeTab .Trade-table-tit .left {
+        text-align: left; }
+      .USDTtradeTable .TradeTab .Trade-table-tit .firstOne {
+        padding-left: 20px; }
+    .USDTtradeTable .TradeTab .scrollKiller {
+      width: calc(100% + 21px);
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 135px;
+      margin-bottom: 6px; }
+    .USDTtradeTable .TradeTab .Trade-table {
+      width: calc(100% + 20px);
+      padding-right: 4px;
+      height: 135px;
+      display: inline-block;
+      margin-bottom: 0; }
+      .USDTtradeTable .TradeTab .Trade-table .cursor {
+        cursor: pointer; }
+      .USDTtradeTable .TradeTab .Trade-table .Nodata {
+        color: #3d4970;
+        font-size: 12px;
+        text-align: center; }
+      .USDTtradeTable .TradeTab .Trade-table .NodataLight {
+        color: #aaafb9;
+        font-size: 12px;
+        text-align: center; }
+      .USDTtradeTable .TradeTab .Trade-table li {
+        line-height: 24px;
+        height: 26px;
+        margin-bottom: 4px; }
+        .USDTtradeTable .TradeTab .Trade-table li .firstOne {
+          padding-left: 20px; }
+        .USDTtradeTable .TradeTab .Trade-table li .green {
+          color: #24B647 !important; }
+        .USDTtradeTable .TradeTab .Trade-table li .red {
+          color: #E74C4C !important; }
+        .USDTtradeTable .TradeTab .Trade-table li .hide {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-align: center;
+          display: inline-block;
+          width: 12.5%;
+          font-size: 12px; }
+          .USDTtradeTable .TradeTab .Trade-table li .hide .Trade-chedan {
+            display: inline-block;
+            width: 70px;
+            height: 22px;
+            border-radius: 11px;
+            vertical-align: middle;
+            line-height: 22px;
+            font-size: 12px;
+            background: #3D79EC;
+            color: #FFFFFF !important;
+            letter-spacing: 0;
+            text-align: center;
+            cursor: pointer;
+            margin-top: -3px;
+            transition: all 0.3s ease-in-out; }
+            .USDTtradeTable .TradeTab .Trade-table li .hide .Trade-chedan:hover {
+              background: #306AD9; }
+          .USDTtradeTable .TradeTab .Trade-table li .hide .Trade-pingcang {
+            display: inline-block;
+            width: 70px;
+            height: 22px;
+            border-radius: 11px;
+            vertical-align: middle;
+            line-height: 22px;
+            font-size: 12px;
+            background: #E74C4C;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: center;
+            cursor: pointer; }
+          .USDTtradeTable .TradeTab .Trade-table li .hide .Trade-chedan {
+            display: inline-block;
+            width: 70px;
+            height: 22px;
+            border-radius: 11px;
+            vertical-align: middle;
+            line-height: 22px;
+            font-size: 12px;
+            background: #3D79EC;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: center;
+            cursor: pointer; }
+        .USDTtradeTable .TradeTab .Trade-table li .left {
+          text-align: left; }
+      .USDTtradeTable .TradeTab .Trade-table li:last-child {
+        margin-bottom: 0; }
+  .USDTtradeTable .weituo .Trade-table-tit > .hide {
+    width: 8%; }
+  .USDTtradeTable .weituo .Trade-table > li > .hide {
+    width: 8%; }
+  .USDTtradeTable .weituo .Trade-table-tit > .trade-middle {
+    width: 11%; }
+  .USDTtradeTable .weituo .Trade-table > li > .trade-middle {
+    width: 11%; }
+  .USDTtradeTable .weituo .Trade-table-tit > .trade-lang {
+    width: 16%; }
+  .USDTtradeTable .weituo .Trade-table > li > .trade-lang {
+    width: 16%; }
+  .USDTtradeTable .lishi .Trade-table-tit > .hide {
+    width: 9%; }
+  .USDTtradeTable .lishi .Trade-table > li > .hide {
+    width: 9%; }
+  .USDTtradeTable .lishi .Trade-table-tit > .trade-middle {
+    width: 11%; }
+  .USDTtradeTable .lishi .Trade-table > li > .trade-middle {
+    width: 11%; }
+  .USDTtradeTable .lishi .Trade-table-tit > .trade-lang {
+    width: 14%; }
+  .USDTtradeTable .lishi .Trade-table > li > .trade-lang {
+    width: 14%; }
+  .USDTtradeTable .zichan .Trade-table-tit > .hide {
+    width: 20%; }
+  .USDTtradeTable .zichan .Trade-table > li > .hide {
+    width: 20%; }
+  .USDTtradeTable .Trade-page {
+    float: right;
+    margin: -5px 24px 0 0;
+    color: #fff; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-prev {
+      min-width: 16px;
+      height: 16px; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-next {
+      min-width: 16px;
+      height: 16px; }
+    .USDTtradeTable .Trade-page .ant-pagination .anticon {
+      margin-top: 1px;
+      display: block; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-prev a,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-next a,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item > a,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item:focus a,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item:hover a {
+      color: #596b9f;
+      margin: 0; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item {
+      min-width: 16px;
+      height: 16px;
+      line-height: 14px; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item-link:after {
+      line-height: 16px !important;
+      height: 16px; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item-active {
+      background: transparent; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item:focus,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item:hover,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item-active:focus,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item-active:hover {
+      border-color: #2D499F; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item-active a,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item-active:focus a,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-item-active:hover a {
+      color: #3D79EC; }
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-jump-next:after,
+    .USDTtradeTable .Trade-page .ant-pagination .ant-pagination-jump-prev:after {
+      color: #596b9f; }
+
+.ant-calendar-range-middle {
+  margin-left: -158px !important; }
+
+#tradelist {
+  width: 100%;
+  height: 100%; }
+  #tradelist .right_box {
+    width: calc(50% - 2px);
+    height: 100%;
+    float: right;
+    overflow: hidden; }
+    #tradelist .right_box .head_title {
+      width: 100%;
+      height: 48px;
+      padding: 6px 10px 0 10px; }
+      #tradelist .right_box .head_title .iconbitebi {
+        font-size: 12px; }
+      #tradelist .right_box .head_title p {
+        font-size: 12px;
+        margin-bottom: 5px; }
+      #tradelist .right_box .head_title .title_line {
+        width: 100%;
+        height: 1px;
+        margin: 0 auto 2px; }
+      #tradelist .right_box .head_title ul {
+        margin-bottom: 0px; }
+        #tradelist .right_box .head_title ul li {
+          display: inline-block;
+          font-size: 12px; }
+        #tradelist .right_box .head_title ul li:nth-of-type(1) {
+          width: 30%;
+          text-align: left; }
+        #tradelist .right_box .head_title ul li:nth-of-type(2) {
+          width: 45%;
+          text-align: center; }
+        #tradelist .right_box .head_title ul li:nth-of-type(3) {
+          width: 25%;
+          text-align: right; }
+    #tradelist .right_box .deal_table {
+      width: 100%;
+      height: calc(100% - 53px);
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      display: block; }
+      #tradelist .right_box .deal_table tbody {
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden; }
+        #tradelist .right_box .deal_table tbody tr {
+          width: 100%;
+          display: block;
+          height: 17px;
+          line-height: 17px;
+          position: relative;
+          z-index: 2;
+          cursor: pointer; }
+          #tradelist .right_box .deal_table tbody tr td {
+            display: inline-block;
+            font-size: 12px;
+            font-family: Helvetica Neue; }
+          #tradelist .right_box .deal_table tbody tr td.green {
+            color: #24B647; }
+          #tradelist .right_box .deal_table tbody tr td.red {
+            color: #E74C4C; }
+          #tradelist .right_box .deal_table tbody tr td:nth-of-type(1) {
+            width: 30%;
+            text-align: justify;
+            text-align-last: left; }
+          #tradelist .right_box .deal_table tbody tr td:nth-of-type(2) {
+            width: 45%;
+            text-align: center; }
+          #tradelist .right_box .deal_table tbody tr td:nth-of-type(3) {
+            width: 25%;
+            text-align: right; }
+          #tradelist .right_box .deal_table tbody tr .hover_line {
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 0;
+            opacity: 0.7; }
+  #tradelist .left_box {
+    width: calc(50% - 2px);
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative; }
+    #tradelist .left_box .head_title {
+      width: 100%;
+      height: 54px;
+      padding: 6px 5% 0 5%;
+      position: relative; }
+      #tradelist .left_box .head_title .iconbitebi {
+        font-size: 12px; }
+      #tradelist .left_box .head_title p {
+        font-size: 12px;
+        float: left;
+        margin-bottom: 5px; }
+      #tradelist .left_box .head_title .title_line {
+        width: 100%;
+        height: 1px;
+        margin: 0 auto; }
+      #tradelist .left_box .head_title .select_menu {
+        height: 20px;
+        float: right;
+        position: relative; }
+        #tradelist .left_box .head_title .select_menu .select_open {
+          cursor: pointer; }
+          #tradelist .left_box .head_title .select_menu .select_open > i.iconfont {
+            font-size: 12px;
+            vertical-align: 2px;
+            margin-left: 5px; }
+          #tradelist .left_box .head_title .select_menu .select_open .svgTooltip {
+            visibility: hidden;
+            opacity: 0;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            right: 10px;
+            top: -3px;
+            transition: all 0.2s linear; }
+          #tradelist .left_box .head_title .select_menu .select_open:hover .svgTooltip {
+            opacity: 1;
+            visibility: visible; }
+        #tradelist .left_box .head_title .select_menu ul.select_drop {
+          max-width: 200px;
+          box-shadow: 0 4px 10px 0 rgba(28, 28, 28, 0.5);
+          border-radius: 4px;
+          overflow: hidden;
+          position: absolute;
+          z-index: 99;
+          top: 17px;
+          left: -10px;
+          line-height: 30px; }
+          #tradelist .left_box .head_title .select_menu ul.select_drop li {
+            width: 100%;
+            height: 30px;
+            text-align: left;
+            cursor: pointer;
+            padding: 0 8px;
+            font-size: 12px; }
+      #tradelist .left_box .head_title > i.iconfont {
+        font-size: 13px;
+        color: #AAB8DF;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer; }
+      #tradelist .left_box .head_title .clearboth {
+        display: block;
+        clear: both;
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      #tradelist .left_box .head_title > ul {
+        margin-top: 4px;
+        margin-bottom: 0;
+        height: 20px;
+        overflow: hidden; }
+        #tradelist .left_box .head_title > ul li {
+          font-size: 12px;
+          display: inline-block;
+          width: 33%; }
+        #tradelist .left_box .head_title > ul li:nth-of-type(1) {
+          text-align: left; }
+        #tradelist .left_box .head_title > ul li:nth-of-type(2) {
+          text-align: center; }
+        #tradelist .left_box .head_title > ul li:nth-of-type(3) {
+          text-align: right;
+          width: 34%; }
+    #tradelist .left_box .outerbox {
+      width: 100%;
+      margin: 0 auto;
+      height: calc(100% - 54px);
+      overflow: hidden;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      #tradelist .left_box .outerbox .innerbox {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        -ms-flex: 1;
+        flex: 1; }
+        #tradelist .left_box .outerbox .innerbox .deep_up_box, #tradelist .left_box .outerbox .innerbox .deep_dn_box {
+          width: calc(100% + 21px);
+          -ms-flex: 1;
+          flex: 1;
+          overflow-x: hidden;
+          overflow-y: scroll; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box ul, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul {
+            width: calc(100% - 21px);
+            margin-bottom: 0; }
+            #tradelist .left_box .outerbox .innerbox .deep_up_box ul li, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li {
+              width: 100%;
+              height: 20px;
+              position: relative;
+              line-height: 20px;
+              margin: 1px 0;
+              overflow: hidden;
+              cursor: pointer; }
+              #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line {
+                position: relative;
+                width: 100%;
+                z-index: 9;
+                margin-top: -1px; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line p, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line p {
+                  font-family: Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
+                  display: inline-block;
+                  width: 33%; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line p.price, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line p.price {
+                  font-size: 12px;
+                  color: #E74C4C; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line p.num, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line p.num {
+                  font-size: 12px;
+                  text-align: center; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line p.sum, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line p.sum {
+                  font-size: 12px;
+                  text-align: right;
+                  width: 34%; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line .upAnimation, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line .upAnimation {
+                  animation: upFlicker 0.3s ease-out;
+                  animation-iteration-count: 1; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line .dnAnimation, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line .dnAnimation {
+                  animation: dnFlicker 0.3s ease-out;
+                  animation-iteration-count: 1; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .info_line:after, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .info_line:after {
+                  display: block;
+                  content: ',';
+                  width: 0;
+                  height: 0;
+                  opacity: 0;
+                  clear: both; }
+              #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .deep_line0, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .deep_line0 {
+                width: 0;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #E74C4C;
+                opacity: .2;
+                transition: all .3s ease-out; }
+              #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .deep_line, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .deep_line {
+                width: 34%;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding-left: 2px; }
+                #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .deep_line .deep_line_color, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .deep_line .deep_line_color {
+                  float: left;
+                  width: 0;
+                  height: 100%;
+                  opacity: .2;
+                  transition: all .3s ease-out;
+                  background-color: #E74C4C; }
+              #tradelist .left_box .outerbox .innerbox .deep_up_box ul li .hover_line, #tradelist .left_box .outerbox .innerbox .deep_dn_box ul li .hover_line {
+                width: 100%;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                z-index: 5;
+                left: 0;
+                opacity: 0.7; }
+        #tradelist .left_box .outerbox .innerbox .deep_up_box {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+          margin-bottom: 1px; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box > ul li:nth-last-of-type(odd) {
+            background: #29303F; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li {
+            top: -20px;
+            z-index: -1;
+            animation-iteration-count: 1; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(odd) {
+            background: #29303F; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(1) {
+            animation: papapa .15s 0s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(2) {
+            animation: papapa .15s .05s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(3) {
+            animation: papapa .15s .1s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(4) {
+            animation: papapa .15s .15s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(5) {
+            animation: papapa .15s .2s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(6) {
+            animation: papapa .15s .25s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(7) {
+            animation: papapa .15s .3s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(8) {
+            animation: papapa .15s .35s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(9) {
+            animation: papapa .15s .4s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(10) {
+            animation: papapa .15s .45s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(11) {
+            animation: papapa .15s .5s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(12) {
+            animation: papapa .15s .55s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(13) {
+            animation: papapa .15s .6s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(14) {
+            animation: papapa .15s .65s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(15) {
+            animation: papapa .15s .7s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(16) {
+            animation: papapa .15s .75s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(17) {
+            animation: papapa .15s .8s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(18) {
+            animation: papapa .15s .85s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(19) {
+            animation: papapa .15s .9s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(20) {
+            animation: papapa .15s 1s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(21) {
+            animation: papapa .15s 1.05s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(22) {
+            animation: papapa .15s 1.1s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(23) {
+            animation: papapa .15s 1.15s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(24) {
+            animation: papapa .15s 1.2s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(25) {
+            animation: papapa .15s 1.25s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(26) {
+            animation: papapa .15s 1.3s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(27) {
+            animation: papapa .15s 1.35s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(28) {
+            animation: papapa .15s 1.4s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(29) {
+            animation: papapa .15s 1.45s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(30) {
+            animation: papapa .15s 1.5s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(31) {
+            animation: papapa .15s 1.55s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(32) {
+            animation: papapa .15s 1.6s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(33) {
+            animation: papapa .15s 1.65s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(34) {
+            animation: papapa .15s 1.7s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(35) {
+            animation: papapa .15s 1.75s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(36) {
+            animation: papapa .15s 1.8s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(37) {
+            animation: papapa .15s 1.85s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(38) {
+            animation: papapa .15s 1.9s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(39) {
+            animation: papapa .15s 1.95s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(40) {
+            animation: papapa .15s 2s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(41) {
+            animation: papapa .15s 2.05s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(42) {
+            animation: papapa .15s 2.1s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(43) {
+            animation: papapa .15s 2.15s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(44) {
+            animation: papapa .15s 2.2s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(45) {
+            animation: papapa .15s 2.25s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(46) {
+            animation: papapa .15s 2.3s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(47) {
+            animation: papapa .15s 2.35s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(48) {
+            animation: papapa .15s 2.4s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(49) {
+            animation: papapa .15s 2.45s linear forwards; }
+          #tradelist .left_box .outerbox .innerbox .deep_up_box .animationUl li:nth-last-of-type(50) {
+            animation: papapa .15s 2.5s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .deep_down_ul {
+          margin-top: 2px; }
+          #tradelist .left_box .outerbox .innerbox .deep_dn_box .deep_down_ul li {
+            top: 0;
+            z-index: 0; }
+            #tradelist .left_box .outerbox .innerbox .deep_dn_box .deep_down_ul li .info_line p.price {
+              color: #24B647; }
+            #tradelist .left_box .outerbox .innerbox .deep_dn_box .deep_down_ul li .deep_line0 {
+              background-color: #24B647; }
+            #tradelist .left_box .outerbox .innerbox .deep_dn_box .deep_down_ul li .deep_line .deep_line_color {
+              background-color: #24B647; }
+          #tradelist .left_box .outerbox .innerbox .deep_dn_box .deep_down_ul li:nth-of-type(odd) {
+            background: #29303F; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li {
+          top: 20px;
+          z-index: -1; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(1) {
+          animation: papapa .15s 0s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(2) {
+          animation: papapa .15s .05s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(3) {
+          animation: papapa .15s .1s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(4) {
+          animation: papapa .15s .15s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(5) {
+          animation: papapa .15s .2s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(6) {
+          animation: papapa .15s .25s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(7) {
+          animation: papapa .15s .3s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(8) {
+          animation: papapa .15s .35s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(9) {
+          animation: papapa .15s .4s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(10) {
+          animation: papapa .15s .45s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(11) {
+          animation: papapa .15s .5s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(12) {
+          animation: papapa .15s .55s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(13) {
+          animation: papapa .15s .6s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(14) {
+          animation: papapa .15s .65s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(15) {
+          animation: papapa .15s .7s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(16) {
+          animation: papapa .15s .75s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(17) {
+          animation: papapa .15s .8s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(18) {
+          animation: papapa .15s .85s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(19) {
+          animation: papapa .15s .9s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(20) {
+          animation: papapa .15s 1s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(21) {
+          animation: papapa .15s 1.05s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(22) {
+          animation: papapa .15s 1.1s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(23) {
+          animation: papapa .15s 1.15s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(24) {
+          animation: papapa .15s 1.2s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(25) {
+          animation: papapa .15s 1.25s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(26) {
+          animation: papapa .15s 1.3s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(27) {
+          animation: papapa .15s 1.35s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(28) {
+          animation: papapa .15s 1.4s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(29) {
+          animation: papapa .15s 1.45s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(30) {
+          animation: papapa .15s 1.5s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(31) {
+          animation: papapa .15s 1.55s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(32) {
+          animation: papapa .15s 1.6s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(33) {
+          animation: papapa .15s 1.65s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(34) {
+          animation: papapa .15s 1.7s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(35) {
+          animation: papapa .15s 1.75s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(36) {
+          animation: papapa .15s 1.8s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(37) {
+          animation: papapa .15s 1.85s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(38) {
+          animation: papapa .15s 1.9s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(39) {
+          animation: papapa .15s 1.95s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(40) {
+          animation: papapa .15s 2s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(41) {
+          animation: papapa .15s 2.05s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(42) {
+          animation: papapa .15s 2.1s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(43) {
+          animation: papapa .15s 2.15s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(44) {
+          animation: papapa .15s 2.2s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(45) {
+          animation: papapa .15s 2.25s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(46) {
+          animation: papapa .15s 2.3s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(47) {
+          animation: papapa .15s 2.35s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(48) {
+          animation: papapa .15s 2.4s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(49) {
+          animation: papapa .15s 2.45s linear forwards; }
+        #tradelist .left_box .outerbox .innerbox .deep_dn_box .animationUl li:nth-of-type(50) {
+          animation: papapa .15s 2.5s linear forwards; }
+      #tradelist .left_box .outerbox .inner_up {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+      #tradelist .left_box .outerbox .inner_dn {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      #tradelist .left_box .outerbox .last_price {
+        width: 90%;
+        height: 30px;
+        padding-left: 10px;
+        cursor: pointer;
+        position: relative;
+        left: 5%;
+        text-align: center; }
+        #tradelist .left_box .outerbox .last_price p {
+          line-height: 30px;
+          color: #24B647;
+          font-size: 16px; }
+          #tradelist .left_box .outerbox .last_price p span {
+            font-size: 12px;
+            margin-left: 5px; }
+        #tradelist .left_box .outerbox .last_price .green {
+          color: #24B647; }
+        #tradelist .left_box .outerbox .last_price .red {
+          color: #E74C4C; }
+        #tradelist .left_box .outerbox .last_price .iconfont {
+          font-size: 12px; }
+    #tradelist .left_box .outerbox.mac .innerbox .deep_up_box > ul, #tradelist .left_box .outerbox.mac .innerbox .deep_dn_box > ul {
+      width: calc(100% - 21px); }
+      #tradelist .left_box .outerbox.mac .innerbox .deep_up_box > ul > li .info_line, #tradelist .left_box .outerbox.mac .innerbox .deep_dn_box > ul > li .info_line {
+        padding-right: 1px; }
+    #tradelist .left_box .outerbox.window .innerbox .deep_up_box > ul, #tradelist .left_box .outerbox.window .innerbox .deep_dn_box > ul {
+      width: 100%; }
+      #tradelist .left_box .outerbox.window .innerbox .deep_up_box > ul li, #tradelist .left_box .outerbox.window .innerbox .deep_dn_box > ul li {
+        padding-right: 4px; }
+  #tradelist .loadingT {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    z-index: 1;
+    background: #212838; }
+  #tradelist .loadingD {
+    float: right; }
+  #tradelist p, #tradelist ul {
+    margin-bottom: 0; }
+
+@keyframes papapa {
+  0% {
+    visibility: hidden; }
+  30% {
+    visibility: visible;
+    top: 0; }
+  100% {
+    visibility: visible;
+    top: 0;
+    z-index: 1; } }
+
+@keyframes dealTr {
+  0%, 100% {
+    background: transparent; }
+  50% {
+    background: yellow; } }
+
+@keyframes upFlicker {
+  0% {
+    background-color: rgba(36, 182, 71, 0.5); }
+  100% {
+    background-color: rgba(36, 182, 71, 0); } }
+
+@keyframes dnFlicker {
+  0% {
+    background-color: rgba(231, 76, 76, 0.5); }
+  100% {
+    background-color: rgba(231, 76, 76, 0); } }
+
+.kline {
+  display: flow-root;
+  margin-right: 4px;
+  width: 100%;
+  height: calc(100% - 84px); }
+  .kline .kline_box {
+    background: transparent;
+    position: initial;
+    height: 100%; }
+
+.pane-legend {
+  display: none; }
+
+.carousel-box {
+  height: 30px;
+  position: relative;
+  overflow: hidden; }
+  .carousel-box > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
+  .carousel-box .carousel-box-ul {
+    height: 30px;
+    margin-bottom: 0px;
+    padding-left: 8px;
+    display: -ms-flexbox;
+    display: flex; }
+    .carousel-box .carousel-box-ul li {
+      display: -ms-flexbox;
+      display: flex;
+      float: left;
+      margin-right: 10px;
+      min-width: 215px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      letter-spacing: 0; }
+      .carousel-box .carousel-box-ul li:hover {
+        color: #C5CDE1;
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: all 0.3s; }
+      .carousel-box .carousel-box-ul li span {
+        white-space: pre;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .carousel-box .carousel-box-ul li span:nth-child(1) {
+        margin-right: 10px;
+        min-width: 50px; }
+      .carousel-box .carousel-box-ul li span:nth-child(2) {
+        margin-right: 5px; }
+      .carousel-box .carousel-box-ul li .increase {
+        color: #24B647; }
+      .carousel-box .carousel-box-ul li .decrease {
+        color: #E74C4C; }
+
+.carousel-box-light {
+  background: #e5eeff; }
+
+.carousel-box-night {
+  background: #293041; }
+
+.box-ul-night {
+  color: #596B9F; }
+
+.box-ul-light {
+  color: #6c7482; }
+
+.trade-form {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative; }
+  .trade-form::before {
+    display: table;
+    content: ""; }
+  .trade-form .ant-spin-blur {
+    overflow: visible;
+    background: transparent; }
+  .trade-form .iconqiehuan {
+    font-size: 12px;
+    margin-left: 3px; }
+
+.trade-form-flex {
+  height: 100%;
+  width: 100%;
+  background: #212838; }
+  .trade-form-flex.trade-form-flex-right {
+    margin-left: 4px;
+    overflow: hidden;
+    height: 100%; }
+    .trade-form-flex.trade-form-flex-right .trade-form-wrap {
+      width: 93%;
+      height: 100%;
+      margin: 0 auto; }
+      .trade-form-flex.trade-form-flex-right .trade-form-wrap .trade-form-content {
+        width: calc(100% + 32px);
+        height: 100%;
+        overflow-y: scroll;
+        padding: 0; }
+  .trade-form-flex .limitSelect {
+    width: 100%;
+    height: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 12px; }
+    .trade-form-flex .limitSelect .limitTab {
+      position: relative;
+      width: 50%;
+      line-height: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #7A87B0;
+      background-color: #353E50;
+      cursor: pointer; }
+      .trade-form-flex .limitSelect .limitTab .limitTab-sp {
+        position: relative; }
+      .trade-form-flex .limitSelect .limitTab:hover {
+        color: #545e74;
+        background-color: #2d3644; }
+        .trade-form-flex .limitSelect .limitTab:hover .icontooltip {
+          opacity: 1;
+          visibility: visible; }
+      .trade-form-flex .limitSelect .limitTab.active {
+        color: #fff;
+        background-color: #3d79ec; }
+        .trade-form-flex .limitSelect .limitTab.active:hover {
+          opacity: 1; }
+      .trade-form-flex .limitSelect .limitTab .icontooltip {
+        visibility: hidden;
+        opacity: 0;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        right: -10px;
+        top: 0;
+        transition: all 0.2s linear; }
+  .trade-form-flex .trade-form-content {
+    padding: 0 7px;
+    font-size: 12px;
+    -ms-flex: 1;
+    flex: 1; }
+    .trade-form-flex .trade-form-content .trade-form-button {
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 8px; }
+      .trade-form-flex .trade-form-content .trade-form-button.trade-form-button-mt {
+        margin-top: 20px; }
+    .trade-form-flex .trade-form-content a.trade-link-button {
+      color: #3D79EC;
+      border-bottom: 1px solid dashed; }
+    .trade-form-flex .trade-form-content .trade-asset-info {
+      width: calc(100% - 32px);
+      border-radius: 4px;
+      line-height: 17px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+      .trade-form-flex .trade-form-content .trade-asset-info .trade-form-link {
+        padding: 6px 0;
+        border-bottom: 1px solid #363B4D;
+        margin-bottom: 16px; }
+      .trade-form-flex .trade-form-content .trade-asset-info .wallet-block {
+        margin-top: 10px;
+        background-color: #1B202D;
+        padding: 0 5px; }
+        .trade-form-flex .trade-form-content .trade-asset-info .wallet-block .trade-account-item {
+          line-height: 24px;
+          border-bottom: 1px dashed #2E3241; }
+          .trade-form-flex .trade-form-content .trade-asset-info .wallet-block .trade-account-item:last-child {
+            border-bottom: none; }
+  .trade-form-flex .trade-form-p {
+    position: relative;
+    height: 40px;
+    line-height: 40px; }
+    .trade-form-flex .trade-form-p .trade-form-mxn {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex: 1;
+      flex: 1;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      line-height: initial;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 0px; }
+    .trade-form-flex .trade-form-p .trade-form-max {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      line-height: 20px;
+      font-size: 12px;
+      white-space: nowrap; }
+      .trade-form-flex .trade-form-p .trade-form-max .ft-theme-price {
+        color: #c5cde1; }
+
+.trade-form-a {
+  color: inherit; }
+
+.trade-form-b {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px; }
+  .trade-form-b .trade-form-first {
+    padding-right: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center; }
+    .trade-form-b .trade-form-first .trade-form-a::after {
+      content: '';
+      border-left: 4px solid;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: -8px; }
+  .trade-form-b .trade-form-a {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    border-bottom: 1px dashed;
+    white-space: nowrap;
+    color: inherit; }
+  .trade-form-b .trade-form-last {
+    padding-left: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: right; }
+    .trade-form-b .trade-form-last .trade-form-a::before {
+      content: '';
+      border-right: 4px solid;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: -8px; }
+  .trade-form-b .trade-form-block::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 32px; }
+
+.trade-form-b-price {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 154px;
+  width: 60px; }
+
+.trade-form-b-top {
+  font-size: 12px;
+  white-space: nowrap; }
+
+.trade-form-b-bottom {
+  font-size: 12px;
+  white-space: nowrap; }
+
+.trade-form-input {
+  margin-left: 10px; }
+  .trade-form-input input {
+    padding-left: 10px !important;
+    height: 32px !important; }
+
+.trade-tran-green {
+  color: #24B647; }
+
+.trade-tran-red {
+  color: #E74C4C; }
+
+.trade-main + .trade-main {
+  margin-top: 6px; }
+
+.trade-main.trade-input {
+  width: 100%;
+  height: 34px;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: none; }
+  .trade-main.trade-input input {
+    width: 100%;
+    height: 100%;
+    padding-left: 72px;
+    line-height: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+
+.trade-main.trade-select {
+  width: 100%;
+  height: 54px;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px; }
+  .trade-main.trade-select input {
+    width: 100%;
+    height: 54px;
+    padding-left: 10px;
+    padding-top: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+
+.trade-main .trade-input-panel {
+  font-size: 12px;
+  position: relative;
+  -ms-flex: 1;
+  flex: 1; }
+
+.trade-main .trade-input-mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer; }
+  .trade-main .trade-input-mask.trade-input-mask-short {
+    width: 66px;
+    background-color: #353E50; }
+
+.trade-main .trade-input-label {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  line-height: 17px;
+  z-index: 2; }
+  .trade-main .trade-input-label:hover .icon-question-bg {
+    opacity: 1;
+    visibility: visible; }
+  .trade-main .trade-input-label .icon-question-bg {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: -4px;
+    top: -6px;
+    border-radius: 4px; }
+    .trade-main .trade-input-label .icon-question-bg .icon-question {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 8px; }
+
+.trade-main .trade-select-list {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  left: 0;
+  z-index: 10;
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  border-radius: 4px; }
+  .trade-main .trade-select-list li {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    cursor: pointer; }
+
+.trade-main .trade-input-ts {
+  position: absolute;
+  right: 10px;
+  bottom: 7px; }
+
+.trade-main .trade-input-ts2 {
+  width: 42px;
+  text-align: center;
+  line-height: 54px;
+  border-top-right-radius: 4px; }
+
+.trade-main .trade-edit {
+  width: 24px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden; }
+  .trade-main .trade-edit a {
+    display: block;
+    height: 17px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px; }
+  .trade-main .trade-edit a:hover {
+    color: #c5cde1; }
+  .trade-main .trade-edit a + a {
+    margin-top: 1px;
+    height: 16px;
+    line-height: 16px; }
+
+.trade-button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #24B647;
+  color: #ffffff;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  box-sizing: border-box; }
+  .trade-button.trade-tallHeight {
+    height: 66px; }
+  .trade-button:first-child {
+    margin-right: 7px; }
+  .trade-button .trade-button-text {
+    display: block;
+    margin: 0 8px;
+    font-size: 17px;
+    padding: 2px 0;
+    border-bottom: 1px solid #5DC777; }
+
+.trade-button:hover {
+  background: #169835; }
+
+.trade-color-red {
+  background: #E74C4C; }
+  .trade-color-red .trade-button-text {
+    border-bottom: 1px solid #E56B6B; }
+
+.trade-color-red:hover {
+  background: #CD3C3C; }
+
+.trade-pop .trade-title {
+  font-size: 16px;
+  color: #AAB8DF;
+  margin-bottom: 39px; }
+
+.trade-pop .trade-type {
+  margin-top: 10px; }
+  .trade-pop .trade-type .label-common {
+    font-size: 12px; }
+  .trade-pop .trade-type .value-common {
+    font-size: 12px;
+    float: right; }
+
+.pop-framework {
+  transition: all .3s ease 0s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000; }
+  .pop-framework .pop-title {
+    font-size: 16px;
+    text-align: center; }
+  .pop-framework .pop-content {
+    transition: all .3s ease 0s;
+    z-index: 2;
+    position: relative;
+    border-radius: 4px;
+    padding: 20px 30px 30px 30px; }
+    .pop-framework .pop-content .iconchahao1 {
+      color: #AAAFB9;
+      font-size: 16px;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      line-height: 16px;
+      cursor: pointer; }
+    .pop-framework .pop-content .button-footer {
+      position: absolute;
+      bottom: 30px;
+      width: calc(100% - 60px); }
+      .pop-framework .pop-content .button-footer .footer-notips {
+        line-height: 36px; }
+        .pop-framework .pop-content .button-footer .footer-notips .checkNone {
+          font-size: 12px;
+          color: #AAB8DF;
+          letter-spacing: 0; }
+          .pop-framework .pop-content .button-footer .footer-notips .checkNone .ant-checkbox-inner {
+            width: 12px;
+            height: 12px;
+            background: #212838;
+            border: 1px solid #596b9f; }
+          .pop-framework .pop-content .button-footer .footer-notips .checkNone .ant-checkbox-inner:after {
+            left: 2.571429px;
+            top: 0.142857px; }
+        .pop-framework .pop-content .button-footer .footer-notips .checkNone:hover .ant-checkbox-inner {
+          border: 1px solid #3D79EC; }
+        .pop-framework .pop-content .button-footer .footer-notips .ant-checkbox-checked .ant-checkbox-inner {
+          width: 12px;
+          height: 12px;
+          background: #3D79EC;
+          border: 1px solid #3D79EC; }
+        .pop-framework .pop-content .button-footer .footer-notips .checkNonelight {
+          font-size: 12px;
+          color: #aaafb9;
+          letter-spacing: 0; }
+          .pop-framework .pop-content .button-footer .footer-notips .checkNonelight .ant-checkbox-inner {
+            width: 12px;
+            height: 12px;
+            border: 1px solid #596b9f; }
+          .pop-framework .pop-content .button-footer .footer-notips .checkNonelight .ant-checkbox-inner:after {
+            left: 2.571429px;
+            top: 0.142857px; }
+        .pop-framework .pop-content .button-footer .footer-notips .notips-span {
+          margin-left: 4px;
+          font-size: 12px; }
+      .pop-framework .pop-content .button-footer .btn {
+        float: right;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent;
+        float: right; }
+      .pop-framework .pop-content .button-footer .btnPrimary {
+        margin: 0 auto;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent;
+        float: right; }
+
+.Notify {
+  transition: all .3s ease 0s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
+  .Notify .NotifyPop {
+    transition: all .3s ease 0s;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px 30px 30px 30px; }
+    .Notify .NotifyPop .iconchahao1 {
+      color: #AAAFB9;
+      font-size: 16px;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      line-height: 16px;
+      cursor: pointer; }
+    .Notify .NotifyPop .Notify-footer {
+      position: absolute;
+      bottom: 30px;
+      width: calc(100% - 60px);
+      text-align: center; }
+      .Notify .NotifyPop .Notify-footer .btn {
+        float: right;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent; }
+      .Notify .NotifyPop .Notify-footer .btnPrimary {
+        margin: 0 auto;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent; }
+    .Notify .NotifyPop .trade-box-value h5 {
+      font-size: 16px;
+      color: #C5CDE1; }
+    .Notify .NotifyPop .trade-box-value .trade-box-content {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 14px;
+      color: #596B9F; }
+    .Notify .NotifyPop .trade-box-value a {
+      width: 140px;
+      height: 36px;
+      line-height: 36px;
+      vertical-align: middle;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      background: #3D79EC;
+      border-radius: 100px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px; }
+
+.trade-box {
+  text-align: left; }
+  .trade-box h5 {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: normal; }
+  .trade-box .trade-box-main {
+    background: #212838; }
+  .trade-box .trade-box-conbox {
+    padding-top: 37px; }
+    .trade-box .trade-box-conbox input {
+      width: 100%;
+      line-height: 30px;
+      margin-bottom: 6px;
+      height: 30px;
+      transition: all 0.3s ease-in-out 0s;
+      background: transparent;
+      letter-spacing: 12px; }
+    .trade-box .trade-box-conbox input::-webkit-input-placeholder {
+      /* WebKit browsers */
+      letter-spacing: 0px; }
+    .trade-box .trade-box-conbox input::-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      letter-spacing: 0px; }
+    .trade-box .trade-box-conbox input:-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      letter-spacing: 0px; }
+    .trade-box .trade-box-conbox input:-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      letter-spacing: 0px; }
+    .trade-box .trade-box-conbox p {
+      float: right;
+      font-size: 12px;
+      color: #E74C4C;
+      letter-spacing: 0; }
+    .trade-box .trade-box-conbox .trade-box-forget {
+      float: left;
+      font-size: 14px;
+      color: #3D79EC;
+      letter-spacing: 0;
+      cursor: pointer; }
+  .trade-box .trade-box-ts {
+    font-size: 14px;
+    margin-top: 41px;
+    text-align: center; }
+    .trade-box .trade-box-ts a {
+      margin-top: 13px;
+      display: inline-block; }
+
+.USDTtrade {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  width: 100%;
+  min-width: 1280px;
+  min-height: 640px;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .USDTtrade .USDTtrade-left {
+    -ms-flex: 7;
+    flex: 7;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .USDTtrade .USDTtrade-left .USDTtrade-top-K {
+      width: calc(100% - 4px);
+      -ms-flex: 1;
+      flex: 1;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .USDTtrade .USDTtrade-left .USDTtrade-bottom-K {
+      height: 240px;
+      transition: height 0.3s ease 0s;
+      margin: 4px 4px 0 0;
+      position: relative; }
+    .USDTtrade .USDTtrade-left .USDTtrade-left-hide {
+      position: relative;
+      transition: height 0.3s ease 0s;
+      height: 40px;
+      margin: 4px 4px 0 0; }
+  .USDTtrade .USDTtrade-showtips {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 0;
+    left: 50%;
+    margin-left: -10px;
+    top: -5px;
+    transition: all 0.3s ease-in-out; }
+  .USDTtrade .USDTtrade-showtips:hover {
+    opacity: 0.6; }
+  .USDTtrade .hideTit {
+    line-height: 40px;
+    margin-left: 20px;
+    margin-bottom: 0; }
+  .USDTtrade .USDTtrade-right {
+    -ms-flex: 3.6;
+    flex: 3.6;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .USDTtrade .USDTtrade-right .USDTtrade-top-L {
+      -ms-flex: 1;
+      flex: 1;
+      overflow: hidden; }
+    .USDTtrade .USDTtrade-right .USDTtrade-bottom-L {
+      position: relative;
+      height: 310px;
+      transition: height 0.3s ease 0s;
+      margin-top: 4px; }
+    .USDTtrade .USDTtrade-right .USDTtrade-right-hide {
+      transition: height 0.3s ease 0s;
+      height: 40px;
+      margin-top: 4px;
+      position: relative; }
+  .USDTtrade .trade-expand-icon {
+    z-index: 1;
+    display: block;
+    width: 18px;
+    height: 8px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    cursor: pointer; }
+  .USDTtrade .trade-expand {
+    top: 4px; }
+    .USDTtrade .trade-expand::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 1px;
+      background: #49556a; }
+    .USDTtrade .trade-expand::after {
+      content: '';
+      display: block;
+      margin-top: 2px;
+      width: 18px;
+      border-top: 4px solid #49556a;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent; }
+  .USDTtrade .trade-hide {
+    top: 12px; }
+    .USDTtrade .trade-hide::before {
+      content: '';
+      display: block;
+      width: 18px;
+      border-bottom: 4px solid #49556a;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent; }
+    .USDTtrade .trade-hide::after {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 1px;
+      margin-top: 2px;
+      background: #49556a; }
+

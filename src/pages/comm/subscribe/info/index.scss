@@ -1,0 +1,560 @@
+.subscribeInfo{
+  .subscribeInfo-main{
+    width: 1200px;
+    margin: 0 auto;
+    .subscribeInfo-one{
+      background:url('../../../../assets/img/market/subscribe.png');
+      box-shadow:0px 0px 10px 0px rgba(220,220,220,0.5);
+      border-radius:6px;
+      height: 264px;
+      padding-top: 40px;
+      margin-top: 37px;
+      position: relative;
+      h4{
+        padding-left: 96px;
+        font-size:22px;
+        font-weight:500;
+        color:#fff;
+        margin-bottom: 0;
+      }
+      h3{
+        font-size:32px;
+        text-align: center;
+        font-weight:600;
+        margin-top: 50px;
+        color:#fff;
+        line-height:32px;
+        margin-bottom: 0;
+      }
+      div{
+        width: 100%;
+        height: 58px;
+        background:rgba(236,243,255,1);
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        line-height: 58px;
+        font-size:20px;
+        font-weight:400;
+        color:rgba(80,131,219,1);
+        span{
+          font-size:25px;
+          font-weight:normal;
+          color:rgba(41,99,199,1);
+        }
+      }
+    }
+    .subscribeInfo-two{
+      padding: 80px 0 20px 10px;
+      display: flex;
+      .subscribeInfo-twoLeft{
+        flex: 1;
+        h5{
+          font-size:22px;
+          font-weight:500;
+          color:rgba(31,45,65,1);
+          margin-bottom: 0;
+        }
+        .subscribeInfo-bape{
+          font-size:14px;
+          font-weight:400;
+          color:rgba(31,45,65,1);
+        }
+        ul{
+          overflow: hidden;
+          width: 400px;
+          margin-bottom: 130px;
+          li{
+            background: #EAF2FF;
+            float: left;
+            height: 26px;
+            line-height: 26px;
+            margin: 25px 25px 0 0;
+            background:rgba(234,242,255,1);
+            border-radius:5px;
+            padding: 0 14px;
+            font-size:14px;
+            font-weight:400;
+            color:rgba(50,110,208,1);
+          }
+          .li1{
+            background: #EAF2FF;
+            color: #326ED0;
+          }
+          .li2{
+            background: #FFF6EA;
+            color: #D48E32;
+          }
+          .li3{
+            background: #FFEAEE;
+            color: #DD3353;
+          }
+          .li4{
+            background: #E3FDE3;
+            color: #2C9D2C;
+          }
+          .li5{
+            background: #EDEAFF;
+            color: #4D35E0;
+          }
+          .li6{
+            background: #EAF2FF;
+            color: #326ED0;
+          }
+          .li7{
+            background: #EAF2FF;
+            color: #326ED0;
+          }
+          .li8{
+            background: #FFF6EA;
+            color: #D48E32;
+          }
+          .li9{
+            background: #FFEAEE;
+            color: #DD3353;
+          }
+          .li10{
+            background: #E3FDE3;
+            color: #2C9D2C;
+          }
+          .li11{
+            background: #EDEAFF;
+            color: #4D35E0;
+          }
+          .li12{
+            background: #EAF2FF;
+            color: #326ED0;
+          }
+        }
+        .marketDescribe-one{
+          display: flex;
+          padding-right: 50px;
+          .one-item{
+            flex: 1;
+            text-align: center;
+          }
+          .one{
+            div{
+              width: 78px;
+              height: 78px;
+              border-radius: 50%;
+              background: #fff;
+              margin: 0 auto;
+              box-shadow:0px 2px 4px 0px rgba(243,243,243,0.5);
+              margin-bottom: 20px;
+            }
+            p{
+              font-size:14px;
+              font-weight:500;
+              color:rgba(31,45,65,1);
+              margin-bottom: 0;
+            }
+            span{
+              font-size:10px;
+              font-weight:400;
+              color:rgba(115,114,114,1);
+            }
+          }
+          .two{
+            img{
+              margin-top: 32px;
+            }
+          }
+        }
+      }
+      .subscribeInfo-twoRight{
+        width: 420px;
+        background:#fff;
+        box-shadow:0px 0px 10px 0px rgba(220,220,220,0.5);
+        border-radius:5px;
+        padding: 30px 30px 20px 30px;
+        position: relative;
+        .subscribeInfo-tag{
+          position: absolute;
+          right: 0;
+          margin-top: 10px;
+          height:26px;
+          line-height: 26px;
+          background:rgba(234,174,20,1);
+          border-radius:13px 0px 0px 13px;
+          font-size:12px;
+          font-weight:400;
+          color:#fff;
+          padding: 0 5px 0 10px;
+          cursor: pointer;
+          i{
+            font-size: 12px;
+            margin-left: 5px;
+            transform: scale(0.8);
+            display: inline-block;
+          }
+        }
+        .subscribeInfo-tit{
+          span{
+            font-size:14px;
+            font-weight:500;
+            color:rgba(31,45,65,1);
+          }
+          .weight{
+            font-size:30px;
+            font-weight:600;
+            color:rgba(31,45,65,1);
+            margin-right: 10px;
+          }
+          .iconfont{
+            color: #2963C7;
+            font-size: 16px;
+            margin: 0 10px;
+          }
+          s{
+            color: #ACACAC;
+          }
+        }
+        .subscribeInfo-fen{
+          color: #ACACAC;
+          margin-bottom: 25px;
+          span{
+            color:#1F2D41;
+          }
+        }
+        .subscribeInfo-last{
+          text-align: right;
+          font-size:14px;
+          color:rgba(41,99,199,1);
+          line-height:14px;
+          margin-bottom: 0;
+        }
+        .subscribeInfo-has{
+          background:rgba(236,243,255,1);
+          border-radius:5px;
+          height: 10px;
+          position: relative;
+          margin: 10px 0;
+          span{
+            display: inline-block;
+            height: 10px;
+            position: absolute;
+            background:rgba(41,99,199,1);
+            border-radius:5px;
+            left: 0;
+            z-index: 1;
+          }
+        }
+        .subscribeInfo-flex{
+          display: flex;
+          margin-bottom: 5px;
+          p{
+            flex: 1;
+            font-size:16px;
+            font-weight:500;
+            color:rgba(31,45,65,1);
+            margin-bottom: 0px;
+          }
+          p:last-child{
+            text-align: right;
+          }
+        }
+        .subscribeInfo-input{
+          height: 36px;
+          font-size:14px;
+          font-weight:400;
+          position: relative;
+          margin-bottom: 20px;
+          input{
+            height: 100%;
+            width: 100%;
+            border-radius:5px;
+            border:1px solid rgba(230,230,230,1);
+            font-size: 14px;
+            padding: 0 10px;
+            transition: all 0.2s linear;
+            color: #2963C7;
+          }
+          input:focus{
+            border:1px solid #2963C7;
+          }
+          span{
+            position: absolute;
+            right: 10px;
+            line-height: 36px;
+            color: #D1D1D1;
+          }
+        }
+        .subscribeInfo-time{
+          p{
+            font-size:12px;
+            font-weight:400;
+            color:rgba(172,172,172,1);
+            line-height: 24px;
+          }
+        }
+        .subscribeInfo-btn{
+          width: 100%;
+          height: 42px;
+          line-height: 42px;
+          background: #2963C7;
+          box-shadow:0px 0px 10px 0px rgba(220,220,220,0.5);
+          border-radius:6px;
+          color: #fff;
+          text-align: center;
+          cursor: pointer;
+          font-size:14px;
+          font-weight:500;
+          margin: 20px 0;
+        }
+        .disable{
+          background: #E6E6E6;
+        }
+        h5{
+          font-size:14px;
+          font-weight:500;
+          color:rgba(41,99,199,1);
+          line-height:14px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+    .subscribeInfo-three{
+      .subscribeInfo-threeItem{
+        h5{
+          margin: 30px 0 15px 20px;
+          font-size:16px;
+          font-weight:500;
+          color:rgba(31,45,65,1);
+        }
+        div{
+          padding: 28px 30px;
+          background:rgba(255,255,255,1);
+          border-radius:6px;
+        }
+        p{
+          margin-bottom: 0;
+        }
+      }
+    }
+    .subscribeInfo-four{
+      h4{
+        margin: 30px 0 0 20px;
+        font-size:16px;
+        font-weight:500;
+        color:rgba(31,45,65,1);
+      }
+      .subscribeInfo-fourItem{
+        padding: 5px 0 30px 0;
+        h5{
+          font-size:14px;
+          font-weight:500;
+          color:rgba(31,45,65,1);
+          margin: 0 0 0 20px;
+        }
+        table{
+          margin-top: 15px;
+          width: 100%;
+          background:rgba(255,255,255,1);
+          border:1px solid rgba(230,230,230,1);
+          border-radius:6px;
+          border-collapse:separate;
+          border-spacing:0;
+          text-align: center;
+          overflow: hidden;
+          thead{
+            background:rgba(236,243,255,1);
+            height: 56px;
+            line-height: 56px;
+            th{
+              border-right: 1px solid #E6E6E6;
+              font-weight: normal;
+            }
+            th:last-child{
+              border-right: 0;
+            }
+          }
+          tr{
+            line-height: 56px;
+            line-height: 56px;
+            td{
+              width: 16.6%;
+              border-right: 1px solid #E6E6E6;
+              font-weight: bold;
+            }
+            td:last-child{
+              border-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.subscribeInfo-pop{
+  h4{
+    font-size:24px;
+    font-weight:400;
+    color:rgba(11,44,79,1);
+    text-align: center;
+    line-height: 60px;
+    position: relative; 
+  }
+  ul{
+    margin-top: 60px;
+    li{
+      border-bottom: 1px solid #E6E6E6;
+      line-height: 54px;
+      height: 54px;
+      margin-top: 5px;
+      display: flex;
+      padding: 0 30px;
+      p{
+        font-size:14px;
+        font-weight:400;
+        color:rgba(139,140,141,1);
+        width: 100px;
+        text-align: left;
+        margin-bottom: 0;
+      }
+      p:last-child{
+        font-size:20px;
+        font-weight:500;
+        color:rgba(11,44,79,1);
+        text-align: right;
+        flex: 1;
+      }
+      .hasNum{
+        .has{
+          height: 28px;
+          line-height: 28px;
+          color: #fff;
+          font-size:14px;
+          background: #EAAE14;
+          border-radius: 2px;
+          padding: 0 10px;
+          display: inline-block;
+          margin-right: 10px;
+          user-select: none;
+          i{
+            font-size: 20px;
+            color: #fff;
+            margin-right: 5px;
+            vertical-align: middle;
+          }
+        }
+        .none{
+          font-size:14px;
+          font-weight:400;
+          color:rgba(139,140,141,1);
+          display: inline-block;
+        }
+        .choose{
+            font-size:14px;
+            color:rgba(234,174,20,1);
+            display: inline-block;
+            margin-right: 10px;
+            i{
+              color: #ccc;
+              margin-left: 10px;
+            }
+        }
+      }
+    }
+    .hasDel{
+      border-bottom: 0;
+      text-align: right;
+      padding: 0 30px;
+      .span{
+        font-size:14px;
+        font-weight:400;
+        color:rgba(139,140,141,1);
+        display: inline-block;
+        width: 100%;
+        span{
+          color: #0B2C4F;
+        }
+      }
+    }
+  }
+  .subscribeInfo-pop-cards{
+    position: absolute;
+    border-radius: 6px;
+    width: 400px;
+    min-height: 100px;
+    max-height: 225px;
+    background: #fff;
+    border:2px solid rgba(234,174,20,1);
+    z-index: 999;
+    left: 370px;
+    margin-top: -130px;
+    padding: 10px 10px 10px 30px;
+    position: relative;
+    .subscribeInfo-pop-cardScroll{
+      overflow-y: auto;
+      table{
+        width: 100%;
+        thead{
+          th{
+            font-size:14px;
+            font-weight:400;
+            color:rgba(172,172,172,1);
+            line-height: 30px;
+          }
+        }
+        tbody{
+          tr{
+            font-size:14px;
+            font-weight:400;
+            color:rgba(11,44,79,1);
+            cursor: pointer;
+            line-height: 30px;
+            transition: color 0.2s linear;
+            td{
+              width: 33%;
+            }
+          }
+          tr:hover{
+            color:rgba(234,174,20,1);
+          }
+        }
+      }
+      i{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .subscribeInfo-pop-cards:after{
+    content:"";
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:15px;
+    top:-11px;
+    background: #fff;
+    transform: rotate(45deg);
+    border-top: 2px solid rgba(234,174,20,1);
+    border-left: 2px solid rgba(234,174,20,1);
+  }
+}
+.nc_scale{
+  margin-top: 10px;
+  border-radius: 17px;
+  .btn_slide{
+    height: 34px !important;
+    border-radius: 7px !important;
+  }
+  .btn_ok{
+    width: 60px !important;
+    height: 34px !important;
+    border-radius: 17px;
+    margin-left: -20px;
+    position: absolute;
+  }
+  .nc_bg{
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    background: #3F79EC !important;
+  }
+}

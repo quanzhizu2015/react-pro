@@ -1,0 +1,36 @@
+.trade-button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #24B647;
+    color: #ffffff;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    &.trade-tallHeight {
+        height: 66px;
+    }
+    &:first-child {
+        margin-right: 7px;
+    }
+    .trade-button-text {
+        display: block;
+        margin: 0 8px;
+        font-size: 17px;
+        padding: 2px 0;
+        border-bottom: 1px solid #5DC777;
+    }
+}
+.trade-button:hover {
+    background: #169835;
+}
+.trade-color-red {
+    background: #E74C4C;
+    .trade-button-text {
+        border-bottom: 1px solid #E56B6B;
+    }
+}
+.trade-color-red:hover {
+    background: #CD3C3C;
+}

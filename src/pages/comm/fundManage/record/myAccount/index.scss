@@ -1,0 +1,44 @@
+.myaccount {
+    background-color: #FFFFFF;
+    // padding: 0 20px;
+    // padding-top: 12px;
+    .myaccount-ul{
+      border-bottom: 1px solid #e7ebf2;
+      line-height: 50px;
+    }
+    ul {
+        line-height: 50px;
+    }
+    .innerRouter{
+        padding: 0 20px;
+    }
+    .subtab-style {
+        display: inline-block;
+        font-size: 12px;
+        color: #4A4A4A;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 10px;
+        padding-right: 21px;
+        border-right: 1px solid #EFEFEF;
+        margin-left: 22px;
+        a {
+            color: #4A4A4A;
+        }
+    }
+    .subtab-style:last-child {
+        border-right: 0;
+    }
+    .subtab-active {
+        color: #3D79EC;
+        border-left: 2px solid #3D79EC;
+        padding-left: 3px;
+        a {
+            color: #3D79EC;
+            text-decoration: none;
+        }
+    }
+    .moneytable .tableOne ul li:first-child {
+        border-bottom: 0;
+    }
+}

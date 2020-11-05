@@ -1,0 +1,35 @@
+.fix-request{
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  border: 1px solid #2963C7;
+  transition: all 0.3s linear;
+  animation: scalcKey 1.8s linear infinite;
+  @keyframes scalcKey
+  {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    75% { transform: scale(0.92); }
+    100% { transform: scale(1); }
+  }
+  i{
+    color: #2963C7;
+    font-size: 30px;
+    line-height: 40px;
+    transition: all 0.3s linear;
+  }
+}
+.fix-request:hover{
+  background: #2963C7;
+  i{
+    color: #fff;
+  }
+}

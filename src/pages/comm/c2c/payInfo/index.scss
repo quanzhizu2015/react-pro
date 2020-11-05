@@ -1,0 +1,232 @@
+.c2c-info{
+  min-height: calc(100vh - 298px);
+  background: #fff;
+  .c2c-info-main{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 60px 0;
+      .order{
+        margin-bottom: 24px;
+        display: inline-block;
+        font-size: 14px;
+        color: #A8A9AB;
+        margin-right: 40px;
+      }
+      .c2cInfo-head{
+        background: #FFFFFF;
+        box-shadow: 0 0 10px 2px rgba(225,225,225,0.50);
+        padding: 10px 30px 20px 30px;
+        span{
+          font-size: 14px;
+          color: #A8A9AB;
+        }
+        h3{
+          font-size: 30px;
+          color: #0B2C4F;
+          line-height: 60px;
+          span{
+            font-size: 30px;
+            color: #0B2C4F;
+            line-height: 60px;
+          }
+          .green{
+            color: #4CC273;
+          }
+          .red{
+            color: #E74C4C;
+          }
+        }
+        p{
+          font-size: 18px;
+          color: #0B2C4F;
+          margin-bottom: 0;
+          display: inline-block;
+          margin-right: 60px;
+          span{
+            font-size: 18px;
+            color: #0B2C4F;
+          }
+        }
+      }
+      .c2cInfo-content{
+        padding-top: 40px;
+        .c2cInfo-content-tit{
+          font-size: 12px;
+          margin-bottom: 30px;
+          color: #A8A9AB;
+        }
+        .c2cInfo-content-tit:after{
+          content: '';
+          width: 1122px;
+          margin: 9px 0 0 6px;
+          height: 1px;
+          background: #e6e6e6;
+          position: absolute;
+        }
+        .c2cInfo-content-tip{
+          line-height: 62px;
+          font-size: 12px;
+          color: #A8A9AB;
+          i{
+            font-size: 12px;
+            margin-right: 10px;
+            color: #E74C4C;
+          }
+          .red{
+            color: #E74C4C;
+          }
+        }
+        .c2cInfo-content-pay{
+          .c2cInfo-content-payItem{
+            margin-bottom: 14px;
+            font-size: 14px;
+            .check{
+              margin-right: 10px;
+              cursor: pointer;
+            }
+            .iconfont{
+              font-size: 14px;
+            }
+            .iconweixin1{
+              font-size: 16px;
+              margin-right: 5px;
+              color: rgb(36, 157, 35);
+            }
+            .iconzhifubao{
+              font-size: 16px;
+              margin-right: 5px;
+              color: rgb(34, 112, 222);
+            }
+            .iconyinhangka{
+              font-size: 16px;
+              margin-right: 5px;
+              color: rgb(231, 144, 33);
+            }
+            .iconerweima1{
+              cursor: pointer;
+            }
+            .grey{
+              color: #A8A9AB;
+              display: inline-block;
+              width: 60px;
+            }
+            .item{
+              margin-right: 10px;
+            }
+          }
+        }
+        .c2cInfo-content-payTime{
+          font-size: 18px;
+          color: #0B2C4F;
+          font-weight: 500;
+          line-height: 50px;
+          span{
+            color: #E74C4C;
+          }
+        }
+        .c2cInfo-content-payBtn{
+          height: 60px;
+          width: 200px;
+          line-height: 60px;
+          text-align: center;
+          background: #3D79EC;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 16px;
+          color: #FFFFFF;
+          margin: 30px 0;
+        }
+        .disable{
+          background: #d6d6d6 !important;
+        }
+        .c2cInfo-content-payCancel{
+          font-size: 14px;
+          color: #3D79EC;
+          cursor: pointer;
+        }
+      }
+      .c2cInfo-content-cancel{
+        margin-top: 40px;
+        border-top: 1px solid #E6E6E6;
+        text-align: center;
+        padding-top: 30px;
+        i{
+          font-size: 100px;
+          color: #dfdede;
+        }
+        .iconduihao2{
+          color: #4CC273;
+        }
+        p{
+          font-size: 18px;
+          color: #0B2C4F;
+          font-weight:bold;
+        }
+        div{
+          width: 87px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          background: #3D79EC;
+          font-size: 16px;
+          color: #FFFFFF;
+          margin: 0 auto;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+      }
+      .c2cInfo-foot{
+        margin-top: 60px;
+        h5{
+          font-size: 12px;
+          color: #0B2C4F;
+          line-height: 40px;
+        }
+        p{
+          font-size: 12px;
+          color: #A8A9AB;
+          line-height: 24px;
+          margin-left: 20px;
+          margin-bottom: 0;
+          span{
+            color: #E74C4C;
+          }
+        }
+        .c2cInfo-foot-tit{
+          font-size: 12px;
+          color: #3D79EC;
+          position: relative;
+          padding-left: 20px;
+          line-height: 20px;
+          margin: 10px 0 0 0;
+        }
+        .c2cInfo-foot-tit:before{
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          content: '';
+          margin: 6px 0 0 -20px;
+          background: #3D79EC;
+          position: absolute;
+        }
+      }
+  }
+}
+.popPayType{
+  h5{
+    font-size: 24px;
+  }
+  .popPayType-item{
+    line-height: 50px;
+    font-size: 14px;
+    color: #0B2C4F;
+    .label{
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      padding-right: 30px;
+      font-size: 12px;
+      color: #8B8C8D;
+    }
+  }
+}

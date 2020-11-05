@@ -1,0 +1,76 @@
+@import '../../styles/common.scss';
+
+#chromeVerify{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    .iconfont{
+        display: block;
+        margin-top: 200px;
+        font-size: 28px;
+    }
+    >p{
+        font-size: 20px;
+        color: $dark_theme;
+        margin-top: 20px;
+        margin-bottom: 140px;
+    }
+    .inputline{
+        position: relative;
+        display: inline-block;
+        .code{
+            outline: none;
+            width: 350px;
+            height: 40px;
+            text-align: center;
+            font-size: $font_normal;
+            border-bottom: 1px solid #d6dae2;
+            transition: all .3s ease-in-out 0s;
+            background: transparent;
+            &:active,&:focus{
+                // border-bottom-color: $dark_theme;
+            }
+        }
+        .tips{
+            position: absolute;
+            top: 15px;
+            right: -150px;
+            color: $error_red;
+            font-size: $font_small;
+        }
+        input::-webkit-input-placeholder{
+            color: $text_light;
+            font-size: $font_normal;
+        }
+        input::-moz-placeholder{
+            color: $text_light;
+            font-size: $font_normal;
+        }
+        input::-ms-input-placeholder{
+            color: $text_light;
+            font-size: $font_normal;
+        }
+    }
+    .chromeBtn{
+        display: block;
+        margin: 180px auto 0;
+        width: 350px;
+    }
+    .relative{
+        position: relative;
+        width: 350px;
+        left: 50%;
+        top: -2px;
+        transform: translateX(-175px);
+        .inputBorder{
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: $dark_theme;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s ease-out;
+        }
+    }
+}

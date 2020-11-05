@@ -1,0 +1,282 @@
+.c2c-ad{
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(220,220,220,0.50);
+  border-radius: 6px;
+  padding: 16px 0;
+  .c2c-ad-title{
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0 16px;
+    li{
+      float: left;
+      padding: 0 14px;
+      font-size: 20px;
+      color: #0B2C4F;
+      line-height: 20px;
+      cursor: pointer;
+      transition: color 0.2s linear;
+      font-weight: bold;
+    }
+    li:first-child{
+      border-right: 1px solid #E6E6E6;
+    }
+    .active{
+      color: #4CC273;
+    }
+  }
+  .c2c-ad-table{
+    margin-top: 20px;
+    .c2c-ad-th{
+      font-size: 14px;
+      color: #A8A9AB !important;
+      border-bottom: 1px solid #DFDEDE;
+      margin: 0 16px;
+      padding: 0 !important;
+      div{
+        line-height: 40px;
+        padding: 0 10px;
+        width: 16.6%;
+      }
+      div:last-child{
+        text-align: right;
+      }
+    }
+    .flexLi{
+      padding: 0 16px;
+      display: flex;
+      font-size: 14px;
+      color: #0B2C4F;
+      .li-item{
+        width: 16.6%;
+        // flex: 1;
+        text-align: left;
+        line-height: 84px;
+        border-bottom: 1px solid #E6E6E6;
+        padding: 0 10px;
+        i{
+          margin-right: 5px;
+          font-size: 21px;
+        }
+      }
+      .weight{
+        font-weight: 500;
+        color: #0B2C4F;
+      }
+      .li-item:first-child{
+      }
+      .li-item:last-child{
+        text-align: right;
+        p{
+          display: inline-block;
+          width: 65px;
+          height: 30px;
+          background: #E74C4C;
+          vertical-align: middle;
+          border-radius: 2.91px;
+          text-align: center;
+          line-height: 30px;
+          font-size: 14px;
+          color: #FFFFFF;
+          cursor: pointer;
+          margin-bottom: 0;
+        }
+        .buy{
+          background: #4CC273;
+        }
+      }
+    }
+    .flexLi:last-child{
+      margin-bottom: 5px;
+    }
+    .noData{
+      min-height: 300px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .activeLi{
+      height: 113px;
+      box-shadow: 0 0 10px 2px rgba(225,225,225,0.50);
+      border-radius: 6px;
+      display: flex;
+      padding: 30px 16px 0 16px;
+      .activeLi-item{
+        width: 180px;
+        padding: 0 10px;
+        border-bottom: 1px solid transparent;
+        i{
+          margin-right: 5px;
+          font-size: 21px;
+        }
+        p{
+          margin-bottom: 0px;
+          line-height: 24px;
+        }
+        .weight{
+          font-weight: 500;
+          color: #0B2C4F;
+        }
+      }
+      .activeLi-item-last{
+        flex: 1;
+        text-align: right;
+        line-height: 44px;
+        p{
+          display: inline-block;
+          span{
+            font-size: 14px;
+            color: #3D79EC;
+          }
+          .cursor{
+            cursor: pointer;
+          }
+        }
+        .cancel{
+          font-size: 14px;
+          color: #A8A9AB;
+          cursor: pointer;
+          padding-left: 10px;
+          margin-left: 10px;
+          position: relative;
+        }
+        .cancel:after{
+          content: '';
+          width: 1px;
+          height: 16px;
+          background: #A8A9AB;
+          position: absolute;
+          left: 0;
+          top: 14px;
+        }
+      }
+      .activeLi-item-last-input{
+        flex: 1;
+        text-align: right;
+        line-height: 53px;
+        padding-right: 5px;
+        input{
+          width: 170px;
+          height: 34px;
+          text-align: right;
+          border: 1px solid #ebebeb;
+          border-radius: 3px;
+          transition: all 0.3s linear;
+          margin: 0 10px;
+          padding: 0 10px;
+          font-size: 14px;
+          color: #0B2C4F;
+          letter-spacing: 0.91px;
+        }
+        .coinInput:focus{
+          border: 1px solid #3D79EC;
+        }
+        .cancel{
+          font-size: 14px;
+          color: #A8A9AB;
+          cursor: pointer;
+        }
+        .btn{
+          line-height: 34px;
+          background: #3D79EC;
+          border-radius: 3px;
+          font-size: 14px;
+          color: #FFFFFF;
+          display: inline-block;
+          padding: 0 10px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        .p-tip{
+          font-size: 14px;
+          color: #A8A9AB;
+          line-height: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .c2c-payType{
+    h5{
+      font-size: 24px;
+      color: #0B2C4F;
+      line-height: 60px;
+      margin-bottom: 0;
+    }
+    .c2c-payItem{
+      .label{
+        font-size: 12px;
+        color: #8B8C8D;
+        margin-bottom: 0;
+        line-height: 30px;
+        margin-top: 10px;
+      }
+      input{
+        height: 36px;
+        color: #0B2C4F;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        padding: 0 10px;
+      }
+      .ant-upload.ant-upload-select-picture-card{
+        width: 100%;
+        height: 150px;
+      }
+      .ant-select-selection--single{
+        height: 36px;
+      }
+    }
+  }
+}
+
+.loadingT{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  background: #fff;
+  // opacity: 1;
+  user-select: none;
+}
+.popPayType{
+  h5{
+    font-size: 24px;
+    color: #0B2C4F;
+    margin-bottom: 20px;
+  }
+  ul{
+    li{
+      line-height: 64px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      padding: 0 30px;
+      overflow: hidden;
+      i{
+        font-size: 34px;
+        margin-right: 25px;
+        vertical-align: middle;
+        float: left;
+      }
+      span{
+        font-size: 20px;
+        color: #8B8C8D;
+        float: left;
+      }
+    }
+    li:hover{
+      background: rgba(61,121,236,0.06);
+    }
+  }
+}
+.iconweixin1{
+  color: rgb(36, 157, 35);
+}
+.iconzhifubao{
+  color: rgb(34, 112, 222);
+}
+.iconyinhangka{
+  color: rgb(231, 144, 33);
+}

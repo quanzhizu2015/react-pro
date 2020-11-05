@@ -1,0 +1,268 @@
+.tabPane {
+  min-height: 500px;
+  .tabPane-header {
+      height: 41px;
+      display: flex;
+      color: #2b2b2d;
+      font-size: 14px;
+      // font-family: Verdana, Geneva, Tahoma, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      .tabPane-header-nav {
+          flex: 7;
+          height: 100%;
+          ul{
+              list-style: none;
+              width: 100%;
+              margin-bottom: 0;
+              li{
+                  display: inline-block;
+                  width: 90px;
+                  line-height: 40px;
+                  vertical-align: middle;
+                  text-align: center;
+                  margin-left: 20px;
+                  cursor: pointer;
+                  transition: background 0.2s linear;
+                  &:hover{
+                      border-bottom: 1px solid #fff;
+                      // background: #fff;
+                  }
+                  .iconfont{
+                      font-size: 20px;
+                      margin:0 0 0 10px;
+                      float: left;
+                  }
+                  img{
+                      margin: 10px 0 0 10px;
+                      float: left;
+                  }
+                  .icontable-btc{
+                      color: burlywood;
+                  }
+              }
+              .active{
+                background: #fff;
+                border-bottom: 1px solid #2963C7;
+              }
+
+          }
+      }
+      .tabPane-header-search{
+          flex:1;
+          height: 26px;
+          margin: 6px 0;
+          position: relative;
+          input {
+              line-height: 26px;
+              background: transparent;
+              border: 1px solid #e8e8e8;
+              border-radius: 4px;
+              padding-left: 30px;
+          }
+          .iconfont{
+              position: absolute;
+              top: 4px;
+              left: 5px;
+              font-size: 18px;
+              color: #9e9e9e87;
+          }
+      }
+  }
+  .tabPane-content{
+      width: 100%;
+      background: #fff;
+      table-layout: fixed;
+      tr{
+          display: flex;
+          cursor: pointer;
+          transition: all 0.2s linear;
+          text-align: left;
+      }
+      th{
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 14px;
+          font-weight: 500;
+          text-align: left;
+          line-height: 38px;
+      }
+      th:first-child{
+          padding-left: 30px;
+      }
+      thead{
+          tr:hover{
+              background: #fff;
+          }
+      }
+      tbody{
+          tr {
+              height: 51px;
+              // border-bottom: 1px solid rgba( 232, 232, 232, 0.8);
+              cursor: pointer;
+              td{
+                  margin: auto 0;
+                  font-size: 14px;
+                  .icontable-btc{
+                      margin:auto 20px;
+                      color: burlywood;
+                  }
+                  img{
+                      margin: 0 5px;
+                      vertical-align: middle;
+                  }
+              }
+              td:first-child{
+                  padding-left: 30px;
+              }
+          }
+          .nodata{
+              text-align: center;
+              font-size: 12px;
+              color: #ccc;
+              min-height: 400px;
+              padding-top: 120px;
+              img{
+                height: 125px;
+              }
+          }
+          .red{
+              color: red;
+          }
+          .green{
+              color: green;
+          }
+          .tabPane-content-main {
+              padding-left: 30px;
+              td{
+                  height: 16px;
+                  line-height: 16px;
+                  padding-left: 10px !important;
+                  border-left:4px solid #036bc1;
+              }
+          }
+
+
+      }
+      tbody {
+          div{
+              width: 100%;
+          }
+      }
+  }
+}
+
+.tabPane-trade {
+  background-color: #212838;
+  color: #fff;
+  display: block;
+  ::-webkit-scrollbar {display:none}
+  .tabPane-header {
+      color: #7A87B0;
+      // width: calc( 100% -  );
+      height: 24px;
+      border: none;
+      background: #191D27;
+      .tabPane-header-search {
+          bottom: 17px;
+          margin: 0;
+          input{
+            border: 1px solid rgba(122, 135, 176, 0.6);
+            line-height: 20px;
+            font-size: 12px;
+            width: 100px;
+          }
+          .iconfont {
+              top: 1px;
+          }
+      }
+      .tabPane-header-nav ul{
+        overflow: hidden;
+      }
+      .tabPane-header-nav ul li:hover {
+          background: rgba(53, 62, 80, 0.6);
+      }
+      .tabPane-header-nav ul li {
+          line-height: 24px;
+          float: left;
+          border: none;
+          width: 64px;
+          font-size: 12px;
+          margin-left: 0;
+          .iconfont{
+              margin-left: 10px;
+          }
+      }
+      .tabPane-header-nav ul .active {
+          background: #323a4a;
+      }
+      .tabPane-header-nav ul li img{
+          // padding-bottom: 10px;
+          margin: 2px 0 0 6px;
+      }
+      thead tr:hover {
+          background: gray;
+      }
+  }
+  .tabPane-content {
+      background: #191D27;
+      thead, tbody tr {
+          display:table;
+          width:100%;
+          table-layout:fixed;
+          border: none;
+          color: #7A87B0;
+      }
+      thead {
+          line-height: 40px;
+      }
+      thead tr:hover {
+          background: #212838;
+      }
+      th {
+          color: #C5CDE1;
+          text-align: right;
+          line-height: 30px;
+      }
+      tbody {
+          height: 150px;
+          overflow-y: scroll;
+          tr {
+              text-align: center;
+          }
+          tr:nth-child(even) {
+              background: rgba(53, 62, 80, 0.4);
+          }
+          td {
+              text-align: right;
+          }
+          td:first-child{
+              padding-left: 10px !important;
+          }
+      }
+  }
+  .iconfont .iconjiantouxia {
+      color: #212838;
+  }
+  .iconfont .iconjiantoushang {
+      color: #212838;
+  }
+}
+
+.market-loading{
+  position: absolute !important;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  .fota-loader{
+    opacity: .5;
+  }
+}
+.market-loadingNull{
+  position: absolute !important;
+  background: rgba(25, 29, 39, 0.8);
+  opacity: 1;
+  .fota-loader{
+    opacity: .5;
+  }
+}
+.iconxingxing1{
+  color: #FAB927;
+}

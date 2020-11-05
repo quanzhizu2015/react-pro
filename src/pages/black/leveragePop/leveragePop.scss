@@ -1,0 +1,49 @@
+.leverage-main {
+    .leverage-name {
+        margin-top: 30px;
+        .value-common {
+            font-size: 12px;
+            float: right;
+        }
+    }
+    .leverage-slide {
+        margin-top: 34px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .label-common {
+        font-size: 12px;
+        // color: #596B9F;
+    }
+    .leverage-value {
+        border: 1px solid #363B4D;
+        border-radius: 4px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        padding-right: 10px;
+        margin-top: 15px;
+        input {
+            background: inherit;
+            padding-left: 33px;
+            width: 210px;
+        }
+    }
+    .error-msg {
+        font-size: 12px;
+        color: #E74C4C;
+        margin-top: 5px;
+    }
+    .callback {
+        margin-top: 40px;
+        font-size: 14px;
+        color: #596B9F;
+        text-align: center;
+    }
+    .no-balance {
+        margin-top: 13px;
+        font-size: 12px;
+        color: #E74C4C;
+        text-align: center;
+    }
+}

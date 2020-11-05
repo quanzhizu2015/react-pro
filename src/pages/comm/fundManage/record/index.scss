@@ -1,0 +1,30 @@
+.record {
+    .tab-style {
+        display: inline-block;
+        width: 120px;
+        height: 46px;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 46px;
+        border-bottom: 0;
+        margin-top: 0;
+        a {
+            color: #666666;
+        }
+    }
+    .tab-active {
+        background-color: #FFFFFF;
+        border-radius: 2px 2px 0 0;
+        a {
+            color: #3D79EC;
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+    ul {
+        margin-bottom: 0px;
+    }
+}

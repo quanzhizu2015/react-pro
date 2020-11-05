@@ -1,0 +1,88 @@
+@import '../../styles/common.scss';
+
+.fund-input {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    label {
+        white-space: nowrap;
+        padding-left: 20px;
+        text-align: right;
+        color: #7f8086 ;
+    }
+    >div {
+        margin-left: 15px;
+    }
+    >input {
+        margin-left: 15px;
+    }
+    input {
+        height: 40px;
+        background: #ffffff;
+        width: 700px;
+        padding-left: 20px;
+        border-radius: 100px;
+        color: #4b4f59;
+    }
+    >button {
+        margin-left: 15px;
+    }
+    button {
+        border: none
+    }
+    .fund-input-board {
+        position: relative;
+    }
+    .fund-input-btn {
+        position: absolute;
+        top: 50%;
+        right: 34px;
+        // width: 72px;
+        color: $all_blue;
+        transform: translateY(-50%);
+    }
+    .fund-input-btn[disabled] {
+        text-align: center;
+        color: $text_light
+    }
+    .fund-qrcode {
+        margin-left: 15px;
+        position: relative;
+        .fund-qrcode-pic {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translate(15px, -50%);
+            width: 100px;
+            height: 100px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 6px 0 rgba(41,50,79,0.10);
+            border-radius: 4px;
+        }
+        .fund-qrcode-pic::before {
+            top: 50%;
+            left: 0;
+            transform: translate(-100%, -50%);
+            position: absolute;
+            content: '';
+            border-right: 6px solid #ffffff;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+    }
+    .fund-error {
+        color: $error_red;
+        margin-left: 16px;
+        word-break: break-word;
+    }
+    .fund-value {
+        margin-left: 35px;
+        color: $dark_theme;
+    }
+    &+.fund-input {
+        margin-top: 15px;
+    }
+}

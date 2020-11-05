@@ -1,0 +1,75 @@
+.c2c-history {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(220, 220, 220, 0.5);
+  border-radius: 6px;
+  padding: 16px 20px; }
+  .c2c-history h4 {
+    font-size: 20px;
+    color: #1F2D41; }
+  .c2c-history .c2c-history-tab {
+    overflow: hidden;
+    margin: 20px 0 0 0; }
+    .c2c-history .c2c-history-tab li {
+      float: left;
+      font-size: 16px;
+      color: #8B8C8D;
+      border-bottom: 1px solid transparent;
+      margin-right: 30px;
+      cursor: pointer;
+      transition: all 0.2s linear; }
+    .c2c-history .c2c-history-tab .active {
+      font-size: 16px;
+      color: #3D79EC;
+      border-bottom: 1px solid #3D79EC; }
+  .c2c-history table {
+    width: 100%;
+    margin: 50px 0 16px 0; }
+    .c2c-history table thead {
+      border-bottom: 1px solid #DFDEDE;
+      line-height: 40px;
+      font-size: 14px;
+      color: #A8A9AB; }
+      .c2c-history table thead th:last-child {
+        text-align: right; }
+    .c2c-history table tr {
+      border-bottom: 1px solid #DFDEDE;
+      line-height: 84px;
+      font-size: 14px;
+      color: #0B2C4F; }
+      .c2c-history table tr td span i {
+        margin-right: 8px; }
+      .c2c-history table tr td:last-child {
+        text-align: right; }
+      .c2c-history table tr .cursor {
+        cursor: pointer;
+        font-size: 14px;
+        color: #216AF8; }
+      .c2c-history table tr .green {
+        color: #4CC273; }
+      .c2c-history table tr .red {
+        color: #E74C4C; }
+      .c2c-history table tr .iconright-1 {
+        color: #3D79EC; }
+      .c2c-history table tr .iconguanbidefuben {
+        color: #dfdede; }
+    .c2c-history table .noData {
+      min-height: 300px;
+      border-bottom: 0;
+      line-height: 30px; }
+      .c2c-history table .noData td {
+        text-align: center !important;
+        font-size: 14px;
+        color: #DFDEDE; }
+
+.loadingT {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  background: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+

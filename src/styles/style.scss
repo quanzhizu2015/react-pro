@@ -1,0 +1,127 @@
+.ac-tab {
+    display: flex;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 80px auto 0;
+    justify-content: flex-end;
+    width: 356px;
+    .ac-tab-item {
+        cursor: pointer;
+        a {
+            color: #9b9b9b;
+        }
+        &.active a {
+            cursor: default;
+            color: #4b4f59;
+        }
+    }
+    .ac-tab-item+.ac-tab-item {
+        margin-left: 33px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-left: 1px solid $text_light;
+            left: -15px;
+            height: 22px;
+            top: 0px;
+        }
+    }
+}
+.ac-form {
+    width: 350px;
+    margin: 30px auto 0;
+    .ac-submit {
+        width: 100%;
+    }
+    .ac-form-bottom {
+        margin-top: 10px;
+        display: flex;
+        color: $text_light;
+        font-size: 12px;
+        line-height: 17px;
+        .ac-form-bottom-left {
+            flex: 1;
+        }
+        .ac-form-bottom-right {
+            white-space: nowrap;
+        }
+    }
+}
+
+.ac-title {
+    margin-top: 8vh;
+    text-align: center;
+    color: $dark_theme;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: lighter;
+    .ac-title-desc {
+        color: $text_light;
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.ft-lighter {
+}
+.ft-bold {
+    font-weight: bold;
+}
+.ft-link {
+    color: $all_blue;
+}
+.ft-right {
+    float: right;
+}
+.ft-mt-6 {
+    margin-top: 6px !important;
+}
+.ft-mt-9 {
+    margin-top: 9px;
+}
+.ft-mt-10 {
+    margin-top: 10px;
+}
+.ft-mt-12 {
+    margin-top: 12px;
+}
+.ft-mt-14 {
+    margin-top: 14px;
+}
+.ft-mt-16 {
+    margin-top: 16px;
+}
+.ft-mt-36 {
+    margin-top: 36px;
+}
+.ft-ml-20 {
+    margin-left: 20px
+}
+.ft-hide {
+    display: none;
+}
+.ft-dialog-success {
+    text-align: center;
+    h3 {
+        margin-top: 62px;
+        font-size: 16px;
+        color: $icon_color;
+    }
+    span {
+        margin-top: 10px;
+        font-size: 14px;
+        color: $text_light;
+    }
+}

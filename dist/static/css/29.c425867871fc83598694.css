@@ -1,0 +1,103 @@
+#proBar {
+  display: inline;
+  text-align: center; }
+  #proBar > ul li {
+    line-height: 22px;
+    display: inline-block; }
+    #proBar > ul li > span {
+      font-size: 16px;
+      color: #AAAFB9; }
+    #proBar > ul li .point {
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: 18%;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #AAAFB9; }
+    #proBar > ul li .true {
+      display: inline-block;
+      margin-right: 10px;
+      width: 8px;
+      height: 15px;
+      border: 1px solid;
+      border-color: transparent #AAAFB9 #AAAFB9 transparent;
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg); }
+    #proBar > ul li .dashed {
+      display: inline-block;
+      width: 63px;
+      height: 10px;
+      margin: 0 10px 5px;
+      border-bottom: 1px dashed #AAAFB9; }
+  #proBar > ul .activeStep > span {
+    color: #3D79EC; }
+  #proBar > ul .activeStep .point {
+    background-color: #3D79EC; }
+  #proBar > ul .activeStep .true {
+    border-color: transparent #3D79EC #3D79EC transparent; }
+
+.open {
+  padding-top: 40px;
+  padding-bottom: 199px; }
+  .open .open-wrap {
+    width: 900px;
+    margin: 0 auto; }
+    .open .open-wrap div {
+      text-align: center;
+      font-size: 30px;
+      color: #4a4a4a; }
+    .open .open-wrap p {
+      font-size: 12px;
+      color: #6C7482;
+      text-align: center;
+      letter-spacing: 0;
+      margin: 10px 0px 20px; }
+    .open .open-wrap .ifopen {
+      margin: 54px 0px 64px 0px; }
+      .open .open-wrap .ifopen p {
+        text-align: center;
+        letter-spacing: 0;
+        font-size: 16px;
+        color: #4a4a4a;
+        margin-bottom: 0px;
+        margin-top: 20px; }
+    .open .open-wrap .agree {
+      font-size: 12px;
+      color: #AAAFB9;
+      letter-spacing: 0; }
+      .open .open-wrap .agree span {
+        vertical-align: middle; }
+      .open .open-wrap .agree a {
+        vertical-align: middle;
+        font-size: 12px;
+        color: #3D79EC;
+        letter-spacing: 0px; }
+    .open .open-wrap input[type=checkbox] {
+      margin-right: 11px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #AAAFB9;
+      border-radius: 2px; }
+    .open .open-wrap button {
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 36px;
+      margin: 0 auto;
+      margin-top: 28px;
+      background: #3D79EC;
+      border-radius: 100px;
+      line-height: 36px;
+      font-size: 16px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      text-align: center;
+      border: none; }
+    .open .open-wrap button:disabled {
+      background: #E7EbF2;
+      border: none;
+      color: #aaafb9;
+      cursor: not-allowed; }
+  .open .xieyi {
+    text-align: center; }
+

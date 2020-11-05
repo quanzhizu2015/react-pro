@@ -1,0 +1,82 @@
+@import '../../styles/common.scss';
+.Notify{
+    transition: all .3s ease 0s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: rgba(0,0,0, 0.5);
+    z-index: 1000;
+    .NotifyPop{
+        transition: all .3s ease 0s;
+        z-index: 2;
+        position: relative;
+        background: #fff;
+        border-radius: 4px;
+        padding: 20px 30px 30px 30px;
+        .iconchahao1{
+            color: #AAAFB9;
+            font-size: 16px;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            line-height: 16px;
+            cursor: pointer;
+        }
+        .Notify-footer{
+            position: absolute;
+            bottom: 30px;
+            width: calc(100% - 60px);
+            text-align: center;
+            .btn{
+                float: right;
+                width: 140px;
+                height: 36px;
+                border-radius: 22px;
+                font-size: $font_big;
+                letter-spacing: 0;
+                text-align: center;
+                outline: none;
+                border: 2px solid transparent;
+            }
+            .btnPrimary{
+                margin: 0 auto;
+                width: 140px;
+                height: 36px;
+                border-radius: 22px;
+                font-size: $font_big;
+                letter-spacing: 0;
+                text-align: center;
+                outline: none;
+                border: 2px solid transparent;
+            }
+        }
+        .trade-box-value {
+            h5 {
+               font-size: 16px;
+               color: #C5CDE1;
+            }
+            .trade-box-content {
+               margin: 20px auto;
+               text-align: center;
+               font-size: 14px;
+               color: #596B9F;
+            }
+            a{
+                width: 140px;
+                height: 36px;
+                line-height: 36px;
+                vertical-align: middle;
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+                background: #3D79EC;
+                border-radius: 100px;
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+}

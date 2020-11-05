@@ -1,0 +1,43 @@
+.Market-notice {
+    // background: rgba(0, 0, 0, .2);
+    background: #212838 !important;
+    // position: absolute;
+    width: 100%;
+    top: 60px;
+    height: 42px;
+    z-index: 1;
+    .Market-notice-content {
+        color: #FFF;
+        // font-weight: lighter;
+        font-size: 14px;
+        width: 1200px;
+        margin: 0 auto;
+        height: 42px;
+        overflow: hidden;
+        display: flex;
+        line-height: 42px;
+        i {
+            width: 40px;
+        }
+        ul li {
+            line-height: 42px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        ul {
+            flex: 1;
+            width: 0;
+            transition: 300ms transform linear;
+            display: block;
+            margin-bottom: 0;
+        }
+        >div {
+            width: 80px;
+            text-align: right;
+        }
+        a {
+            color: inherit;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.funcoin-footer{
+    background-color: #212838 !important;
+    padding: 40px 0 30px 0;
+    height: 238px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .footer-main{
+        margin: 0 auto;
+        width: 1200px;
+        overflow: hidden;
+        .footer-left{
+            float: left;
+            img{
+              height: 40px;
+              margin-bottom: 10px;
+              cursor: pointer;
+            }
+            h1{
+                color: #ffffff;
+                height: 40px;
+                font-size: 30px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            span, em{
+                color: #c7c7c7;
+                display: block;
+                font-size: 14px;
+                padding-bottom: 10px;
+            }
+            span {
+              word-wrap: break-word;
+              word-break: break-all;
+              max-width: 230px;
+              margin-bottom: 5px;
+            }
+            em{
+                margin-top: 10px;
+            }
+            p{
+                font-size: 12px;
+                color: #555;
+            }
+            .footer-leftMain{
+                display: flex;
+                width: 180px;
+                position: relative;
+                .icon-item{
+                    flex: 1;
+                    .iconfont{
+                        color: #555;
+                        font-size: 20px;
+                        line-height: 1;
+                        cursor: pointer;
+                        transition: color 0.3s linear;
+                    }
+                    .iconfont:hover{
+                        color: #2d8cf0;
+                    }
+                }
+                .qrcode{
+                    position: absolute;
+                    z-index: 100;
+                    opacity: 0;
+                    transform: translateY(-300px);
+                    transition: all 0.3s linear;
+                    padding: 5px;
+                    background: #fff;
+                    border-radius: 10px;
+                    margin-left: 50px;
+                    box-shadow: 0 2px 4px 0 rgba(41, 50, 79, 0.05);
+                    pointer-events: none;
+                    img{
+                        width: 160px;
+                        height: 160px;
+                        margin-bottom: 0;
+                    }
+                }
+                .active{
+                    transform: translateY(-200px);
+                    opacity: 1;
+                }
+            }
+        }
+        .footer-right{
+            ul{
+                float: right;
+                margin-left: 70px;
+                li{
+                    font-size: 13px;
+                    color: #dcdcdc;
+                    cursor: pointer;
+                    line-height: 30px;
+                    transition: color 0.3s linear;
+                    a{
+                        color: inherit;
+                    }
+                }
+                li:hover{
+                    color: #2d8cf0;
+                }
+                li:first-child{
+                    height: 48px;
+                    cursor: auto;
+                }
+                li:first-child:hover{
+                    color: #dcdcdc;
+                }
+            }
+        }
+    }
+    .footer-link{
+      width: 100%;
+      border-top: 1px solid #3A3A3A;
+      ul{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        li{
+          line-height: 54px;
+          color: #DBDBDB;
+          margin: 0 20px;
+          font-size: 14px;
+          cursor: pointer;
+          user-select: none;
+        }
+        li:hover{
+          color: #348DF7;
+        }
+        li:first-child{
+          margin: 0;
+        }
+      }
+    }
+}
+.funcoin-footer-active{
+  padding: 30px 0 0 0;
+
+}

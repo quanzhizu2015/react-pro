@@ -1,0 +1,128 @@
+@import '../../../../styles/common.scss';
+.changelopass-title {
+    font-size: 20px;
+    color: #4a4a4a;
+    letter-spacing: 0;
+}
+.line {
+    margin-top: 14px;
+    width: 966px;
+    height: 1px;
+    background: #E7EBF2;
+}
+.safenotice {
+    font-size: $font_small;
+    color: $text_light;
+    margin-top: 2px;
+}
+.wrap {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    .google {
+        display: flex;
+        margin-bottom: 6px;
+        span {
+            font-size: $font_normal;
+            color: $dark_theme;
+            letter-spacing: 0;
+        }
+        .googlecode {
+            width: 350px;
+            height: 93px;
+            border: 1px solid $input_line;
+            padding: 12px 20px 12px 20px;
+            margin-left: 9px;
+            .word {
+                min-width: 176px;
+                float: left;
+                width: 176px;
+                word-break: break-all;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 18px;
+                div {
+                    width: 176px;
+                    font-size: $font_normal;
+                    color: $dark_theme;
+                    cursor: pointer;
+                }
+            }
+            .googleline {
+                float: left;
+                width: 1px;
+                height: 32px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #D6DAE2;
+                margin-left: 17px;
+            }
+            i {
+                float: right;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+        .googleEn {
+            margin-left: 20px;
+        }
+    }
+    .googlep {
+        font-size: $font_small;
+        color: $text_light;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        margin-left: 121px;
+        margin-bottom: 20px;
+    }
+    .googlepEn {
+        margin-left: 220px;
+        width: 350px;
+    }
+    .bindgoogle-btn {
+        width: 471px;
+        text-align: right;
+        margin-top: 59px;
+    }
+    .enGoogleBtn {
+        width: 610px;
+    }
+    .googleInfo {
+        width: 256px;
+        height: 248px;
+        border: 1px solid $input_line;
+        padding: 20px 18px 19px 18px;
+        font-size: $font_small;
+        color: $dark_theme;
+        letter-spacing: 0;
+        text-align: justify;
+        p:nth-child(2) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .safeInput-wrap .safeInput-form {
+        .enLabel {
+            min-width: 220px;
+        }
+        .enGoogleInput {
+            width: 410px;
+        }
+
+        .enGoogleErrorMsg {
+            font-size: $font_small;
+            color: $error_red;
+            margin-left: 20px;
+            line-height: 20px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        .googleBtn {
+            top: 12px;
+            height: 18px;
+        }
+    }
+}

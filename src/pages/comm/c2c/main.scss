@@ -1,0 +1,56 @@
+.c2c-main{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 50px;
+  .c2c-navbar{
+    width: 205px;
+    ul{
+      border: 1px solid #E6E6E6;
+      border-right: 0;
+      border-radius: 3px;
+      margin-bottom: 45px;
+      background: #fff;
+      min-height: 120px;
+      li{
+        line-height: 60px;
+        transition: all 0.3s linear;
+        border-right: 1px solid #E6E6E6;
+        padding: 0 14px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #0B2C4F;
+        img{
+          margin-right: 15px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .active{
+        background-image: linear-gradient(90deg,#F0F7FF 100%, #FAFCFF 0%);
+        border-right: 3px solid #3D79EC;
+      }
+    }
+    .c2c-navBar-history{
+      li{
+        i{
+          font-size: 20px;
+          line-height: 60px;
+          vertical-align: middle;
+          margin-right: 20px;
+        }
+      }
+      li:first-child{
+        font-size: 13px;
+        color: #A8A9AB;
+      }
+      li:last-child{
+        padding-left: 52px;
+      }
+    }
+  }
+  .c2c-container{
+    flex: 1;
+    padding-left: 45px;
+  }
+}

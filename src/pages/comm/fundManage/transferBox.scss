@@ -1,0 +1,227 @@
+@import '../../../styles/common.scss';
+
+#transferBox{
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #F7F8F9;
+    // margin: 10px 20px 20px 20px;
+    padding:18px 15px 30px;
+    margin: 0 20px;
+    position: relative;
+    .fromTo{
+        >p{
+            font-size: 18px;
+            color: $dark_theme;
+            display: inline-block;
+            margin-bottom: 0px;
+        }
+        .arrowIcon{
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 0 20px;
+            position: relative;
+            vertical-align: middle;
+            >svg{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .operation{
+        margin-top: 29px;
+        // overflow: hidden;
+        .number{
+            float: left;
+            position: relative;
+            >span{
+                font-size: $font_normal;
+                color: #7f8086;
+                opacity: 0.73;
+            }
+            .numInput{
+                width: 190px;
+                height: 40px;
+                border-radius: 100px;
+                background-color: #fff;
+                font-size: $font_normal;
+                color: #4b4f59;
+                text-align: left;
+                padding-left: 20px;
+                margin-left: 15px;
+            }
+            .errorBox{
+                width: 205px;
+                display: inline-block;
+                margin-left: 10px;
+                vertical-align: middle;
+                >p{
+                    font-size: $font_small;
+                    color: $error_red;
+                    margin-bottom: 0;
+                    span {
+                        color: $all_blue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .button{
+            float: right;
+            display: flex;
+            align-items: center;
+            p{
+                max-width: 450px;
+                font-size: $font_normal;
+                color: #9b9b9b;
+                margin-bottom: 0px;
+                b{
+                    color: #4b4f59;
+                    font-weight: normal;
+                    border-bottom: 1px solid #4b4f59;
+                    cursor: pointer;
+                }
+            }
+            .btn{
+                display: inline-block;
+                width: 140px;
+                height: 36px;
+                line-height: 36px;
+                border-radius: 20px;
+                background-color: $all_blue;
+                font-size: $font_normal;
+                color: #fff;
+                text-align: center;
+                margin-left: 20px;
+                cursor: pointer;
+                border: none;
+            }
+        }
+        .btn:disabled {
+            background: $text_light;
+            border: none;
+            color: #FFFFFF;
+            cursor: not-allowed;
+        }
+    }
+    .sanjiao{
+        position: absolute;
+        top: -8px;
+        right: 50px;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid #F7F8FC;
+        border-left: 10px solid transparent;
+        border-right: 8px solid transparent;
+    }
+    .sanjiaoEn {
+        right: 35px;
+    }
+}
+.transferBox-value{
+    text-align: left;
+    h5{
+        font-size: 16px;
+        color: $dark_theme;
+        letter-spacing: 0;
+    }
+    .transferBox-con{
+        padding-top: 37px;
+        input{
+            color: #4b4f59;
+            font-size: 18px;
+            width: 100%;
+            border-bottom: 1px solid #D6DAE2;
+            line-height: 30px;
+            margin-bottom: 6px;
+            height: 30px;
+            transition: all 0.3s ease-in-out 0s;
+            &:focus{
+                border-bottom-color: $dark_theme;
+            }
+        }
+        input[type=password] {
+            letter-spacing: 5px;
+        }
+        input::-webkit-input-placeholder { /* WebKit browsers */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        p{
+            float: right;
+            font-size: 12px;
+            color: #E74C4C;
+            letter-spacing: 0;
+        }
+        .transferBox-forget{
+            float: left;
+            font-size: 14px;
+            color: #3D79EC;
+            letter-spacing: 0;
+            cursor: pointer;
+            a {
+                color: #3D79EC;
+                &:link {
+                    color: #3D79EC;
+                }
+                &:visited {
+                    color: #3D79EC;
+                }
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+.transferBox-success{
+    text-align: center;
+    padding-top: 42px;
+    h5{
+        font-size: 16px;
+        color: #3D4657;
+        letter-spacing: 0;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 14px;
+        color: #AAAFB9;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    button{
+        width: 140px;
+        height: 36px;
+        background: #3D79EC;
+        border-radius: 18px;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        border: 0;
+        outline: none;
+        margin-top: 35px;
+    }
+}

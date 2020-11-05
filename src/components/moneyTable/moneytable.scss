@@ -1,0 +1,164 @@
+.moneytable{
+    width: 100%;
+    background: #fff;
+    .tableOne{
+        ul{
+            padding-bottom: 1px;
+            margin-bottom: 0px;
+            li{
+                margin: 0 20px;
+                line-height: 20px;
+                padding: 10px 0;
+                font-size: 14px;
+                color: #4b4f59;
+                letter-spacing: 0;
+                text-align: left;
+                span{
+                    display: inline-block;
+                }
+                .expand-div {
+                    margin: 18px 0;
+                    background: #F7F8F9;
+                    position: relative;
+                    border-radius: 4px;
+                    .expand-arrow {
+                        position: absolute;
+                        border-bottom: 10px solid #F7F8FC;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        top: 2px;
+                        transform: translate(-50%, -100%)
+                    }
+                }
+                .money-table-button {
+                    transition: all .3s ease 0s;
+                    padding: 0 6px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #E8E9ED;
+                    background: #fff;
+                    border-radius: 2px;
+                    font-size: 12px;
+                    color: #3D79EC;
+                    letter-spacing: 0;
+                    text-align: center;
+                    margin-left: 15px;
+                }
+                .money-table-button:hover {
+                    border: 1px solid #3D79EC;
+                }
+                .money-table-button.active{
+                    border-color: #3D79EC;
+                }
+                .disable{
+                    margin-left: 15px;
+                    transition: all .3s ease 0s;
+                    padding: 0 6px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid transparent;
+                    background: #fff;
+                    border-radius: 2px;
+                    font-size: 12px;
+                    color: #7f8086;
+                    letter-spacing: 0;
+                    text-align: center;
+                    cursor: default;
+                    opacity: 0.4;
+                }
+                .liTab{
+                    background: #F7F8FC;
+                    margin: 20px 0;
+                    position: relative;
+                    .triangle{
+                        display: inline-block;
+                        position: absolute;
+                        margin-top: -10px;
+                        right: 15px;
+                        width: 0;
+                        height: 0;
+                        border-bottom: 10px solid #F7F8FC;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                    }
+                    .triangle1{
+                        margin-right: 55px;
+                    }
+                }
+            }
+            .noData{
+                text-align: center;
+                min-height: 205px;
+                // padding: 60px 0;
+                p{
+                    color: #ccc;
+                    line-height: 30px;
+                    margin-bottom: 0px;
+                    margin-top: -24px;
+                }
+            }
+            li:first-child{
+                margin: 0;
+                border-bottom: 1px solid #E7EBF2;
+                display: flex;
+                justify-items: center;
+                align-content: center;
+                // min-height: 50px;
+                line-height: 18px;
+                padding: 10px 20px;
+                span{
+                    font-size: 12px;
+                    color: #7f8086;
+                    opacity: 0.73;
+                    letter-spacing: -0.6px;
+                    text-align: center;
+                    margin-top: 10px;
+                    text-align: left;
+                }
+                .lastSpan{
+                    text-align: right;
+                    width: 15%;
+                }
+            }
+            li:nth-child(2) {
+                margin-top: 6px;
+            }
+        }
+    }
+    .tableTwo{
+        ul{
+            padding-bottom: 1px;
+            li{
+                margin: 0 20px;
+                border-bottom: 1px solid #E8E9ED;
+                line-height: 20px;
+                padding: 10px 0;
+                font-size: 14px;
+                color: #3D4657;
+                letter-spacing: 0;
+                text-align: left;
+                span{
+                    display: inline-block;
+                }
+            }
+            li:first-child{
+                margin: 0;
+                height: 40px;
+                border-bottom: 1px solid #E8E9ED;
+                line-height: 25px;
+                padding: 0 20px;
+                span{
+                    font-size: 12px;
+                    color: #4b4f59;
+                    letter-spacing: -0.6px;
+                    text-align: center;
+                    margin-top: 15px;
+                    text-align: left;
+                }
+            }
+            li:last-child{
+                border:0;
+            }
+        }
+    }
+}

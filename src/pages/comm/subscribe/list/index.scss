@@ -1,0 +1,247 @@
+.subscribeList{
+  .subscribeList-banner{
+    height: 525px;
+    width: 100%;
+    background: #ccc;
+  }
+  .subscribeList-list{
+    .subscribeList-listMain{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px 0;
+      h4{
+        font-size:30px;
+        font-weight:500;
+        color:rgba(31,45,65,1);
+        letter-spacing:1px;
+      }
+      .ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+          flex: 1;
+          max-width: calc(25% - 37.5px);
+          min-width: calc(25% - 37.5px);
+          margin-right: 50px;
+          height: 362px;
+          background:rgba(255,255,255,1);
+          box-shadow:0px 0px 20px 0px rgba(220,220,220,0.5);
+          border-radius: 6px;
+          overflow: hidden;
+          margin-top: 40px;
+          border:1px solid rgba(230,230,230,1);
+          .subscribeList-itemTop{
+            height: 195px;
+            background: url('../../../../assets/img/market/litleBg.png');
+            background-size: 100% 100%;
+            padding: 30px 20px;
+            position: relative;
+            h5{
+              font-size:20px;
+              font-weight:500;
+              color:rgba(255,255,255,1);
+              line-height:20px;
+              margin-bottom: 50px;
+            }
+            p{
+              font-size:13px;
+              font-weight:400;
+              color:rgba(22,218,205,1);
+              background: url('../../../../assets/img/market/litle-bg.png');
+              background-size: 100% 100%;
+              padding: 10px 5px;
+              width: 90%;
+              margin: 0 auto;
+            }
+            div {
+              background:rgba(229,43,43,1);
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              box-shadow:0px 2px 4px 0px rgba(49,49,49,0.5);
+              border-radius:10px;
+              height: 20px;
+              padding: 0 8px;
+              color: #fff;
+              font-size: 12px;
+              line-height: 17px;
+              i{
+                line-height: 20px;
+                font-size: 12px;
+                margin-right: 5px;
+              }
+            }
+            .red{
+              background: #E52B2B;
+            }
+            .green{
+              background: #1DB750;
+            }
+            .yellow{
+              background: #F0B13F;
+            }
+            .grey{
+              background: #ACACAC;
+            }
+          }
+          .subscribeList-itemBottom{
+            padding: 10px 10px;
+            text-align: left;
+            h5{
+              font-size:14px;
+              font-weight:500;
+              color:rgba(31,45,65,1);
+              margin-bottom: 10px;
+              min-height: 43px;
+            }
+            p{
+              font-size:12px;
+              font-weight:400;
+              color:rgba(115,114,114,1);
+              line-height: 16px;
+              margin-bottom: 8px;
+              i{
+                font-size: 12px;
+                color:#FAB927;
+                transform: scale(0.8);
+                display: inline-block;
+                width: 10px;
+              }
+            }
+          }
+          .btn{
+              width: 240px;
+              margin: 0 auto;
+              background:rgba(41,99,199,1);
+              box-shadow:0px 2px 4px 0px rgba(154,187,245,1);
+              border-radius:6px;
+              height: 40px;
+              line-height: 40px;
+              font-size:16px;
+              font-weight:400;
+              color:rgba(255,255,255,1);
+              text-align: center;
+              user-select: none;
+              transform: translateY(20px);
+              transition: all 0.3s ease-in;
+              cursor: pointer;
+          }
+          .active{
+            transform: translateY(-58px);
+          }
+        }
+        li:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .subscribeList-collapse{
+    .subscribeList-collapseMain{
+      width: 1200px;
+      margin: 0 auto;
+      h5{
+        font-size:18px;
+        font-weight:500;
+        color:rgba(31,45,65,1);
+        padding: 80px 0 20px 0;
+      }
+      ul{
+        li{
+          border-radius:0px 0px 5px 5px;
+          div:first-child{
+            border:1px solid rgba(230,230,230,1);
+            display: flex;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            p{
+              flex: 1;
+              font-size:14px;
+              font-weight:400;
+              color:rgba(31,45,65,1);
+              margin-bottom: 0;
+            }
+            i{
+              text-align: right;
+              color: #2963C7;
+              transition: all 0.2s linear;
+              font-size: 14px;
+            }
+            .rotate{
+              transform: rotate(90deg);
+            }
+          }
+          div:first-child:hover{
+            background: #ECF3FF;
+            p{
+              color:#2963C7;
+            }
+          }
+          div:last-child{
+            border-left:1px solid rgba(230,230,230,1);
+            border-right:1px solid rgba(230,230,230,1);
+            padding: 18px 26px;
+            transition: all 0.3s linear;
+            p{
+              font-size:14px;
+              font-weight:400;
+              color:rgba(115,114,114,1);
+              line-height: 24px;
+              margin-bottom: 5px;
+            }
+            p:last-child{
+              margin-bottom: 0px;
+            }
+          }
+          .none{
+            height: 0;
+            overflow: hidden;
+            padding: 0 26px !important;
+          }
+          .active{
+          
+          }
+        }
+        li:first-child{
+          div:first-child{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+        }
+        li:last-child{
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          div:last-child{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom:1px solid rgba(230,230,230,1);
+          }
+        }
+      }
+    }
+  }
+  .subscribeList-warning{
+    padding-bottom: 70px;
+    .subscribeList-warningMain{
+      width: 1200px;
+      margin: 0 auto;
+      h5{
+          margin: 80px 0 20px 0;
+          font-size:18px;
+          font-weight:500;
+          color:rgba(31,45,65,1);
+      }
+      p{
+        font-size:14px;
+        font-weight:400;
+        color:rgba(115,114,114,1);
+        line-height:22px;
+      }
+      .textList{
+        padding-left: 20px;
+      }
+    }
+  }
+}

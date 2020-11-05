@@ -1,0 +1,144 @@
+
+@import './common.scss';
+@import './style.scss';
+
+/*全局样式*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div,
+dl,
+dt,
+dd,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ol,
+ul,
+li,
+table,
+th,
+td,
+p,
+span,
+a {
+    border: 0;
+    // font-weight: 400;
+}
+
+img,
+input {
+    border: none;
+    // vertical-align: middle;
+}
+
+html body {
+    font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // background-color: #f2f2f2;
+}
+.routerMain, #root{
+    width: 100%;
+    height: 100%;
+}
+.message {
+    position: absolute;
+    right: 20px;
+    top:85px;
+    width:230px;
+    background: red
+}
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+a, input, button {
+    outline: none;
+}
+a, button {
+    cursor: pointer;
+}
+input {
+    color: $dark_theme;
+}
+input::placeholder {
+    color: #c3c6ce;
+}
+
+input::-webkit-credentials-auto-fill-button {
+    display: none !important
+}
+html,
+body {
+    min-width: 1280px;
+    height: 100%;
+}
+i {
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DINPro-Medium";
+    font-display: fallback;
+    src: url("../assets/font/DINPro-Medium.otf");
+    src: url("../assets/font/DINPro-Medium.woff2") format("woff2"),
+         url("../assets/font/DINPro-Medium.woff") format("woff"),
+         url("../assets/font/DINPro-Medium.ttf") format("truetype"),
+         url("../assets/font/DINPro-Medium.eot") format("embedded-opentype"),
+         url("../assets/font/DINPro-Medium.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.ant-tooltip{
+  max-width: 260px !important;
+}
+.pop-contant{
+  a{
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+.ant-tooltip-inner{
+    min-height: auto !important;
+    padding: 3px 10px 0px 10px !important;
+    font-size: 12px !important;
+    background: #49556A !important;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.10) !important;
+    border-radius: 4px !important;
+    line-height: 20px !important;
+}
+.ant-tooltip-arrow{
+    border-top-color: #49556A !important;
+    border-bottom-color: #49556A !important;
+}
+.subscribeInfo-tooltip{
+  .ant-tooltip-inner{
+    background: #2963C7 !important;
+    span{
+      cursor: pointer;
+    }
+  }
+  .ant-tooltip-arrow{
+    border-top-color: #2963C7 !important;
+  }
+}

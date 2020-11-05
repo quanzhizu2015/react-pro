@@ -1,0 +1,835 @@
+@import '../../styles/common.scss';
+
+#tradelist{
+    width: 100%;
+    height: 100%;
+    // height: calc(100% - 1px);
+    // background-color: #212838;
+    .right_box{
+        width: calc(50% - 2px);
+        height: 100%;
+        float: right;
+        overflow: hidden;
+        // width: 100%;
+        .head_title{
+            width: 100%;
+            height: 48px;
+            padding: 6px 10px 0 10px;
+            .iconbitebi {
+                font-size: 12px;
+            }
+            p{
+                font-size: $font_small;
+                // color: $trade_light;
+                margin-bottom: 5px;
+            }
+            .title_line{
+                width: 100%;
+                height: 1px;
+                margin: 0 auto 2px;
+            }
+            ul{
+                margin-bottom: 0px;
+                li{
+                    display: inline-block;
+                    // color: $trade_dark;
+                    font-size: $font_small;
+                }
+                li:nth-of-type(1){
+                    width: 30%;
+                    text-align: left;
+                }
+                li:nth-of-type(2){
+                    width: 45%;
+                    text-align: center;
+                }
+                li:nth-of-type(3){
+                    width: 25%;
+                    text-align: right;
+                }
+            }
+        }
+        .deal_table{
+            width: 100%;
+            height: calc(100% - 53px);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            display: block;
+            tbody{
+                width: 100%;
+                height: 100%;
+                display: block;
+                overflow: hidden;
+                tr{
+                    width: 100%;
+                    display: block;
+                    height: 17px;
+                    line-height: 17px;
+                    position: relative;
+                    z-index: 2;
+                    cursor: pointer;
+                    td{
+                        display: inline-block;
+                        // color: $trade_light;
+                        font-size: $font_small;
+                        font-family: Helvetica Neue;
+                    }
+                    td.green{
+                        color: $trade_green;
+                    }
+                    td.red{
+                        color: $trade_red;
+                    }
+                    td:nth-of-type(1){
+                        width: 30%;
+                        // text-align: left;
+                        text-align: justify;
+                        text-align-last: left;
+                    }
+                    td:nth-of-type(2){
+                        width: 45%;
+                        text-align: center;
+                        // cursor: pointer;
+                    }
+                    td:nth-of-type(3){
+                        width: 25%;
+                        text-align: right;
+                    }
+                    .hover_line{
+                        width: 100%;
+                        height: 20px;
+                        position: absolute;
+                        top: 0;
+                        z-index: -1;
+                        left: 0;
+                        opacity: 0.7;
+                    }
+                }
+                tr:nth-of-type(1) {
+                    // animation: dealTr 0.2s ease-out backwards;
+                }
+            }
+        }
+    }
+    .left_box{
+        width: calc(50% - 2px);
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        // width: 100%;
+        .head_title{
+            width: 100%;
+            height: 54px;
+            padding: 6px 5% 0 5%;
+            position: relative;
+            .iconbitebi {
+                font-size: 12px;
+            }
+            p{
+                font-size: $font_small;
+                // color: $trade_light;
+                float: left;
+                margin-bottom: 5px;
+            }
+            .title_line{
+                width: 100%;
+                height: 1px;
+                margin: 0 auto;
+            }
+            .select_menu{
+                // width: 60px;
+                height: 20px;
+                float: right;
+                position: relative;
+                .select_open{
+                    cursor: pointer;
+                    >i.iconfont{
+                        font-size: 12px;
+                        vertical-align: 2px;
+                        margin-left: 5px;
+                    }
+                    .svgTooltip{
+                        visibility: hidden;
+                        opacity: 0;
+                        width: 8px;
+                        height: 8px;
+                        position: absolute;
+                        right: 10px;
+                        top: -3px;
+                        transition: all 0.2s linear;
+                    }
+                    &:hover {
+                        .svgTooltip{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                ul.select_drop{
+                    max-width: 200px;
+                    box-shadow: 0 4px 10px 0 rgba(28,28,28,0.50);
+                    border-radius: 4px;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: 99;
+                    top: 17px;
+                    left: -10px;
+                    line-height: 30px;
+                    li{
+                        width: 100%;
+                        height: 30px;
+                        text-align: left;
+                        cursor: pointer;
+                        padding: 0 8px;
+                        font-size: $font_small;
+                        &:hover {
+                            // color: #AAB8DF;
+                            // background-color: #49556A;
+                        }
+                    }
+                }
+            }
+            >i.iconfont{
+                font-size: 13px;
+                color: #AAB8DF;
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                cursor: pointer;
+            }
+            .clearboth{
+                display: block;
+                clear: both;
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+            >ul{
+                margin-top: 4px;
+                margin-bottom: 0;
+                height: 20px;
+                overflow: hidden;
+                li{
+                    // color: $trade_dark;
+                    font-size: $font_small;
+                    display: inline-block;
+                    width: 33%;
+                }
+                li:nth-of-type(1){
+                    text-align: left;
+                }
+                li:nth-of-type(2){
+                    text-align: center;
+                }
+                li:nth-of-type(3){
+                    text-align: right;
+                    width: 34%;
+                }
+            }
+        }
+        .outerbox{
+            width: 100%;
+            margin: 0 auto;
+            height: calc(100% - 54px);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: flex-start;
+            .innerbox{
+                width: 90%;
+                margin: 0 auto;
+                // padding: 0 5%;
+                overflow: hidden;
+                // box-sizing: content-box;
+                flex: 1;
+                .deep_up_box, .deep_dn_box{
+                    width: calc(100% + 21px);
+                    flex: 1;
+                    // padding: 0px 5%;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    ul{
+                        width: calc(100% - 21px);
+                        margin-bottom: 0;
+                        // overflow-x: hidden;
+                        li{
+                            width: 100%;
+                            height: 20px;
+                            position: relative;
+                            line-height: 20px;
+                            margin: 1px 0;
+                            // margin-bottom: 2px;
+                            // visibility: hidden;
+                            overflow: hidden;
+                            cursor: pointer;
+                            .info_line{
+                                position: relative;
+                                width: 100%;
+                                z-index: 9;
+                                margin-top: -1px;
+                                // display: flex;
+                                // justify-content: space-between;
+                                p{
+                                    font-family: Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
+                                    display: inline-block;
+                                    width: 33%;
+                                    // flex: 1;
+                                }
+                                p.price{
+                                    // float: left;
+                                    font-size: $font_small;
+                                    color: $trade_red;
+                                }
+                                p.num{
+                                    // float: left;
+                                    font-size: $font_small;
+                                    text-align: center;
+                                    // color: $trade_light;
+                                }
+                                p.sum{
+                                    // float: right;
+                                    font-size: $font_small;
+                                    text-align: right;
+                                    width: 34%;
+                                }
+                                .upAnimation{
+                                    animation: upFlicker 0.3s ease-out;
+                                    animation-iteration-count: 1;
+                                }
+                                .dnAnimation{
+                                    animation: dnFlicker 0.3s ease-out;
+                                    animation-iteration-count: 1;
+                                }
+                                &:after{
+                                    display: block;
+                                    content: ',';
+                                    width: 0;
+                                    height: 0;
+                                    opacity: 0;
+                                    clear: both;
+                                }
+                            }
+                            .deep_line0{
+                                width: 0;
+                                height: 20px;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background-color: $trade_red;
+                                opacity: .2;
+                                transition: all .3s ease-out;
+                            }
+                            .deep_line{
+                                width: 34%;
+                                height: 20px;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                padding-left: 2px;
+                                .deep_line_color{
+                                    float: left;
+                                    width: 0;
+                                    height: 100%;
+                                    opacity: .2;
+                                    transition: all .3s ease-out;
+                                    background-color: $trade_red;
+                                }
+                            }
+                            .hover_line{
+                                width: 100%;
+                                height: 20px;
+                                position: absolute;
+                                top: 0;
+                                z-index: 5;
+                                left: 0;
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+                .deep_up_box{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-bottom: 1px;
+                    >ul{
+                        li:nth-last-of-type(odd){
+                            background: #29303F;
+                        }
+                    }
+                    .animationUl{
+                        // position: absolute;
+                        // bottom: 0;
+                        li{
+                            top: -20px;
+                            z-index: -1;
+                            animation-iteration-count: 1;
+                        }
+                        li:nth-last-of-type(odd){
+                            background: #29303F;
+                        }
+                        li:nth-last-of-type(1) {
+                            animation: papapa .15s 0s linear forwards;
+                        }
+                        li:nth-last-of-type(2) {
+                            animation: papapa .15s .05s linear forwards;
+                        }
+                        li:nth-last-of-type(3) {
+                            animation: papapa .15s .1s linear forwards;
+                        }
+                        li:nth-last-of-type(4) {
+                            animation: papapa .15s .15s linear forwards;
+                        }
+                        li:nth-last-of-type(5) {
+                            animation: papapa .15s .2s linear forwards;
+                        }
+                        li:nth-last-of-type(6) {
+                            animation: papapa .15s .25s linear forwards;
+                        }
+                        li:nth-last-of-type(7) {
+                            animation: papapa .15s .3s linear forwards;
+                        }
+                        li:nth-last-of-type(8) {
+                            animation: papapa .15s .35s linear forwards;
+                        }
+                        li:nth-last-of-type(9) {
+                            animation: papapa .15s .4s linear forwards;
+                        }
+                        li:nth-last-of-type(10) {
+                            animation: papapa .15s .45s linear forwards;
+                        }
+                        li:nth-last-of-type(11) {
+                            animation: papapa .15s .5s linear forwards;
+                        }
+                        li:nth-last-of-type(12) {
+                            animation: papapa .15s .55s linear forwards;
+                        }
+                        li:nth-last-of-type(13) {
+                            animation: papapa .15s .6s linear forwards;
+                        }
+                        li:nth-last-of-type(14) {
+                            animation: papapa .15s .65s linear forwards;
+                        }
+                        li:nth-last-of-type(15) {
+                            animation: papapa .15s .7s linear forwards;
+                        }
+                        li:nth-last-of-type(16) {
+                            animation: papapa .15s .75s linear forwards;
+                        }
+                        li:nth-last-of-type(17) {
+                            animation: papapa .15s .8s linear forwards;
+                        }
+                        li:nth-last-of-type(18) {
+                            animation: papapa .15s .85s linear forwards;
+                        }
+                        li:nth-last-of-type(19) {
+                            animation: papapa .15s .9s linear forwards;
+                        }
+                        li:nth-last-of-type(20) {
+                            animation: papapa .15s 1s linear forwards;
+                        }
+                        li:nth-last-of-type(21) {
+                            animation: papapa .15s 1.05s linear forwards;
+                        }
+                        li:nth-last-of-type(22) {
+                            animation: papapa .15s 1.1s linear forwards;
+                        }
+                        li:nth-last-of-type(23) {
+                            animation: papapa .15s 1.15s linear forwards;
+                        }
+                        li:nth-last-of-type(24) {
+                            animation: papapa .15s 1.2s linear forwards;
+                        }
+                        li:nth-last-of-type(25) {
+                            animation: papapa .15s 1.25s linear forwards;
+                        }
+                        li:nth-last-of-type(26) {
+                            animation: papapa .15s 1.3s linear forwards;
+                        }
+                        li:nth-last-of-type(27) {
+                            animation: papapa .15s 1.35s linear forwards;
+                        }
+                        li:nth-last-of-type(28) {
+                            animation: papapa .15s 1.4s linear forwards;
+                        }
+                        li:nth-last-of-type(29) {
+                            animation: papapa .15s 1.45s linear forwards;
+                        }
+                        li:nth-last-of-type(30) {
+                            animation: papapa .15s 1.5s linear forwards;
+                        }
+                        li:nth-last-of-type(31) {
+                            animation: papapa .15s 1.55s linear forwards;
+                        }
+                        li:nth-last-of-type(32) {
+                            animation: papapa .15s 1.6s linear forwards;
+                        }
+                        li:nth-last-of-type(33) {
+                            animation: papapa .15s 1.65s linear forwards;
+                        }
+                        li:nth-last-of-type(34) {
+                            animation: papapa .15s 1.7s linear forwards;
+                        }
+                        li:nth-last-of-type(35) {
+                            animation: papapa .15s 1.75s linear forwards;
+                        }
+                        li:nth-last-of-type(36) {
+                            animation: papapa .15s 1.8s linear forwards;
+                        }
+                        li:nth-last-of-type(37) {
+                            animation: papapa .15s 1.85s linear forwards;
+                        }
+                        li:nth-last-of-type(38) {
+                            animation: papapa .15s 1.9s linear forwards;
+                        }
+                        li:nth-last-of-type(39) {
+                            animation: papapa .15s 1.95s linear forwards;
+                        }
+                        li:nth-last-of-type(40) {
+                            animation: papapa .15s 2s linear forwards;
+                        }
+                        li:nth-last-of-type(41) {
+                            animation: papapa .15s 2.05s linear forwards;
+                        }
+                        li:nth-last-of-type(42) {
+                            animation: papapa .15s 2.1s linear forwards;
+                        }
+                        li:nth-last-of-type(43) {
+                            animation: papapa .15s 2.15s linear forwards;
+                        }
+                        li:nth-last-of-type(44) {
+                            animation: papapa .15s 2.2s linear forwards;
+                        }
+                        li:nth-last-of-type(45) {
+                            animation: papapa .15s 2.25s linear forwards;
+                        }
+                        li:nth-last-of-type(46) {
+                            animation: papapa .15s 2.3s linear forwards;
+                        }
+                        li:nth-last-of-type(47) {
+                            animation: papapa .15s 2.35s linear forwards;
+                        }
+                        li:nth-last-of-type(48) {
+                            animation: papapa .15s 2.4s linear forwards;
+                        }
+                        li:nth-last-of-type(49) {
+                            animation: papapa .15s 2.45s linear forwards;
+                        }
+                        li:nth-last-of-type(50) {
+                            animation: papapa .15s 2.5s linear forwards;
+                        }
+                    }
+                }
+                .deep_dn_box{
+                    .deep_down_ul{
+                        margin-top: 2px;
+                        li{
+                            top: 0;
+                            z-index: 0;
+                            .info_line{
+                                p.price{
+                                    color: $trade_green;
+                                }
+                            }
+                            .deep_line0{
+                                background-color: $trade_green;
+                            }
+                            .deep_line{
+                                .deep_line_color{
+                                    background-color: $trade_green;
+                                }
+                            }
+                        }
+                        li:nth-of-type(odd){
+                            background: #29303F;
+                        }
+                    }
+                    .animationUl{
+                        li{
+                            top: 20px;
+                            z-index: -1;
+                        }
+                        li:nth-of-type(1) {
+                            animation: papapa .15s 0s linear forwards;
+                        }
+                        li:nth-of-type(2) {
+                            animation: papapa .15s .05s linear forwards;
+                        }
+                        li:nth-of-type(3) {
+                            animation: papapa .15s .1s linear forwards;
+                        }
+                        li:nth-of-type(4) {
+                            animation: papapa .15s .15s linear forwards;
+                        }
+                        li:nth-of-type(5) {
+                            animation: papapa .15s .2s linear forwards;
+                        }
+                        li:nth-of-type(6) {
+                            animation: papapa .15s .25s linear forwards;
+                        }
+                        li:nth-of-type(7) {
+                            animation: papapa .15s .3s linear forwards;
+                        }
+                        li:nth-of-type(8) {
+                            animation: papapa .15s .35s linear forwards;
+                        }
+                        li:nth-of-type(9) {
+                            animation: papapa .15s .4s linear forwards;
+                        }
+                        li:nth-of-type(10) {
+                            animation: papapa .15s .45s linear forwards;
+                        }
+                        li:nth-of-type(11) {
+                            animation: papapa .15s .5s linear forwards;
+                        }
+                        li:nth-of-type(12) {
+                            animation: papapa .15s .55s linear forwards;
+                        }
+                        li:nth-of-type(13) {
+                            animation: papapa .15s .6s linear forwards;
+                        }
+                        li:nth-of-type(14) {
+                            animation: papapa .15s .65s linear forwards;
+                        }
+                        li:nth-of-type(15) {
+                            animation: papapa .15s .7s linear forwards;
+                        }
+                        li:nth-of-type(16) {
+                            animation: papapa .15s .75s linear forwards;
+                        }
+                        li:nth-of-type(17) {
+                            animation: papapa .15s .8s linear forwards;
+                        }
+                        li:nth-of-type(18) {
+                            animation: papapa .15s .85s linear forwards;
+                        }
+                        li:nth-of-type(19) {
+                            animation: papapa .15s .9s linear forwards;
+                        }
+                        li:nth-of-type(20) {
+                            animation: papapa .15s 1s linear forwards;
+                        }
+                        li:nth-of-type(21) {
+                            animation: papapa .15s 1.05s linear forwards;
+                        }
+                        li:nth-of-type(22) {
+                            animation: papapa .15s 1.1s linear forwards;
+                        }
+                        li:nth-of-type(23) {
+                            animation: papapa .15s 1.15s linear forwards;
+                        }
+                        li:nth-of-type(24) {
+                            animation: papapa .15s 1.2s linear forwards;
+                        }
+                        li:nth-of-type(25) {
+                            animation: papapa .15s 1.25s linear forwards;
+                        }
+                        li:nth-of-type(26) {
+                            animation: papapa .15s 1.3s linear forwards;
+                        }
+                        li:nth-of-type(27) {
+                            animation: papapa .15s 1.35s linear forwards;
+                        }
+                        li:nth-of-type(28) {
+                            animation: papapa .15s 1.4s linear forwards;
+                        }
+                        li:nth-of-type(29) {
+                            animation: papapa .15s 1.45s linear forwards;
+                        }
+                        li:nth-of-type(30) {
+                            animation: papapa .15s 1.5s linear forwards;
+                        }
+                        li:nth-of-type(31) {
+                            animation: papapa .15s 1.55s linear forwards;
+                        }
+                        li:nth-of-type(32) {
+                            animation: papapa .15s 1.6s linear forwards;
+                        }
+                        li:nth-of-type(33) {
+                            animation: papapa .15s 1.65s linear forwards;
+                        }
+                        li:nth-of-type(34) {
+                            animation: papapa .15s 1.7s linear forwards;
+                        }
+                        li:nth-of-type(35) {
+                            animation: papapa .15s 1.75s linear forwards;
+                        }
+                        li:nth-of-type(36) {
+                            animation: papapa .15s 1.8s linear forwards;
+                        }
+                        li:nth-of-type(37) {
+                            animation: papapa .15s 1.85s linear forwards;
+                        }
+                        li:nth-of-type(38) {
+                            animation: papapa .15s 1.9s linear forwards;
+                        }
+                        li:nth-of-type(39) {
+                            animation: papapa .15s 1.95s linear forwards;
+                        }
+                        li:nth-of-type(40) {
+                            animation: papapa .15s 2s linear forwards;
+                        }
+                        li:nth-of-type(41) {
+                            animation: papapa .15s 2.05s linear forwards;
+                        }
+                        li:nth-of-type(42) {
+                            animation: papapa .15s 2.1s linear forwards;
+                        }
+                        li:nth-of-type(43) {
+                            animation: papapa .15s 2.15s linear forwards;
+                        }
+                        li:nth-of-type(44) {
+                            animation: papapa .15s 2.2s linear forwards;
+                        }
+                        li:nth-of-type(45) {
+                            animation: papapa .15s 2.25s linear forwards;
+                        }
+                        li:nth-of-type(46) {
+                            animation: papapa .15s 2.3s linear forwards;
+                        }
+                        li:nth-of-type(47) {
+                            animation: papapa .15s 2.35s linear forwards;
+                        }
+                        li:nth-of-type(48) {
+                            animation: papapa .15s 2.4s linear forwards;
+                        }
+                        li:nth-of-type(49) {
+                            animation: papapa .15s 2.45s linear forwards;
+                        }
+                        li:nth-of-type(50) {
+                            animation: papapa .15s 2.5s linear forwards;
+                        }
+                    }
+                }
+            }
+            .inner_up{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .inner_dn{
+                display: flex;
+                flex-direction: column;
+            }
+            .last_price{
+                width: 90%;
+                height: 30px;
+                padding-left: 10px;
+                cursor: pointer;
+                position: relative;
+                // top: 50%;
+                left: 5%;
+                // transform: translateY(-15px);
+                text-align: center;
+                p{
+                    // display: inline;
+                    line-height: 30px;
+                    color: $trade_green;
+                    font-size: 16px;
+                    span{
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+                }
+                .green{
+                    color: $trade_green;
+                }
+                .red{
+                    color: $trade_red;
+                }
+                .iconfont{
+                    font-size: 12px;
+                }
+            }
+        }
+        .outerbox.mac{
+            .innerbox{
+                .deep_up_box, .deep_dn_box{
+                    >ul{
+                        width: calc(100% - 21px);
+                        >li{
+                            .info_line{
+                                padding-right: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .outerbox.window{
+            .innerbox{
+                .deep_up_box, .deep_dn_box{
+                    >ul{
+                        width: 100%;
+                        li{
+                            padding-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .loadingT{
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        z-index: 1;
+        // background-color: #212838;
+        background: #212838;
+        // opacity: 1;
+        .spinner{
+            // left: 49%;
+        }
+    }
+    .loadingD{
+        float: right;
+    }
+    p,ul{
+        margin-bottom: 0;
+    }
+}
+
+@keyframes papapa {
+    0% {
+        visibility: hidden;
+    }
+    30% {
+        visibility: visible;
+        top: 0;
+    }
+    100% {
+        visibility: visible;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes dealTr {
+    0%,100% {
+        background: transparent;
+    }
+    50% {
+        background: yellow;
+    }
+}
+
+@keyframes upFlicker {
+    0% {
+        background-color: rgba(36, 182, 71, 0.5);
+    }
+    100% {
+        background-color: rgba(36, 182, 71, 0);
+    }
+}
+@keyframes dnFlicker {
+    0% {
+        background-color: rgba(231, 76, 76, 0.5);
+    }
+    100% {
+        background-color: rgba(231, 76, 76, 0);
+    }
+}

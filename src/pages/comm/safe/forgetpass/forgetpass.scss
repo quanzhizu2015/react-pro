@@ -1,0 +1,33 @@
+@import '../../../../styles/common.scss';
+.forgetpass-wrap {
+    .forgetpass-title {
+        font-size: 20px;
+        color: $dark_theme;
+        letter-spacing: 0px;
+    }
+    .line {
+        margin-top: 26px;
+        width: 966px;
+        height: 1px;
+        background: #E7EBF2;
+    }
+    .forgetpass-fromWrap {
+        margin-top: 40px;
+        .safeInput-form {
+            .enLabel {
+                min-width: 220px;
+            }
+            .enInput {
+                width: 400px;
+            }
+        }
+        .changelopass-btn {
+            width: 471px;
+            text-align: right;
+            margin-top: 59px;
+        }
+        .enBtn {
+            width: 620px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.Market{
+    background: #FCFBFB;
+    // background: #212838;
+    min-width: 1200px;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 238px;
+    .Market-header{
+        background: #303142;
+        // background: url('../../assets/img/market/banner.png') no-repeat;
+        background-size: cover;
+    }
+    .Market-market{
+        // height: 164px;
+        margin-top: 20px;
+        .Market-market-main{
+            width: 1260px;
+            margin: 0 auto;
+            // height: 164px;
+        }
+    }
+    .Market-table{
+        background: #fff;
+        min-height: 500px;
+        .Market-table-main{
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            min-height: 500px;
+        }
+    }
+}

@@ -1,0 +1,275 @@
+.loadingBall {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 23%;
+  margin-left: 5px;
+  display: inline-block; }
+  .loadingBall span {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 2px;
+    background-color: #fff;
+    opacity: .5;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center; }
+  .loadingBall .one {
+    animation: wave .8s linear 0s infinite; }
+  .loadingBall .two {
+    animation: wave .8s linear .12s infinite; }
+  .loadingBall .three {
+    animation: wave .8s linear .24s infinite; }
+
+@keyframes wave {
+  10% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  25% {
+    transform: scale(0.8, 1.2); }
+  35% {
+    transform: translateY(-5px); }
+  50% {
+    opacity: 1; }
+  65% {
+    transform: translateY(-5px) scale(1, 1); }
+  80% {
+    transform: scale(0.8, 1.2); }
+  90% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  100% {
+    opacity: .5;
+    transform: translateY(0) scale(1, 1); } }
+
+.ft-button {
+  font-size: 16px;
+  height: 36px;
+  color: #3D79EC;
+  border: 2px solid #3D79EC;
+  border-radius: 100px;
+  padding: 0 24px;
+  position: relative; }
+
+.ft-color-primary {
+  background: #3D79EC;
+  color: #FFFFFF; }
+
+.ft-color-primary:hover {
+  background: #306AD9; }
+
+.ft-size-small {
+  height: 28px; }
+
+.ft-size-medium {
+  height: 40px; }
+
+.ft-button:disabled {
+  background: #E7EbF2;
+  border: none;
+  color: #aaafb9;
+  cursor: not-allowed; }
+
+.ac-input {
+  width: 350px;
+  position: relative; }
+  .ac-input input {
+    background: transparent;
+    padding-left: 36px;
+    height: 30px;
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: #4b4f59;
+    border-bottom: 1px solid #D6DAE2;
+    transition: all 0.3s ease-in-out 0s; }
+    .ac-input input:focus {
+      border-bottom: 1px solid #4a4a4a; }
+  .ac-input .ac-error {
+    position: absolute;
+    font-size: 12px;
+    left: 100%;
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    color: #E74C4C;
+    white-space: nowrap; }
+  .ac-input + .ac-input {
+    margin-top: 30px; }
+
+.ac-input-icon {
+  position: absolute;
+  font-size: 18px;
+  line-height: 20px; }
+
+.ac-progress {
+  margin-top: 16px;
+  width: 100%;
+  height: 10px;
+  position: relative;
+  background: #E8E9ED;
+  border-radius: 100px; }
+  .ac-progress i {
+    display: block;
+    position: absolute;
+    height: 100%;
+    border-radius: 100px;
+    transition: width 300ms; }
+  .ac-progress span {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 17px;
+    white-space: nowrap; }
+
+.ac-piturecode {
+  position: absolute;
+  right: 0px;
+  bottom: 7px; }
+  .ac-piturecode img {
+    position: relative;
+    width: 97px;
+    height: 31px;
+    right: 32px;
+    bottom: 7px;
+    -ms-transform: translateX(15px);
+    transform: translateX(15px); }
+  .ac-piturecode i {
+    right: 0px;
+    text-align: center; }
+  .ac-piturecode .iconshuaxin {
+    cursor: pointer; }
+
+.ac-code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 81px;
+  padding-left: 10px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .ac-code::before {
+    position: absolute;
+    content: '';
+    top: 1px;
+    left: 0;
+    width: 1px;
+    height: 18px;
+    background: #D6DAE2; }
+  .ac-code a {
+    display: inline-block;
+    font-size: 14px;
+    color: #3D4657;
+    white-space: nowrap;
+    text-decoration: none; }
+    .ac-code a[disabled] {
+      color: #AAAFB9; }
+  .ac-code span {
+    display: block;
+    font-size: 14px;
+    color: #AAAFB9; }
+
+.login {
+  width: 100%; }
+  .login::before {
+    content: '';
+    display: table; }
+  .login .login-submit {
+    margin-top: 81px; }
+
+.pg-login {
+  padding-bottom: 20px; }
+
+.safe {
+  padding-top: 44px; }
+  .safe .safe-main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .safe .safe-main .safe-mainUl {
+      width: 184px;
+      float: left;
+      text-align: left; }
+      .safe .safe-main .safe-mainUl ul li {
+        margin-top: 38px;
+        font-size: 20px;
+        color: #9b9b9b;
+        letter-spacing: 0;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        line-height: 45px; }
+      .safe .safe-main .safe-mainUl ul .iconfont {
+        font-size: 12px;
+        line-height: 45px;
+        position: absolute;
+        margin-left: 10px; }
+      .safe .safe-main .safe-mainUl ul .active {
+        font-size: 30px;
+        color: #4a4a4a;
+        letter-spacing: 0; }
+      .safe .safe-main .safe-mainUl ul li:first-child {
+        margin-top: 0; }
+    .safe .safe-main .safe-mainChild {
+      padding: 26px 0 0 50px;
+      margin-left: 184px;
+      border-left: 1px solid #E7EBF2;
+      margin-bottom: 30px; }
+    .safe .safe-main .success-modal {
+      margin-top: 10px;
+      text-align: center; }
+      .safe .safe-main .success-modal i {
+        line-height: 80px;
+        font-size: 80px;
+        color: #24B647; }
+      .safe .safe-main .success-modal p {
+        margin-top: 6px;
+        font-size: 16px;
+        color: #4a4a4a;
+        letter-spacing: 0;
+        text-align: center; }
+
+.fundManage {
+  padding-bottom: 30px; }
+  .fundManage::before {
+    content: '';
+    display: table-cell; }
+  .fundManage .box1200 {
+    width: 1200px;
+    margin: 0 auto; }
+    .fundManage .box1200 > div {
+      font-size: 24px;
+      color: #4a4a4a;
+      margin-top: 20px; }
+    .fundManage .box1200 .tabNav {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+      .fundManage .box1200 .tabNav > ul {
+        width: 100%;
+        margin-bottom: 0; }
+        .fundManage .box1200 .tabNav > ul > li {
+          display: inline-block;
+          margin-right: 50px;
+          cursor: pointer; }
+          .fundManage .box1200 .tabNav > ul > li > a {
+            line-height: 36px;
+            font-size: 16px;
+            color: #9b9b9b;
+            text-decoration: none; }
+        .fundManage .box1200 .tabNav > ul .activeLi > a {
+          color: #3D79EC; }
+      .fundManage .box1200 .tabNav .tabNavLine {
+        width: 100%;
+        height: 2px;
+        background-color: transparent;
+        position: relative; }
+        .fundManage .box1200 .tabNav .tabNavLine .activeLine {
+          position: absolute;
+          top: 0;
+          width: 64px;
+          height: 2px;
+          background-color: #3D79EC;
+          transition: all .2s ease-out; }
+

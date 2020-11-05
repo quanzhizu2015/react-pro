@@ -1,0 +1,446 @@
+.USDTtradeTable{
+    overflow-x: hidden;
+    width: calc(100% - 20px);
+    height: 100%;
+    .ant-spin-nested-loading{
+        .ant-spin-blur{
+            overflow: visible !important;
+            background: transparent;
+        }
+    }
+    .TradeTable-title{
+        overflow: hidden;
+        padding: 10px 0 10px 30px;
+        margin-bottom: 0;
+        li{
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            float: left;
+            width: 64px;
+            height: 24px;
+            font-size: 14px;
+            // letter-spacing: 2px;
+            text-align: center;
+            line-height: 22px;
+            margin-right: 20px;
+            position: relative;
+            .triangle{
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background: #fff;
+                border-bottom: 1px solid #3D79EC;
+                border-right: 1px solid #3D79EC;
+                top: 20px;
+                left: 28px;
+                transform: rotate(45deg);
+            }
+            .triangleNight{
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background: #3D79EC;
+                border-bottom: 1px solid #3D79EC;
+                border-right: 1px solid #3D79EC;
+                top: 20px;
+                left: 28px;
+                transform: rotate(45deg);
+            }
+        }
+        .hover:hover{
+            opacity: 0.6;
+        }
+        .liActive{
+            border: 1px solid #3D79EC;
+            background: #3D79EC;
+            color: #fff;
+        }
+        .TradeTable-FindList{
+            float: right;
+            border: none;
+            width: auto;
+            margin-right: 0;
+            .checkNone{
+                font-size: 12px;
+                color: #AAB8DF;
+                letter-spacing: 0;
+                .ant-checkbox-inner{
+                    width: 12px;
+                    height: 12px;
+                    background: #212838;
+                    border: 1px solid #596b9f;
+                }
+                .ant-checkbox-inner:after{
+                    left: 2.571429px;
+                    top: 0.142857px;
+                }
+                svg{
+                  width: 8px;
+                  height: 8px;
+                  float: right;
+                  margin-left: -10px;
+                }
+            }
+            .checkNone:hover{
+                .ant-checkbox-inner{
+                    border: 1px solid #3D79EC;
+                }
+            }
+            .ant-checkbox-checked{
+                .ant-checkbox-inner{
+                    width: 12px;
+                    height: 12px;
+                    background: #3D79EC;
+                    border: 1px solid #3D79EC;
+                }
+            }
+            .checkNonelight{
+                font-size: 12px;
+                color: #aaafb9;
+                letter-spacing: 0;
+                .ant-checkbox-inner{
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid #596b9f;
+                }
+                .ant-checkbox-inner:after{
+                    left: 2.571429px;
+                    top: 0.142857px;
+                }
+                svg{
+                  width: 8px;
+                  height: 8px;
+                  float: right;
+                  margin-left: -10px;
+                }
+            }
+            .timeNone{
+                margin-top: -1px;
+                .ant-input{
+                    width: 240px;
+                    height: 24px;
+                    border: 1px solid #596B9F;
+                    border-radius: 4px;
+                    background-color: #212838;
+                    color: #AAB8DF;
+                    padding: 0;
+                }
+                .ant-calendar-range-picker-input{
+                    margin: -6px 0 0 -6px;
+                }
+                .ant-calendar-range-picker-separator{
+                    color: #AAB8DF;
+                }
+                .ant-calendar-picker-icon{
+                    color: #aab8df;
+                }
+                .ant-calendar-picker-icon:after{
+                    color: #aab8df;
+                }
+                .ant-calendar-picker-clear{
+                    color: #fff;
+                    background: #212838;
+                }
+                input::-webkit-input-placeholder {
+                    font-size: 12px;
+                    color: #aab8df;
+                    letter-spacing: 0;
+                }
+                input::-moz-placeholder {
+                    font-size: 12px;
+                    color: #aab8df;
+                    letter-spacing: 0;
+                }
+                input:-ms-input-placeholder {
+                    font-size: 12px;
+                    color: #aab8df;
+                    letter-spacing: 0;
+                }
+            }
+            .timeNonelight{
+                margin-top: -1px;
+                .ant-input{
+                    width: 240px;
+                    height: 24px;
+                    border: 1px solid #aaafb9;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    color: #aaafb9;
+                    padding: 0;
+                }
+                .ant-calendar-range-picker-input{
+                    margin: -6px 0 0 -6px;
+                }
+                .ant-calendar-range-picker-separator{
+                    color: #aaafb9;
+                }
+                input::-webkit-input-placeholder {
+                    font-size: 12px;
+                    color: #aaafb9;
+                    letter-spacing: 0;
+                }
+                input::-moz-placeholder {
+                    font-size: 12px;
+                    color: #aaafb9;
+                    letter-spacing: 0;
+                }
+                input:-ms-input-placeholder {
+                    font-size: 12px;
+                    color: #aaafb9;
+                    letter-spacing: 0;
+                }
+            }
+            button{
+                min-width: 70px;
+                height: 24px;
+                border: 1px solid #3D79EC;
+                background: transparent;
+                border-radius: 4px;
+                font-size: 12px;
+                color: #3D79EC;
+                // letter-spacing: 2px;
+                margin-left: 20px;
+                line-height: 24px;
+                float: right;
+            }
+        }
+    }
+    .TradeTab{
+        padding: 0 0 0 23px;
+        .Trade-table-tit{
+            line-height: 24px;
+            padding-right: 2px;
+            // width: calc(100% - 20px);
+            // margin-right: 24px;
+            .hide{
+                display: inline-block;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                font-size: 12px;
+                letter-spacing: 0;
+                text-align: center;
+                width: 12.5%;
+            }
+            .cursor{
+              cursor: pointer;
+            }
+            .left{
+              text-align: left;
+            }
+            .firstOne{
+                // text-align: left;
+                padding-left: 20px;
+            }
+        }
+        .scrollKiller{
+          width: calc(100% + 21px);
+          overflow-x: hidden;
+          overflow-y: scroll;
+          height: 135px;
+          margin-bottom: 6px;
+        }
+        .Trade-table{
+            width: calc(100% + 20px);
+            padding-right: 4px;
+            height: 135px;
+            display: inline-block;
+            margin-bottom: 0;
+            .cursor{
+                cursor: pointer;
+            }
+            .Nodata{
+                color: #3d4970;
+                font-size: 12px;
+                text-align: center;
+            }
+            .NodataLight{
+                color: #aaafb9;
+                font-size: 12px;
+                text-align: center;
+            }
+            li{
+                line-height: 24px;
+                height: 26px;
+                margin-bottom: 4px;
+                .firstOne{
+                    // text-align: left;
+                    padding-left: 20px;
+                }
+                .green{
+                    color: #24B647 !important;
+                }
+                .red{
+                    color: #E74C4C !important;
+                }
+                .hide{
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    text-align: center;
+                    display: inline-block;
+                    width: 12.5%;
+                    font-size: 12px;
+                    .Trade-chedan{
+                        display: inline-block;
+                        width: 70px;
+                        height: 22px;
+                        border-radius: 11px;
+                        vertical-align: middle;
+                        line-height: 22px;
+                        font-size: 12px;
+                        background:#3D79EC;
+                        color: #FFFFFF !important;
+                        letter-spacing: 0;
+                        text-align: center;
+                        cursor: pointer;
+                        margin-top: -3px;
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            background:#306AD9;
+                        }
+                    }
+                    .Trade-pingcang{
+                        display: inline-block;
+                        width: 70px;
+                        height: 22px;
+                        border-radius: 11px;
+                        vertical-align: middle;
+                        line-height: 22px;
+                        font-size: 12px;
+                        background: #E74C4C;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .Trade-chedan{
+                        display: inline-block;
+                        width: 70px;
+                        height: 22px;
+                        border-radius: 11px;
+                        vertical-align: middle;
+                        line-height: 22px;
+                        font-size: 12px;
+                        background:#3D79EC;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+                .left{
+                  text-align: left;
+                }
+            }
+            li:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .weituo{
+        .Trade-table-tit>.hide{
+            width: 8%;
+        }
+        .Trade-table>li>.hide{
+            width: 8%;
+        }
+        .Trade-table-tit>.trade-middle{
+          width: 11%;
+        }
+        .Trade-table>li>.trade-middle{
+            width: 11%;
+        }
+        .Trade-table-tit>.trade-lang{
+            width: 16%;
+        }
+        .Trade-table>li>.trade-lang{
+            width: 16%;
+        }
+    }
+    .lishi{
+        .Trade-table-tit>.hide{
+            width: 9%;
+        }
+        .Trade-table>li>.hide{
+            width: 9%;
+        }
+        .Trade-table-tit>.trade-middle{
+          width: 11%;
+        }
+        .Trade-table>li>.trade-middle{
+            width: 11%;
+        }
+        .Trade-table-tit>.trade-lang{
+            width: 14%;
+        }
+        .Trade-table>li>.trade-lang{
+            width: 14%;
+        }
+    }
+    .zichan{
+        .Trade-table-tit>.hide{
+            width: 20%;
+        }
+        .Trade-table>li>.hide{
+            width: 20%;
+        }
+    }
+    .Trade-page{
+        float: right;
+        margin: -5px 24px 0 0;
+        color: #fff;
+          .ant-pagination {
+
+          .ant-pagination-prev{
+            min-width: 16px;
+            height: 16px;
+          }
+          .ant-pagination-next{
+            min-width: 16px;
+            height: 16px;
+          }
+          .anticon{
+            margin-top: 1px;
+            display: block;
+          }
+            .ant-pagination-prev a,
+            .ant-pagination-next a,
+            .ant-pagination-item>a,
+            .ant-pagination-item:focus a,
+            .ant-pagination-item:hover a {
+                color: #596b9f;
+                margin: 0;
+            }
+            .ant-pagination-item {
+              min-width: 16px;
+              height: 16px;
+              line-height: 14px;
+            }
+            .ant-pagination-item-link:after{
+              line-height: 16px !important;
+              height: 16px;
+            }
+            .ant-pagination-item-active {
+                background: transparent;
+            }
+            .ant-pagination-item:focus,
+            .ant-pagination-item:hover,
+            .ant-pagination-item-active:focus,
+            .ant-pagination-item-active:hover {
+                border-color: #2D499F;
+            }
+            .ant-pagination-item-active a ,
+            .ant-pagination-item-active:focus a,
+            .ant-pagination-item-active:hover a {
+                color: #3D79EC;
+            }
+            .ant-pagination-jump-next:after,
+            .ant-pagination-jump-prev:after{
+                color: #596b9f;
+            }
+        }
+    }
+}
+.ant-calendar-range-middle{
+    margin-left: -158px !important;
+}

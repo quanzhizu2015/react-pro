@@ -1,0 +1,66 @@
+.carousel-box {
+    height: 30px;
+    position: relative;
+    // z-index: 1002;
+    overflow: hidden;
+    >div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+    }
+    .carousel-box-ul {
+        height: 30px;
+        margin-bottom: 0px;
+        padding-left: 8px;
+        display: flex;
+        li {
+            display: flex;
+            float: left;
+            margin-right: 10px;
+            min-width:215px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            letter-spacing: 0;
+            // text-align: center;
+            // vertical-align: middle;
+            &:hover {
+                color: #C5CDE1;
+                transform: scale(1.2);
+                transition: all 0.3s;
+            }
+            span{
+                white-space: pre;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            span:nth-child(1) {
+                margin-right: 10px;
+                min-width: 50px;
+            }
+            span:nth-child(2) {
+                margin-right: 5px;
+            }
+            // 涨幅
+            .increase {
+                color: #24B647;
+            }
+            .decrease {
+                color: #E74C4C;
+            }
+        }
+    }
+}
+.carousel-box-light {
+    background: #e5eeff;
+}
+.carousel-box-night {
+    background: #293041;
+}
+.box-ul-night {
+    color: #596B9F;
+}
+.box-ul-light {
+    color: #6c7482;
+}

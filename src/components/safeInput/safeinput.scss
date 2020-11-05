@@ -1,0 +1,89 @@
+@import '../../styles/common.scss';
+.safeInput-wrap {
+    margin-bottom: 20px;
+    .safeInput-form {
+        display: flex;
+        p {
+            font-size: $font_normal;
+            color: #4a4a4a;
+            min-width: 120px;
+            line-height: 40px;
+            margin-bottom: 0px;
+        }
+        input {
+            outline: none;
+            width: 350px;
+            height: 40px;
+            font-size: $font_normal;
+            color: $dark_theme;
+            line-height: 40px;
+            background: none;
+            border-bottom: 1px solid $input_line;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        input:focus {
+            border-bottom: 1px solid $dark_theme;
+        }
+        input[type=password] {
+           letter-spacing: 5px;
+        }
+        input:disabled {
+            border-bottom: 0px;
+            cursor: not-allowed;
+        }
+        // 修改登陆密码错误提示
+        .errorMsg {
+            font-size: $font_small;
+            color: $error_red;
+            margin-left: 20px;
+            line-height: 40px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        input::-webkit-input-placeholder { /* WebKit browsers */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        input:-moz-placeholder { /* Mozilla Firefox 19+ */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            font-size: $font_normal;
+            color: #c3c6ce;
+            letter-spacing: 0px;
+        }
+        .sendcode-wrap {
+            position: relative;
+            margin-bottom: 0px;
+            .sendcode-btn {
+                width: 83px;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                font-size: $font_normal;
+                border-left: 1px solid $input_line;
+                padding-left: 10px;
+                line-height: 18px;
+                text-align: center;
+                a {
+                    color: $all_blue;
+                    cursor: pointer;
+                    &[disabled] {
+                        color: $text_light;
+                        cursor: not-allowed;
+                    }
+                }
+                span {
+                    color: #AAAFB9;
+                }
+            }
+        }
+    }
+}

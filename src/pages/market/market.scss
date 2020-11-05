@@ -1,0 +1,91 @@
+.Market{
+    background: #f7f8f9;
+    // background: #212838;
+    min-width: 1200px;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 238px;
+    .Market-header{
+        height: 525px;
+        background: #303142;
+        // background: url('../../assets/img/market/banner.png') no-repeat;
+        background-size: cover;
+    }
+    .Market-market{
+        // height: 164px;
+        margin-top: 20px;
+        .Market-market-main{
+            width: 1260px;
+            margin: 0 auto;
+            // height: 164px;
+        }
+    }
+    .Market-table{
+        min-height: 500px;
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 50px;
+        .Market-table-main{
+            margin: 0 auto;
+        }
+    }
+    .Market-app{
+      height: 520px;
+      background-color: #16316C;
+      background-image: url('../../assets/img/market/bg1.png');
+      background-size: 100% 100%;
+      .Market-app-main{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        .Market-app-main-left{
+          flex: 1;
+          text-align: center;
+          padding-top: 127px;
+          img{
+            width: 140px;
+          }
+          p{
+            font-size:14px;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            line-height: 50px;
+          }
+          .qrcode{
+            display: flex;
+            padding: 0 80px;
+            div{
+              flex: 1;
+              height:50px;
+              border-radius:5px;
+              border:1px solid rgba(238,238,238,1);
+              margin-right: 20px;
+              line-height: 48px;
+              cursor: pointer;
+              i{
+                font-size: 20px;
+                color: #fff;
+                margin-right: 15px;
+              }
+              span{
+                font-size:14px;
+                font-weight:500;
+                color:rgba(255,255,255,1);
+              }
+            }
+            div:last-child{
+              margin: 0 0 0 20px;
+            }
+          }
+        }
+        .Market-app-main-right{
+          flex: 1;
+          text-align: center;
+          img{
+            width: 370px;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+}

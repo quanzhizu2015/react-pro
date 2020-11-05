@@ -1,0 +1,54 @@
+@import '../../styles/common.scss';
+.ac-select {
+    position: relative;
+    width: 108px;
+    height: 30px;
+    // border-bottom-width:108px;
+    // border-bottom: 1px solid #d6dae2;
+    input {
+        cursor: pointer;
+        width: 102px;
+        padding-left: 36px;
+        height: 30px;
+        font-size: 14px;
+        padding-bottom: 10px;
+        color: $dark_theme;
+        border-bottom: 1px solid $input_line;
+        &:focus {
+            border-bottom: 1px solid $dark_theme;
+        }
+    }
+    ul {
+        position: absolute;
+        left: 20px;
+        background: #FFFFFF;
+        box-shadow: 1px 2px 5px 0
+        rgba(21,28,52,0.12);
+        border-radius: 2px;
+        height: 199px;
+        overflow-y: auto;
+        z-index: 10;
+        li {
+           font-size: 12px;
+           color: #AAAFB9;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+           white-space: nowrap;
+           cursor: pointer;
+        }
+        li:hover{
+            font-size: 12px;
+            color: #0F182A;
+            letter-spacing: 0;
+        }
+    }
+    .ac-error {
+        position: absolute;
+        font-size: 12px;
+        left: 100%;
+        transform: translateX(20px);
+        color: $error_red;
+        white-space: nowrap;
+    }
+}

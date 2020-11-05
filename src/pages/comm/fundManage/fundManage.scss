@@ -1,0 +1,57 @@
+@import '../../../styles/common.scss';
+
+.fundManage{
+    padding-bottom: 30px;
+    &::before {
+        content: '';
+        display: table-cell;
+    }
+    .box1200{
+        width: 1200px;
+        margin: 0 auto;
+        >div{
+            font-size: 24px;
+            color: $dark_theme;
+            margin-top: 20px;
+        }
+        .tabNav{
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            >ul{
+                width: 100%;
+                margin-bottom: 0;
+                >li{
+                    display: inline-block;
+                    margin-right: 50px;
+                    cursor: pointer;
+                    >a{
+                        line-height: 36px;
+                        font-size: $font_big;
+                        color: #9b9b9b;
+                        text-decoration: none;
+                    }
+                }
+                .activeLi{
+                    >a{
+                        color: $all_blue;
+                    }
+                }
+            }
+            .tabNavLine{
+                width: 100%;
+                height: 2px;
+                background-color: transparent;
+                position: relative;
+                .activeLine{
+                    position: absolute;
+                    top: 0;
+                    width: 64px;
+                    height: 2px;
+                    background-color: $all_blue;
+                    transition: all .2s ease-out;
+                }
+            }
+        }
+    }
+}

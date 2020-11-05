@@ -1,0 +1,155 @@
+@import '../../../../styles/common.scss';
+.trade-form {
+    height: 100%;
+    position: relative;
+    padding-top: 10px;
+    &::before {
+        display: table;
+        content: "";
+    }
+    .ant-spin-blur {
+        overflow: visible;
+        background: transparent;
+    }
+    .iconqiehuan {
+        font-size: 12px;
+        margin-left: 3px;
+    }
+}
+.trade-form-flex {
+    display: flex;
+    padding: 0px 10px;
+    width: 100%;
+    .trade-form-content {
+        font-size: 12px;
+        flex: 1;
+        &+.trade-form-content {
+            margin-left: 10px;
+        }
+        a.trade-link {
+            margin-top: 1px;
+            font-size: 16px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            border-radius: 4px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .trade-asset-info {
+            border-radius: 4px;
+            padding-top: 14px;
+            padding: 12px 10px;
+            height: 140px;
+            line-height: 17px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            >div+div {
+                margin-top: 8px;
+            }
+        }
+    }
+    .trade-form-p {
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        .trade-form-mxn {
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 0px;
+        }
+        .trade-form-max {
+            font-size: 12px;
+            white-space: nowrap;
+        }
+    }
+}
+.trade-form-a {
+    color: inherit;
+}
+.trade-form-b {
+    display: flex;
+    margin-top: 10px;
+    .trade-form-first {
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        .trade-form-a::after {
+            content: '';
+            border-left: 4px solid;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -8px;
+        }
+    }
+    .trade-form-a {
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        line-height: 20px;
+        border-bottom: 1px dashed;
+        white-space: nowrap;
+        color: inherit;
+    }
+
+    .trade-form-last {
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        .trade-form-a::before {
+            content: '';
+            border-right: 4px solid;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -8px;
+        }
+    }
+    .trade-form-block::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 32px;
+    }
+}
+.trade-form-b-price {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 154px;
+    width: 60px;
+}
+
+
+.trade-form-b-top {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.trade-form-b-bottom {
+    font-size: 12px;
+    white-space: nowrap;
+}
+.trade-form-input {
+    margin-left: 10px;
+    input {
+        padding-left: 10px !important;
+        height: 32px !important;
+    }
+}
+.trade-tran-green {
+    color: #24B647
+}
+.trade-tran-red {
+    color: #E74C4C
+}

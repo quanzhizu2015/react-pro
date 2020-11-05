@@ -1,0 +1,109 @@
+@import '../../../styles/common.scss';
+.pop-framework{
+    transition: all .3s ease 0s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    .pop-title {
+        font-size: 16px;
+        text-align: center;
+    }
+    .pop-content{
+        transition: all .3s ease 0s;
+        z-index: 2;
+        position: relative;
+        border-radius: 4px;
+        padding: 20px 30px 30px 30px;
+        .iconchahao1{
+            color: #AAAFB9;
+            font-size: 16px;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            line-height: 16px;
+            cursor: pointer;
+        }
+        .button-footer{
+            position: absolute;
+            bottom: 30px;
+            width: calc(100% - 60px);
+            .footer-notips {
+                line-height: 36px;
+                .checkNone{
+                    font-size: 12px;
+                    color: #AAB8DF;
+                    letter-spacing: 0;
+                    .ant-checkbox-inner{
+                        width: 12px;
+                        height: 12px;
+                        background: #212838;
+                        border: 1px solid #596b9f;
+                    }
+                    .ant-checkbox-inner:after{
+                        left: 2.571429px;
+                        top: 0.142857px;
+                    }
+                }
+                .checkNone:hover{
+                    .ant-checkbox-inner{
+                        border: 1px solid #3D79EC;
+                    }
+                }
+                .ant-checkbox-checked{
+                    .ant-checkbox-inner{
+                        width: 12px;
+                        height: 12px;
+                        background: #3D79EC;
+                        border: 1px solid #3D79EC;
+                    }
+                }
+                .checkNonelight{
+                    font-size: 12px;
+                    color: #aaafb9;
+                    letter-spacing: 0;
+                    .ant-checkbox-inner{
+                        width: 12px;
+                        height: 12px;
+                        border: 1px solid #596b9f;
+                    }
+                    .ant-checkbox-inner:after{
+                        left: 2.571429px;
+                        top: 0.142857px;
+                    }
+                }
+                .notips-span {
+                    margin-left: 4px;
+                    font-size: 12px;
+                }
+            }
+            .btn{
+                float: right;
+                width: 140px;
+                height: 36px;
+                border-radius: 22px;
+                font-size: $font_big;
+                letter-spacing: 0;
+                text-align: center;
+                outline: none;
+                border: 2px solid transparent;
+                float: right;
+            }
+            .btnPrimary{
+                margin: 0 auto;
+                width: 140px;
+                height: 36px;
+                border-radius: 22px;
+                font-size: $font_big;
+                letter-spacing: 0;
+                text-align: center;
+                outline: none;
+                border: 2px solid transparent;
+                float: right;
+            }
+        }
+    }
+}

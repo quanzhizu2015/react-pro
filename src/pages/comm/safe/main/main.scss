@@ -1,0 +1,166 @@
+@import '../../../../styles/common.scss';
+
+.SafeMain{
+    text-align: left;
+    .SafeMain-Ul{
+        li{
+            table{
+                width: 100%;
+                tr{
+                    td{
+                        border: 0;
+                        border-bottom: 1px solid #E7EBF2;
+                        height: 80px;
+                    }
+                    td:first-child{
+                        width: 183px;
+                        span{
+                            float: left; // TODO
+                            font-size: $font_big;
+                            color: #4a4a4a;
+                            letter-spacing: 0;
+                            display: inline-block;
+                            line-height: 80px;
+                            width: 160px;
+                        }
+                        i{
+                            float: left;
+                        }
+                        .iconduihao2{
+                            color: #24B647;
+                            font-size: 18px;
+                            line-height: 80px;
+                        }
+                        .iconchahao{
+                            color: $error_red;
+                            font-size: 18px;
+                            line-height: 80px !important;
+                        }
+                    }
+                    td:last-child{
+                        text-align: right;
+                        cursor: pointer;
+                        font-size: $font_normal;
+                        color: $all_blue;
+                        letter-spacing: 0;
+                        span{
+                            span{
+                              margin-left: 20px;
+                            }
+                            span:first-child{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    .SafeMian-tit{
+                        width: 578px;
+                        span{
+                            font-size: $font_small;
+                            color: #9b9b9b;
+                            letter-spacing: 0;
+                            line-height: 12px;
+                            >a{
+                                color: $all_blue;
+                            }
+                        }
+                        .btn{
+                            margin-left: 8px;
+                            display: inline-block;
+                            min-width: 50px;
+                            height: 22px;
+                            border: 1px solid $input_line;
+                            border-radius: 11px;
+                            line-height: 20px;
+                            font-size: $font_small;
+                            color: $input_line;
+                            letter-spacing: 0;
+                            text-align: center;
+                            padding: 0 2px;
+                        }
+                        .active{
+                            border: 1px solid $error_red;
+                            color: $error_red;
+                        }
+                    }
+                    .SafeMain-google{
+                        font-size: $font_small;
+                        color: #A3AAB7;
+                        letter-spacing: 0;
+                        input{
+                            width: 300px; // 英文placeholder长度
+                            padding: 5px 0;
+                            background: transparent;
+                            font-size: 16px;
+                        }
+                        .habener{
+                            margin: 0 20px 0 40px;
+                        }
+                        .habenerEn {
+                            margin-left: 15px;
+                            margin-right: 5px;
+                        }
+                        .Safe-googleSlide{
+                            display: inline-block;
+                            width: 72px;
+                            height: 24px;
+                            border: 1px solid $input_line;
+                            border-radius: 11px;
+                            .Safe-googleSlideLide{
+                                transition: all .3s ease 0s;
+                                cursor: pointer;
+                                display: inline-block;
+                                margin: 1px 0 0 1px;
+                                width: 46px;
+                                height: 20px;
+                                line-height: 20px;
+                                background: $error_red;
+                                border-radius: 11px;
+                                text-align: center;
+                                font-size: 12px;
+                                color: #FFFFFF;
+                                letter-spacing: 0;
+                            }
+                            .Safe-googleSlideLideActive{
+                                margin: 1px 0 0 23px;
+                                background: #24B647;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        li:first-child{
+            border-bottom: 1px solid #E7EBF2;
+            height: 60px;
+            line-height: 60px;
+            font-size: $font_normal;
+            color: #4a4a4a;
+            letter-spacing: 0;
+        }
+    }
+}
+.safeGoogle{
+    text-align: center;
+    padding-top: 6px;
+    h5{
+        font-size: 16px;
+        color: #0F182A;
+        letter-spacing: 0;
+        text-align: left;
+    }
+    .safeGoogle-con{
+        margin-top: 20px;
+        input{
+            width: 100%;
+            border-bottom: 1px solid #D6DAE2;
+            line-height: 40px;
+        }
+        p{
+            margin-top: 6px;
+            float: right;
+            font-size: 12px;
+            color: #E74C4C;
+            letter-spacing: 0;
+        }
+    }
+}

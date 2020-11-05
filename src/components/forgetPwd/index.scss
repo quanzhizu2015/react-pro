@@ -1,0 +1,48 @@
+@import '../../styles/common.scss';
+
+.ft-forget {
+    .ft-forget-title {
+        width: 100%;
+        max-width: 1200px;
+        margin: 79px auto 0;
+        padding: 0 70px;
+        div {
+            font-size: 24px;
+            line-height: 33px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid $progress_bar;
+        }
+    }
+    .ft-forget-step {
+        margin-top: 65px;
+    }
+    .ft-forget-form {
+        margin-top: 180px;
+    }
+    .ft-forget-submit {
+        margin-top: 44px;
+        text-align: right;
+        button {
+            width: 200px;
+        }
+    }
+    .ft-forget-done {
+        text-align: center;
+        font-size: 125px;
+    }
+    .ft-forget-success {
+        margin-top: 60px;
+        text-align: center;
+        p {
+            color: $text_light;
+            font-size: 18px;
+            margin-top: 18px;
+        }
+        a {
+            color: $all_blue;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 6px;
+        }
+    }
+}

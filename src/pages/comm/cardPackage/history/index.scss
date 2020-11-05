@@ -1,0 +1,43 @@
+.cardHistory{
+    padding: 0 100px;
+    min-height: 500px;
+    table{
+      width: 100%;
+      thead{
+        th{
+          font-size:14px;
+          font-weight:400;
+          color:rgba(172,172,172,1);
+          text-align: left;
+          line-height: 54px;
+        }
+      }
+      tbody{
+        tr{
+          line-height: 54px;
+          td{
+            font-size:14px;
+            font-weight:400;
+            color:rgba(19,19,19,1);
+          }
+        }
+        .noData{
+          color: #ccc;
+          text-align: center;
+          td{
+            padding: 90px 0 80px 0;
+            i{
+                font-size: 60px;
+                color: #ccc;
+            }
+            img{
+              height: 84px;
+            }
+            p{
+              color: #ccc;
+            }
+          }
+        }
+      }
+    }
+}

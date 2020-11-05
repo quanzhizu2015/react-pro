@@ -1,0 +1,88 @@
+.cardsList{
+  display: flex;
+  flex-flow: wrap;
+  padding: 0 110px;
+  .cardsList-item{
+    min-width: 390px;
+    max-width: 390px;
+    height: 167px;
+    padding: 15px;
+    background: url('../../../../assets/img/cards/bg.png') no-repeat;
+    flex: 1;
+    display: flex;
+    .cardsList-itemLeft{
+      width: 216px;
+      padding: 20px 0 0 30px;
+      h5{
+        font-size:14px;
+        font-weight:500;
+        color:rgba(234,174,20,1);
+        margin-bottom: 35px;
+      }
+      p{
+        font-size:14px;
+        font-weight:400;
+        color:rgba(31,45,65,1);
+        margin-bottom: 0;
+      }
+      span{
+        font-size:12px;
+        font-weight:400;
+        color:rgba(172,172,172,1);
+      }
+    }
+    .cardsList-itemRight{
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      h5{
+        font-size:14px;
+        font-weight:400;
+        color:rgba(172,172,172,1);
+        margin-bottom: 10px;
+      }
+      p{
+        font-size:14px;
+        font-weight:500;
+        color:rgba(41,99,199,1);
+        margin-bottom: 0;
+      }
+      span{
+        font-size:12px;
+        font-weight:500;
+        color:rgba(172,172,172,1);
+      }
+      div{
+        width:96px;
+        height:30px;
+        margin: 0 auto;
+        line-height: 30px;
+        background:rgba(41,99,199,1);
+        border-radius: 6px;
+        font-size:14px;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        cursor: pointer;
+      }
+      .disable{
+        background: #D1D1D1;
+      }
+    }
+  }
+  .cardsList-item:nth-child(2n) {
+    margin-left: 10px;
+  }
+  .noData{
+    text-align: center;
+    margin: 0 auto;
+    height: 500px;
+    padding-top: 200px;
+    img{
+      height: 84px;
+    }
+    p{
+      color: #ccc;
+      line-height: 40px;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.subscribeInvite {
+  width: 100%; }
+  .subscribeInvite .subscribeInvite-banner {
+    height: 415px;
+    background: url(/static/img/ditu.9380fff.png) no-repeat;
+    background-size: auto 415px;
+    background-position: center; }
+  .subscribeInvite .subscribeInvite-main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0; }
+    .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop {
+      height: 184px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #e6e6e6;
+      padding: 20px 60px;
+      display: -ms-flexbox;
+      display: flex; }
+      .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left {
+        -ms-flex: 1;
+        flex: 1; }
+        .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left h4 {
+          font-size: 20px;
+          font-weight: 500;
+          color: #1f2d41;
+          line-height: 60px;
+          letter-spacing: 1px;
+          margin-bottom: 0; }
+        .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain {
+          display: -ms-flexbox;
+          display: flex; }
+          .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-left {
+            -ms-flex: 1;
+            flex: 1; }
+            .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-left p {
+              font-size: 12px;
+              font-weight: 400;
+              color: #1f2d41;
+              line-height: 14px;
+              margin-bottom: 10px; }
+            .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-left div {
+              width: 580px;
+              border-radius: 6px;
+              border: 1px solid #e6e6e6;
+              height: 40px;
+              line-height: 40px;
+              padding: 0 10px;
+              position: relative;
+              font-size: 16px;
+              font-weight: 500;
+              color: #1f2d41; }
+              .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-left div i {
+                position: absolute;
+                margin-right: 5px;
+                right: 5px;
+                font-size: 24px;
+                color: #2963C7;
+                cursor: pointer; }
+              .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-left div .iconfuzhi3 {
+                right: 35px; }
+              .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-left div p {
+                background: #fff;
+                position: absolute;
+                border: 1px solid #e6e6e6;
+                border-radius: 6px;
+                right: -20px;
+                top: -130px;
+                opacity: 0;
+                padding: 5px;
+                transition: all 0.3s linear;
+                margin-left: 30px; }
+              .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-left div .active {
+                opacity: 1;
+                top: -110px; }
+          .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-right {
+            width: 293px;
+            padding-left: 50px; }
+            .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-right p {
+              font-size: 12px;
+              font-weight: 400;
+              color: #1f2d41;
+              line-height: 14px;
+              margin-bottom: 10px; }
+            .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-right div {
+              width: 203px;
+              border-radius: 6px;
+              border: 1px solid #e6e6e6;
+              height: 40px;
+              line-height: 40px;
+              padding: 0 10px;
+              position: relative;
+              font-size: 16px;
+              font-weight: 500;
+              color: #1f2d41; }
+              .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-left .mainTop-leftMain .leftMain-right div i {
+                position: absolute;
+                margin-right: 5px;
+                right: 5px;
+                font-size: 24px;
+                color: #2963C7;
+                cursor: pointer; }
+      .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-right {
+        width: 248px;
+        text-align: center;
+        padding: 55px 0 0 60px;
+        border-left: 1px solid #e6e6e6; }
+        .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-right p {
+          font-size: 12px;
+          font-weight: 400;
+          color: #1f2d41;
+          line-height: 30px;
+          margin-bottom: 10px; }
+        .subscribeInvite .subscribeInvite-main .subscribeInvite-mainTop .mainTop-right span {
+          font-size: 16px;
+          font-weight: 500;
+          color: #2963c7;
+          line-height: 16px; }
+    .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom {
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #e6e6e6;
+      padding: 20px 60px;
+      margin-top: 40px; }
+      .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #1f2d41;
+        letter-spacing: 1px;
+        line-height: 60px; }
+      .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table {
+        width: 100%;
+        border: 0; }
+        .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table th {
+          font-size: 14px;
+          font-weight: 400;
+          color: #acacac;
+          text-align: left;
+          line-height: 38px; }
+        .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table tbody tr {
+          line-height: 38px; }
+          .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table tbody tr td {
+            font-size: 14px;
+            font-weight: 400;
+            color: #131313; }
+        .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table tbody .noData {
+          color: #ccc;
+          text-align: center; }
+          .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table tbody .noData td {
+            padding: 60px 0; }
+            .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table tbody .noData td i {
+              font-size: 60px;
+              color: #ccc; }
+            .subscribeInvite .subscribeInvite-main .subscribeInvite-mainBottom table tbody .noData td p {
+              color: #ccc; }
+

@@ -1,0 +1,24 @@
+.market-affiche{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    height: 44px;
+    div{
+        flex: 1 1 auto;
+        font-size: 14px;
+        color: #555;
+        line-height: 44px;
+        text-align: left;
+        transition: color 0.3s linear;
+        cursor: pointer;
+    }
+    div:hover{
+      color: #2d8cf0;
+    }
+    div:nth-child(2n) {
+        text-align: center;
+    }
+    div:nth-child(3n) {
+        text-align: right;
+    }
+}

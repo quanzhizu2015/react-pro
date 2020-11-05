@@ -1,0 +1,95 @@
+.know{
+    padding-top: 40px;
+    .know-main{
+        width: 900px;
+        margin: 0 auto;
+        .know-mainTop{
+            text-align: center;
+            h3{
+                font-size: 30px;
+                color: #0F182A;
+                letter-spacing: 0;
+                font-weight: 400;
+            }
+            p{
+                margin: 10px 0 20px 0;
+                font-size: 12px;
+                color: #6C7482;
+                letter-spacing: 0;
+            }
+        }
+        .know-body {
+            margin-top: 40px;
+            table{
+              margin-top: 20px;
+              width: 100%;
+              border-spacing: 0;
+              tr{
+                line-height: 30px;
+                td{
+                  font-size: 14px;
+                  color: #6c7482;
+                  border: 1px solid #ccc;
+                  border-right: 0;
+                  text-align: center;
+                }
+                td:last-child{
+                  border-right: 1px solid #ccc;
+                }
+              }
+              tr:first-child{
+                background: #eee;
+                td{
+                  border-bottom: 0;
+                }
+              }
+            }
+            .label-style1 {
+                font-size: 18px;
+                color: #0F182A;
+                letter-spacing: 0;
+                font-weight: bold;
+                margin-top: 20px;
+                p{
+                    margin:4px 0 16px 0;
+                }
+            }
+            .content-style {
+                font-size: 14px;
+                color: #6C7482;
+                letter-spacing: 0;
+                .content-child {
+                    margin-top: 10px;
+                }
+            }
+            .content-child1 {
+                margin-top: 10px;
+                font-size: 14px;
+                color: #6C7482;
+                letter-spacing: 0;
+            }
+        }
+        .know-button {
+            text-align: center;
+            margin-top: 50px;
+            button {
+                width: 280px; 
+                height: 45px;
+                border-radius: 100px;
+                font-size: 16px;
+                line-height: 41px;
+                text-align: center;
+                border: 2px solid transparent;
+                background: #3D79EC;
+                color: #fff;
+            }
+            .know-expert {
+                font-size: 16px;
+                color: #3D79EC;
+                letter-spacing: 0;
+                cursor: pointer;
+                margin-top: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import '../../styles/common.scss';
+
+.ac-input {
+    width: 350px;
+    position: relative;
+    input {
+        background: transparent;
+        padding-left: 36px;
+        height: 30px;
+        width: 100%;
+        font-size: 14px;
+        padding-bottom: 10px;
+        color: #4b4f59;
+        border-bottom: 1px solid $input_line;
+        transition: all 0.3s ease-in-out 0s;
+        &:focus {
+            border-bottom: 1px solid $dark_theme;
+        }
+    }
+    .ac-error {
+        position: absolute;
+        font-size: 12px;
+        left: 100%;
+        transform: translateX(20px);
+        color: $error_red;
+        white-space: nowrap;
+    }
+    &+.ac-input {
+        margin-top: 30px;
+    }
+}
+.ac-input-icon {
+    position: absolute;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.ac-progress {
+    margin-top: 16px;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background: $progress_bar;
+    border-radius: 100px;
+    i {
+        display: block;
+        position: absolute;
+        height: 100%;
+        border-radius: 100px;
+        transition: width 300ms;
+    }
+    span {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        margin-left: 20px;
+        font-size: 12px;
+        line-height: 17px;
+        white-space: nowrap;
+    }
+}
+.ac-piturecode {
+    position: absolute;
+    right: 0px;
+    bottom: 7px;
+    img {
+        position: relative;
+        width: 97px;
+        height: 31px;
+        right:32px;
+        bottom: 7px;
+        transform: translateX(15px);
+    }
+    i {
+        right: 0px;
+        text-align: center;
+    }
+    .iconshuaxin {
+        cursor: pointer;
+    }
+}
+.ac-code {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 81px;
+    padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 1px;
+        left: 0;
+        width: 1px;
+        height: 18px;
+        background: $input_line;
+    }
+    a {
+        display: inline-block;
+        font-size: 14px;
+        color: $icon_color;
+        white-space:nowrap;
+        text-decoration:none;
+        &[disabled] {
+            color: $text_light
+        }
+    }
+    span {
+        display: block;
+        font-size: 14px;
+        color: $text_light
+    }
+}

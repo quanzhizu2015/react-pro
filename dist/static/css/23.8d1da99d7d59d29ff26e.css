@@ -1,0 +1,242 @@
+.loadingBall {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 23%;
+  margin-left: 5px;
+  display: inline-block; }
+  .loadingBall span {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 2px;
+    background-color: #fff;
+    opacity: .5;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center; }
+  .loadingBall .one {
+    animation: wave .8s linear 0s infinite; }
+  .loadingBall .two {
+    animation: wave .8s linear .12s infinite; }
+  .loadingBall .three {
+    animation: wave .8s linear .24s infinite; }
+
+@keyframes wave {
+  10% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  25% {
+    transform: scale(0.8, 1.2); }
+  35% {
+    transform: translateY(-5px); }
+  50% {
+    opacity: 1; }
+  65% {
+    transform: translateY(-5px) scale(1, 1); }
+  80% {
+    transform: scale(0.8, 1.2); }
+  90% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  100% {
+    opacity: .5;
+    transform: translateY(0) scale(1, 1); } }
+
+.ft-button {
+  font-size: 16px;
+  height: 36px;
+  color: #3D79EC;
+  border: 2px solid #3D79EC;
+  border-radius: 100px;
+  padding: 0 24px;
+  position: relative; }
+
+.ft-color-primary {
+  background: #3D79EC;
+  color: #FFFFFF; }
+
+.ft-color-primary:hover {
+  background: #306AD9; }
+
+.ft-size-small {
+  height: 28px; }
+
+.ft-size-medium {
+  height: 40px; }
+
+.ft-button:disabled {
+  background: #E7EbF2;
+  border: none;
+  color: #aaafb9;
+  cursor: not-allowed; }
+
+.Notify {
+  transition: all .3s ease 0s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
+  .Notify .NotifyPop {
+    transition: all .3s ease 0s;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px 30px 30px 30px; }
+    .Notify .NotifyPop .iconchahao1 {
+      color: #AAAFB9;
+      font-size: 16px;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      line-height: 16px;
+      cursor: pointer; }
+    .Notify .NotifyPop .Notify-footer {
+      position: absolute;
+      bottom: 30px;
+      width: calc(100% - 60px);
+      text-align: center; }
+      .Notify .NotifyPop .Notify-footer .btn {
+        float: right;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent; }
+      .Notify .NotifyPop .Notify-footer .btnPrimary {
+        margin: 0 auto;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent; }
+    .Notify .NotifyPop .trade-box-value h5 {
+      font-size: 16px;
+      color: #C5CDE1; }
+    .Notify .NotifyPop .trade-box-value .trade-box-content {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 14px;
+      color: #596B9F; }
+    .Notify .NotifyPop .trade-box-value a {
+      width: 140px;
+      height: 36px;
+      line-height: 36px;
+      vertical-align: middle;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      background: #3D79EC;
+      border-radius: 100px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px; }
+
+.safeInput-wrap {
+  margin-bottom: 20px; }
+  .safeInput-wrap .safeInput-form {
+    display: -ms-flexbox;
+    display: flex; }
+    .safeInput-wrap .safeInput-form p {
+      font-size: 14px;
+      color: #4a4a4a;
+      min-width: 120px;
+      line-height: 40px;
+      margin-bottom: 0px; }
+    .safeInput-wrap .safeInput-form input {
+      outline: none;
+      width: 350px;
+      height: 40px;
+      font-size: 14px;
+      color: #4a4a4a;
+      line-height: 40px;
+      background: none;
+      border-bottom: 1px solid #D6DAE2;
+      transition: all 0.3s ease-in-out 0s; }
+    .safeInput-wrap .safeInput-form input:focus {
+      border-bottom: 1px solid #4a4a4a; }
+    .safeInput-wrap .safeInput-form input[type=password] {
+      letter-spacing: 5px; }
+    .safeInput-wrap .safeInput-form input:disabled {
+      border-bottom: 0px;
+      cursor: not-allowed; }
+    .safeInput-wrap .safeInput-form .errorMsg {
+      font-size: 12px;
+      color: #E74C4C;
+      margin-left: 20px;
+      line-height: 40px;
+      transition: all 0.3s ease-in-out 0s; }
+    .safeInput-wrap .safeInput-form input::-webkit-input-placeholder {
+      /* WebKit browsers */
+      font-size: 14px;
+      color: #c3c6ce;
+      letter-spacing: 0px; }
+    .safeInput-wrap .safeInput-form input::-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      font-size: 14px;
+      color: #c3c6ce;
+      letter-spacing: 0px; }
+    .safeInput-wrap .safeInput-form input:-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      font-size: 14px;
+      color: #c3c6ce;
+      letter-spacing: 0px; }
+    .safeInput-wrap .safeInput-form input:-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      font-size: 14px;
+      color: #c3c6ce;
+      letter-spacing: 0px; }
+    .safeInput-wrap .safeInput-form .sendcode-wrap {
+      position: relative;
+      margin-bottom: 0px; }
+      .safeInput-wrap .safeInput-form .sendcode-wrap .sendcode-btn {
+        width: 83px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: 14px;
+        border-left: 1px solid #D6DAE2;
+        padding-left: 10px;
+        line-height: 18px;
+        text-align: center; }
+        .safeInput-wrap .safeInput-form .sendcode-wrap .sendcode-btn a {
+          color: #3D79EC;
+          cursor: pointer; }
+          .safeInput-wrap .safeInput-form .sendcode-wrap .sendcode-btn a[disabled] {
+            color: #AAAFB9;
+            cursor: not-allowed; }
+        .safeInput-wrap .safeInput-form .sendcode-wrap .sendcode-btn span {
+          color: #AAAFB9; }
+
+.changelopass-title {
+  font-size: 20px;
+  color: #4a4a4a;
+  letter-spacing: 0; }
+
+.line {
+  margin-top: 26px;
+  width: 966px;
+  height: 1px;
+  background: #E7EBF2; }
+
+.bindemail-fromWrap {
+  margin-top: 44px; }
+  .bindemail-fromWrap .safeInput-form .enLabel {
+    min-width: 220px; }
+  .bindemail-fromWrap .safeInput-form .enInput {
+    width: 410px; }
+  .bindemail-fromWrap .changelopass-btn {
+    width: 471px;
+    text-align: right;
+    margin-top: 120px; }
+  .bindemail-fromWrap .enBtn {
+    width: 620px; }
+

@@ -1,0 +1,131 @@
+@import '../../../../styles/common.scss';
+
+#userguide{
+    width: 100%;
+    >h1{
+        font-size: 20px;
+        color: $dark_theme;
+        font-weight: normal;
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        margin-top: 49px;
+        background-color: $input_line;
+    }
+    .pi{
+        width: 100%;
+        height: auto;
+        >p{
+            float: left;
+            width: 600px;
+            font-size: $font_normal;
+            color: $dark_theme;
+            text-align: justify;
+            line-height: 24px;
+        }
+        .right{
+            float: right;
+            i.iconfont{
+                font-size: 35px;
+            }
+            >ul{
+                display: inline-block;
+                li{
+                    display: block;
+                    font-size: $font_small;
+                    color: $dark_theme;
+                    margin-left: 13px;
+                    cursor: pointer;
+                    position: relative;
+                    .erCode{
+                        position: absolute;
+                        width: 101px;
+                        height: 101px;
+                        box-shadow: 0 0 6px 0 rgba(41,50,79,0.10);
+                        border-radius: 4px;
+                        opacity: 0;
+                        background-color: #fff;
+                        transition: all 0.3s ease-out;
+                        visibility: hidden;
+                        >img{
+                            width: 77px;
+                            margin: 12px
+                        }
+                    }
+                    &:before{
+                        content: "\e640";
+                        font-size: 10px;
+                        margin-right: 4px;
+                    }
+                    &:hover{
+                        color: $all_blue;
+                        &:before{
+                            color: $all_blue;
+                        }
+                        .erCode{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .hover1{
+                    top: -6px;
+                    .erCode{
+                        bottom: 0px;
+                        right: 4px;
+                    }
+                    &:hover{
+                        .erCode{
+                            bottom: 30px;
+                        }
+                    }
+                }
+                .hover2{
+                    .erCode{
+                        bottom: 0px;
+                        right: 4px;
+                    }
+                    &:hover{
+                        .erCode{
+                            bottom: 30px;
+                        }
+                    }
+                    margin-bottom: 2px;
+                }
+                .hover3{
+                    .erCode{
+                        top: 60px;
+                        right: 4px;
+                    }
+                    &:hover{
+                        .erCode{
+                            top: 30px;
+                        }
+                    }
+                    margin-top: 2px;
+                }
+            }
+        }
+        &:after{
+            content: '';
+            visibility: hidden;
+            display: block;
+            opacity: 0;
+            clear: both;
+        }
+    }
+    .p1{
+        margin-top: 70px;
+        padding-right: 10px;
+    }
+    .p2{
+        margin-top: 80px;
+    }
+    >button{
+        margin-top: 200px !important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

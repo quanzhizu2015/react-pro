@@ -1,0 +1,31 @@
+@import '../../../../styles/common.scss';
+.changelopass-title {
+    font-size: 20px;
+    color: #4a4a4a;
+    letter-spacing: 0;
+}
+.line {
+    margin-top: 26px;
+    width: 966px;
+    height: 1px;
+    background: #E7EBF2;
+}
+.changepass-fromWrap {
+    margin-top: 44px;
+    .safeInput-form {
+        .enLabel {
+            min-width: 220px;
+        }
+        .enInput {
+            width: 400px;
+        }
+    }
+    .changelopass-btn {
+        width: 471px;
+        text-align: right;
+        margin-top: 120px;
+    }
+    .enBtn {
+        width: 620px;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../styles/common.scss';
+
+.ft-step {
+    font-size: 16px;
+    color: $text_light;
+    justify-content: center;
+    display: flex;
+    .ft-step-line {
+        display: flex;
+        align-items: center;
+        padding: 0 10px 0 7px;
+        .line {
+           width: 63px;
+           height: 1px;
+           border: none;
+           border-top: 1.5px dotted #AAAFB9;
+        }
+    }
+    .ft-step-item {
+        position: relative;
+        padding-left: 14px;
+        &::before {
+            background: $text_light;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 4px;
+            width: 4px;
+            border-radius: 100%;
+        }
+        &.active {
+            color: $all_blue;
+            &::before {
+                background: $all_blue;
+            }
+        }
+    }
+    .ft-step-item.check {
+        padding-left: 18px;
+        &::before {
+            left: 3px;
+            border-right: 1px solid $text_light;
+            border-bottom: 1px solid $text_light;
+            border-radius: 0;
+            transform: translateY(-55%) rotate(45deg);
+            background: transparent;
+            height: 10px;
+            width: 5px;
+        }
+
+        &.active {
+            &::before {
+                border-right: 1px solid $all_blue;
+                border-bottom: 1px solid $all_blue;
+            }
+        }
+    }
+}

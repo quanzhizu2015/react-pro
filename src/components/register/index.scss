@@ -1,0 +1,55 @@
+@import '../../styles/common.scss';
+.register {
+    width: 100%;
+    position: relative;
+    &::before {
+        content: '';
+        display: table;
+    }
+    .register-clause {
+        padding: 84px 0 20px;
+        span {
+            font-size: 12px;
+        }
+    }
+    .ac-selectbox {
+        width: 350px;
+        height: 30px;
+        margin-bottom: 30px;
+        .ac-select, .ac-input {
+            display: table-cell;
+        }
+        .ac-select+.ac-input {
+            padding-left: 12px;
+        }
+
+    }
+}
+.nc-container{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -175px;
+  border-bottom: 1px solid #D6DAE2;
+  padding-bottom: 10px;
+}
+.nc_scale{
+  margin-top: 10px;
+  border-radius: 17px;
+  .btn_slide{
+    height: 34px !important;
+    border-radius: 7px !important;
+  }
+  .btn_ok{
+    width: 60px !important;
+    height: 34px !important;
+    border-radius: 17px;
+    margin-left: -20px;
+    position: absolute;
+  }
+  .nc_bg{
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    background: #3F79EC !important;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../../styles/common.scss';
+.kline {
+    display: flow-root;
+    // display: inline-block;
+    // flex:1;
+    // margin-top: 10px;
+    margin-right: 4px;
+    width: 100%;
+    height: calc(100% - 84px);
+    // flex-wrap: wrap;
+    // position: relative;
+    .kline_box {
+        // display: -webkit-flex;
+        background: transparent;
+        position: initial;
+        height: 100%;
+        // flex:1;
+        // margin-top: 10px;
+        // margin-right: 4px;
+        // margin-left: 8px;
+        // flex-wrap: wrap;
+    }
+}
+
+.pane-legend {
+    display: none;
+}

@@ -1,0 +1,490 @@
+.loadingBall {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 23%;
+  margin-left: 5px;
+  display: inline-block; }
+  .loadingBall span {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 2px;
+    background-color: #fff;
+    opacity: .5;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center; }
+  .loadingBall .one {
+    animation: wave .8s linear 0s infinite; }
+  .loadingBall .two {
+    animation: wave .8s linear .12s infinite; }
+  .loadingBall .three {
+    animation: wave .8s linear .24s infinite; }
+
+@keyframes wave {
+  10% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  25% {
+    transform: scale(0.8, 1.2); }
+  35% {
+    transform: translateY(-5px); }
+  50% {
+    opacity: 1; }
+  65% {
+    transform: translateY(-5px) scale(1, 1); }
+  80% {
+    transform: scale(0.8, 1.2); }
+  90% {
+    transform: translateY(0) scale(1.2, 0.8); }
+  100% {
+    opacity: .5;
+    transform: translateY(0) scale(1, 1); } }
+
+.ft-button {
+  font-size: 16px;
+  height: 36px;
+  color: #3D79EC;
+  border: 2px solid #3D79EC;
+  border-radius: 100px;
+  padding: 0 24px;
+  position: relative; }
+
+.ft-color-primary {
+  background: #3D79EC;
+  color: #FFFFFF; }
+
+.ft-color-primary:hover {
+  background: #306AD9; }
+
+.ft-size-small {
+  height: 28px; }
+
+.ft-size-medium {
+  height: 40px; }
+
+.ft-button:disabled {
+  background: #E7EbF2;
+  border: none;
+  color: #aaafb9;
+  cursor: not-allowed; }
+
+.Notify {
+  transition: all .3s ease 0s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
+  .Notify .NotifyPop {
+    transition: all .3s ease 0s;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px 30px 30px 30px; }
+    .Notify .NotifyPop .iconchahao1 {
+      color: #AAAFB9;
+      font-size: 16px;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      line-height: 16px;
+      cursor: pointer; }
+    .Notify .NotifyPop .Notify-footer {
+      position: absolute;
+      bottom: 30px;
+      width: calc(100% - 60px);
+      text-align: center; }
+      .Notify .NotifyPop .Notify-footer .btn {
+        float: right;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent; }
+      .Notify .NotifyPop .Notify-footer .btnPrimary {
+        margin: 0 auto;
+        width: 140px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        outline: none;
+        border: 2px solid transparent; }
+    .Notify .NotifyPop .trade-box-value h5 {
+      font-size: 16px;
+      color: #C5CDE1; }
+    .Notify .NotifyPop .trade-box-value .trade-box-content {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 14px;
+      color: #596B9F; }
+    .Notify .NotifyPop .trade-box-value a {
+      width: 140px;
+      height: 36px;
+      line-height: 36px;
+      vertical-align: middle;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      background: #3D79EC;
+      border-radius: 100px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px; }
+
+.subscribeInfo .subscribeInfo-main {
+  width: 1200px;
+  margin: 0 auto; }
+  .subscribeInfo .subscribeInfo-main .subscribeInfo-one {
+    background: url(/static/img/subscribe.aba3f8f.png);
+    box-shadow: 0px 0px 10px 0px rgba(220, 220, 220, 0.5);
+    border-radius: 6px;
+    height: 264px;
+    padding-top: 40px;
+    margin-top: 37px;
+    position: relative; }
+    .subscribeInfo .subscribeInfo-main .subscribeInfo-one h4 {
+      padding-left: 96px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 0; }
+    .subscribeInfo .subscribeInfo-main .subscribeInfo-one h3 {
+      font-size: 32px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 50px;
+      color: #fff;
+      line-height: 32px;
+      margin-bottom: 0; }
+    .subscribeInfo .subscribeInfo-main .subscribeInfo-one div {
+      width: 100%;
+      height: 58px;
+      background: #ecf3ff;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      line-height: 58px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #5083db; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-one div span {
+        font-size: 25px;
+        font-weight: normal;
+        color: #2963c7; }
+  .subscribeInfo .subscribeInfo-main .subscribeInfo-two {
+    padding: 80px 0 20px 10px;
+    display: -ms-flexbox;
+    display: flex; }
+    .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft {
+      -ms-flex: 1;
+      flex: 1; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft h5 {
+        font-size: 22px;
+        font-weight: 500;
+        color: #1f2d41;
+        margin-bottom: 0; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft .subscribeInfo-bape {
+        font-size: 14px;
+        font-weight: 400;
+        color: #1f2d41; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul {
+        overflow: hidden;
+        width: 400px;
+        margin-bottom: 130px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul li {
+          background: #EAF2FF;
+          float: left;
+          height: 26px;
+          line-height: 26px;
+          margin: 25px 25px 0 0;
+          background: #eaf2ff;
+          border-radius: 5px;
+          padding: 0 14px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #326ed0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li1 {
+          background: #EAF2FF;
+          color: #326ED0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li2 {
+          background: #FFF6EA;
+          color: #D48E32; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li3 {
+          background: #FFEAEE;
+          color: #DD3353; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li4 {
+          background: #E3FDE3;
+          color: #2C9D2C; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li5 {
+          background: #EDEAFF;
+          color: #4D35E0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li6 {
+          background: #EAF2FF;
+          color: #326ED0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li7 {
+          background: #EAF2FF;
+          color: #326ED0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li8 {
+          background: #FFF6EA;
+          color: #D48E32; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li9 {
+          background: #FFEAEE;
+          color: #DD3353; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li10 {
+          background: #E3FDE3;
+          color: #2C9D2C; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li11 {
+          background: #EDEAFF;
+          color: #4D35E0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft ul .li12 {
+          background: #EAF2FF;
+          color: #326ED0; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft .marketDescribe-one {
+        display: -ms-flexbox;
+        display: flex;
+        padding-right: 50px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft .marketDescribe-one .one-item {
+          -ms-flex: 1;
+          flex: 1;
+          text-align: center; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft .marketDescribe-one .one div {
+          width: 78px;
+          height: 78px;
+          border-radius: 50%;
+          background: #fff;
+          margin: 0 auto;
+          box-shadow: 0px 2px 4px 0px rgba(243, 243, 243, 0.5);
+          margin-bottom: 20px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft .marketDescribe-one .one p {
+          font-size: 14px;
+          font-weight: 500;
+          color: #1f2d41;
+          margin-bottom: 0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft .marketDescribe-one .one span {
+          font-size: 10px;
+          font-weight: 400;
+          color: #737272; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoLeft .marketDescribe-one .two img {
+          margin-top: 32px; }
+    .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight {
+      width: 420px;
+      background: #fff;
+      box-shadow: 0px 0px 10px 0px rgba(220, 220, 220, 0.5);
+      border-radius: 5px;
+      padding: 30px 30px 20px 30px;
+      position: relative; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-tag {
+        position: absolute;
+        right: 0;
+        margin-top: 10px;
+        height: 26px;
+        line-height: 26px;
+        background: #eaae14;
+        border-radius: 13px 0px 0px 13px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        padding: 0 5px 0 10px;
+        cursor: pointer; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-tag i {
+          font-size: 12px;
+          margin-left: 5px;
+          -ms-transform: scale(0.8);
+          transform: scale(0.8);
+          display: inline-block; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-tit span {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1f2d41; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-tit .weight {
+        font-size: 30px;
+        font-weight: 600;
+        color: #1f2d41;
+        margin-right: 10px; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-tit .iconfont {
+        color: #2963C7;
+        font-size: 16px;
+        margin: 0 10px; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-tit s {
+        color: #ACACAC; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-fen {
+        color: #ACACAC;
+        margin-bottom: 25px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-fen span {
+          color: #1F2D41; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-last {
+        text-align: right;
+        font-size: 14px;
+        color: #2963c7;
+        line-height: 14px;
+        margin-bottom: 0; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-has {
+        background: #ecf3ff;
+        border-radius: 5px;
+        height: 10px;
+        position: relative;
+        margin: 10px 0; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-has span {
+          display: inline-block;
+          height: 10px;
+          position: absolute;
+          background: #2963c7;
+          border-radius: 5px;
+          left: 0;
+          z-index: 1; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-flex {
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 5px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-flex p {
+          -ms-flex: 1;
+          flex: 1;
+          font-size: 16px;
+          font-weight: 500;
+          color: #1f2d41;
+          margin-bottom: 0px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-flex p:last-child {
+          text-align: right; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-input {
+        height: 36px;
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 20px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-input input {
+          height: 100%;
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid #e6e6e6;
+          font-size: 14px;
+          padding: 0 10px;
+          transition: all 0.2s linear;
+          color: #2963C7; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-input input:focus {
+          border: 1px solid #2963C7; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-input span {
+          position: absolute;
+          right: 10px;
+          line-height: 36px;
+          color: #D1D1D1; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-time p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #acacac;
+        line-height: 24px; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .subscribeInfo-btn {
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        background: #2963C7;
+        box-shadow: 0px 0px 10px 0px rgba(220, 220, 220, 0.5);
+        border-radius: 6px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px 0; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight .disable {
+        background: #E6E6E6; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-two .subscribeInfo-twoRight h5 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #2963c7;
+        line-height: 14px;
+        text-align: center;
+        cursor: pointer; }
+  .subscribeInfo .subscribeInfo-main .subscribeInfo-three .subscribeInfo-threeItem h5 {
+    margin: 30px 0 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1f2d41; }
+  .subscribeInfo .subscribeInfo-main .subscribeInfo-three .subscribeInfo-threeItem div {
+    padding: 28px 30px;
+    background: white;
+    border-radius: 6px; }
+  .subscribeInfo .subscribeInfo-main .subscribeInfo-three .subscribeInfo-threeItem p {
+    margin-bottom: 0; }
+  .subscribeInfo .subscribeInfo-main .subscribeInfo-four h4 {
+    margin: 30px 0 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1f2d41; }
+  .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem {
+    padding: 5px 0 30px 0; }
+    .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem h5 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1f2d41;
+      margin: 0 0 0 20px; }
+    .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem table {
+      margin-top: 15px;
+      width: 100%;
+      background: white;
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+      border-collapse: separate;
+      border-spacing: 0;
+      text-align: center;
+      overflow: hidden; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem table thead {
+        background: #ecf3ff;
+        height: 56px;
+        line-height: 56px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem table thead th {
+          border-right: 1px solid #E6E6E6;
+          font-weight: normal; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem table thead th:last-child {
+          border-right: 0; }
+      .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem table tr {
+        line-height: 56px;
+        line-height: 56px; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem table tr td {
+          width: 16.6%;
+          border-right: 1px solid #E6E6E6;
+          font-weight: bold; }
+        .subscribeInfo .subscribeInfo-main .subscribeInfo-four .subscribeInfo-fourItem table tr td:last-child {
+          border-right: 0; }
+
+.subscribeInfo-pop h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #0b2c4f;
+  text-align: center;
+  line-height: 60px; }
+
+.subscribeInfo-pop ul {
+  margin-top: 60px; }
+  .subscribeInfo-pop ul li {
+    border-bottom: 1px solid #E6E6E6;
+    line-height: 54px;
+    margin-top: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 30px; }
+    .subscribeInfo-pop ul li p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #8b8c8d;
+      width: 100px;
+      text-align: left;
+      margin-bottom: 0; }
+    .subscribeInfo-pop ul li p:last-child {
+      font-size: 20px;
+      font-weight: 500;
+      color: #0b2c4f;
+      text-align: right;
+      -ms-flex: 1;
+      flex: 1; }
+

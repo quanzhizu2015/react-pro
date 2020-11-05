@@ -1,0 +1,62 @@
+.loadable-loading {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    .fota-loader{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        margin: -40px 0 0 -40px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #9370DB;
+        -webkit-animation: spins 2s linear infinite;
+        animation: spins 2s linear infinite;
+    }
+    .fota-loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #BA55D3;
+        -webkit-animation: spins 3s linear infinite;
+        animation: spins 3s linear infinite;
+    }
+    .fota-loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #FF00FF;
+        -webkit-animation: spins 1.5s linear infinite;
+        animation: spins 1.5s linear infinite;
+    }
+    @keyframes spins {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+    }
+}

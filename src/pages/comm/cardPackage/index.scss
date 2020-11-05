@@ -1,0 +1,62 @@
+@import '../../../styles/common.scss';
+
+.card{
+    padding-top: 44px;
+    .card-main{
+        width: 1200px;
+        margin: 0 auto;
+        // background: #ccc;
+        overflow: hidden;
+        .card-mainUl{
+            width: 184px;
+            float: left;
+            text-align: left;
+            ul{
+                li{
+                    margin-top: 38px;
+                    font-size: 20px;
+                    color: #9b9b9b;
+                    letter-spacing: 0;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                    line-height: 45px;
+                }
+                .iconfont{
+                    font-size: 12px;
+                    line-height: 45px;
+                    position: absolute;
+                    margin-left: 10px;
+                }
+                .active{
+                    font-size: 30px;
+                    color: $dark_theme;
+                    letter-spacing: 0;
+                }
+                li:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+        .card-mainChild{
+            margin-left: 184px;
+            border-left: 1px solid #E7EBF2;
+            margin-bottom: 30px;
+        }
+        .success-modal {
+            margin-top: 10px;
+            text-align: center;
+            i {
+                line-height: 80px;
+                font-size: 80px;
+                color: #24B647;
+            }
+            p {
+                margin-top: 6px;
+                font-size: 16px;
+                color: $dark_theme;
+                letter-spacing: 0;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.message-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10700000;
+    text-align: center;
+
+    .alert-zhezhao{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background: rgba(2,2,21,0.5);
+        z-index: 100000;
+        pointer-events: all;
+        .alert-info{
+            top: 30vh;
+            height: 400px;
+            width: 400px;
+            border-radius: 4px;
+            color: #4A4A4A;
+            background: #fff;
+            text-align: center;
+            padding-top: 50px;
+            img{
+                width: 45px;
+                height: auto;
+                position: absolute;
+                left: 50%;
+                margin: -40px 0 0 -22px;
+            }
+            i{
+              color: rgb(255, 122, 23);
+              font-size: 40px;
+              line-height: 40px;
+            }
+            p{
+                font-size: 20px;
+                color: #212121;
+                letter-spacing: 0;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 16px;
+            }
+            .alert-p{
+                width: 300px;
+                margin: 0 auto;
+                font-size: 14px;
+                color: #666666;
+                letter-spacing: 0;
+                text-align: justify;
+                text-align-last: center;
+                line-height: 26px;
+            }
+        }
+    }
+}

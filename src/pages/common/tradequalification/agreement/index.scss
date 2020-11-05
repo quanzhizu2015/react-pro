@@ -1,0 +1,32 @@
+@import '../../../../styles/common.scss';
+.agreement-wrap {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+    .agreement-title {
+        font-size: 30px;
+        color: $dark_theme;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .agreement-content {
+        font-size: 14px;
+        color: #6C7482;
+        letter-spacing: 0;
+        word-break: break-all;
+        padding-bottom: 20px;
+        .agreement1{
+            font-size: 16px;
+            color: #4a4a4a;
+            margin: 10px 0 20px 0;
+        }
+        p{
+            font-size: 14px;
+            color: #5f646e;
+            letter-spacing: 0;
+            line-height: 26px;
+            margin-top: 10px;
+        }
+    }
+}

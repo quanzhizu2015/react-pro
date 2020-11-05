@@ -1,0 +1,52 @@
+@import '../../styles/common.scss';
+
+#proBar{
+    display: inline;
+    text-align: center;
+    >ul{
+        li{
+            line-height: 22px;
+            display: inline-block;
+            >span{
+                font-size: $font_big;
+                color: $text_light;
+            }
+            .point{
+                margin-right: 10px;
+                display: inline-block;
+                vertical-align: 18%;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $text_light;
+            }
+            .true{
+                display: inline-block;
+                margin-right: 10px;
+                width: 8px;
+                height: 15px;
+                border: 1px solid;
+                border-color: transparent $text_light $text_light transparent;
+                transform: rotate(40deg);
+            }
+            .dashed{
+                display: inline-block;
+                width: 63px;
+                height: 10px;
+                margin: 0 10px 5px;
+                border-bottom: 1px dashed $text_light;
+            }
+        }
+        .activeStep{
+            >span{
+                color: $all_blue;
+            }
+            .point{
+                background-color: $all_blue;
+            }
+            .true{
+                border-color: transparent $all_blue $all_blue transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.USDTtrade{
+    display:flex;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    width: 100%;
+    min-width: 1280px;
+    min-height: 640px;
+    flex-direction: row;
+    .USDTtrade-left{
+        flex: 7;
+        display:flex;
+        flex-direction: column;
+        .USDTtrade-top-K{
+            width: calc(100% - 4px);
+            flex: 1;
+            display:inline-flex;
+            flex-direction: column;
+        }
+        .USDTtrade-bottom-K{
+            height: 240px;
+            transition: height 0.3s ease 0s;
+            margin:4px 4px 0 0;
+            position: relative;
+        }
+        .USDTtrade-left-hide{
+            position: relative;
+            transition: height 0.3s ease 0s;
+            height: 40px;
+            margin:4px 4px 0 0;
+        }
+    }
+    .USDTtrade-showtips{
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        font-size: 12px;
+        letter-spacing: 0;
+        left: 50%;
+        margin-left: -10px;
+        top: -5px;
+        transition: all 0.3s ease-in-out;
+    }
+    .USDTtrade-showtips:hover{
+        opacity: 0.6;
+    }
+    .hideTit{
+        line-height: 40px;
+        // color: #596b9f;
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .USDTtrade-right{
+        flex: 3.6;
+        display:flex;
+        flex-direction: column;
+        .USDTtrade-top-L{
+            flex: 1;
+            overflow: hidden;
+        }
+        .USDTtrade-bottom-L{
+            position: relative;
+            height: 310px;
+            transition: height 0.3s ease 0s;
+            margin-top: 4px;
+        }
+        .USDTtrade-right-hide{
+            transition: height 0.3s ease 0s;
+            height: 40px;
+            margin-top: 4px;
+            position: relative;
+        }
+    }
+    .trade-expand-icon {
+        z-index: 1;
+        display: block;
+        width: 18px;
+        height: 8px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+    .trade-expand {
+        top: 4px;
+        &::before {
+            content: '';
+            display: block;
+            width: 18px;
+            height: 1px;
+            background: #49556a;
+        }
+        &::after {
+            content: '';
+            display: block;
+            margin-top: 2px;
+            width: 18px;
+            border-top: 4px solid #49556a;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+        }
+    }
+
+    .trade-hide {
+        top: 12px;
+        &::before {
+            content: '';
+            display: block;
+            width: 18px;
+            border-bottom: 4px solid #49556a;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 18px;
+            height: 1px;
+            margin-top: 2px;
+            background: #49556a;
+        }
+    }
+}

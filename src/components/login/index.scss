@@ -1,0 +1,10 @@
+.login {
+    width: 100%;
+    &::before {
+        content: '';
+        display: table;
+    }
+    .login-submit {
+        margin-top: 81px;
+    }
+}

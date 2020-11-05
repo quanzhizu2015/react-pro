@@ -1,0 +1,25 @@
+.answer{
+    padding-top: 40px;
+    .answer-main{
+        width: 900px;
+        margin: 0 auto;
+        .answer-mainTop{
+            text-align: center;
+            h3{
+                font-size: 30px;
+                color: #0F182A;
+                letter-spacing: 0;
+                font-weight: 400;
+            }
+            p{
+                margin: 10px 0 20px 0;
+                font-size: 12px;
+                color: #6C7482;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+ul {
+    margin-bottom: 0;
+}

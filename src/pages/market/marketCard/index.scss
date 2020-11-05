@@ -1,0 +1,75 @@
+
+.swiper-main{
+    // width: 1200px;
+    height: 170px;
+    position: relative;
+    margin: 0 auto;
+    overflow-y: auto;
+    // height: 200px;
+}
+.swiper-container {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    height: 170px;
+    padding-top: 5px;
+}
+.swiper-slide {
+    height: 157px;
+    font-size: 14px;
+    position: relative;
+    padding: 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 0px 6px #e4e4e4;
+    // background: #f6fdff;
+    p{
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .swipe-lable{
+        color: #ccc;
+        line-height: 30px;
+    }
+    .swipe-content{
+        color: rgb(84, 97, 116);
+        font-weight: bold;
+        position: relative;
+        .swipe-up{
+            color: green;
+            position: absolute;
+            right: 0px;
+            font-style: italic;
+        }
+        .swipe-down{
+            color: red;
+            position: absolute;
+            right: 0px;
+            font-style: italic;
+        }
+        .swipe-none{
+            position: absolute;
+            right: 0px;
+            font-style: italic;
+        }
+    }
+    .swiper-button-next{
+        top:45%;
+        left: -10px !important;
+    }
+    .swiper-button-prev{
+        top:45%;
+        right: -10px !important;
+    }
+}
+.swiper-slide:hover{
+    background: #fff;
+}

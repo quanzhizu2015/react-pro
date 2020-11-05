@@ -1,0 +1,184 @@
+.subscribeInvite{
+  width: 100%;
+  .subscribeInvite-banner{
+    height: 415px;
+    background: url('../../../../assets/img/market/ditu.png') no-repeat;
+    background-size: auto 415px;
+    background-position: center;
+  }
+  .subscribeInvite-main{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    .subscribeInvite-mainTop{
+      height:184px;
+      background:rgba(255,255,255,1);
+      border-radius:5px;
+      border:1px solid rgba(230,230,230,1);
+      padding: 20px 60px;
+      display: flex;
+      .mainTop-left{
+        flex: 1;
+        h4{
+          font-size:20px;
+          font-weight:500;
+          color:rgba(31,45,65,1);
+          line-height:60px;
+          letter-spacing:1px;
+          margin-bottom: 0;
+        }
+        .mainTop-leftMain{
+          display: flex;
+          .leftMain-left{
+            flex: 1;
+            p{
+              font-size:12px;
+              font-weight:400;
+              color:rgba(31,45,65,1);
+              line-height:14px;
+              margin-bottom: 10px;
+            }
+            div{
+              width: 580px;
+              border-radius:6px;
+              border:1px solid rgba(230,230,230,1);
+              height: 40px;
+              line-height: 40px;
+              padding: 0 10px;
+              position: relative;
+              font-size:16px;
+              font-weight:500;
+              color:rgba(31,45,65,1);
+              i{
+                position: absolute;
+                margin-right: 5px;
+                right: 5px;
+                font-size: 24px;
+                color: #2963C7;
+                cursor: pointer;
+              }
+              .iconfuzhi3 {
+                right: 35px;
+              }
+              p{
+                background: #fff;
+                position: absolute;
+                border: 1px solid #e6e6e6;
+                border-radius: 6px;
+                right: -20px;
+                top: -130px;
+                opacity: 0;
+                padding: 5px;
+                transition: all 0.3s linear;
+                margin-left: 30px;
+              }
+              .active{
+                opacity: 1;
+                top: -110px;
+              }
+            }
+          }
+          .leftMain-right{
+            width: 293px;
+            padding-left: 50px;
+            p{
+              font-size:12px;
+              font-weight:400;
+              color:rgba(31,45,65,1);
+              line-height:14px;
+              margin-bottom: 10px;
+            }
+            div{
+              width: 203px;
+              border-radius:6px;
+              border:1px solid rgba(230,230,230,1);
+              height: 40px;
+              line-height: 40px;
+              padding: 0 10px;
+              position: relative;
+              font-size:16px;
+              font-weight:500;
+              color:rgba(31,45,65,1);
+              i{
+                position: absolute;
+                margin-right: 5px;
+                right: 5px;
+                font-size: 24px;
+                color: #2963C7;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .mainTop-right{
+        width: 248px;
+        text-align: center;
+        padding: 55px 0 0 60px;
+        border-left: 1px solid #e6e6e6;
+        p{
+          font-size:12px;
+          font-weight:400;
+          color:rgba(31,45,65,1);
+          line-height:30px;
+          margin-bottom: 10px;;
+        }
+        span{
+          font-size:16px;
+          font-weight:500;
+          color:rgba(41,99,199,1);
+          line-height:16px;
+        }
+      }
+    }
+    .subscribeInvite-mainBottom{
+      background:rgba(255,255,255,1);
+      border-radius:5px;
+      border:1px solid rgba(230,230,230,1);
+      padding: 20px 60px;
+      margin-top: 40px;
+      h4{
+        font-size:20px;
+        font-weight:500;
+        color:rgba(31,45,65,1);
+        letter-spacing:1px;
+        line-height: 60px;
+      }
+      table{
+        width: 100%;
+        border: 0;
+        th{
+          font-size:14px;
+          font-weight:400;
+          color:rgba(172,172,172,1);
+          text-align: left;
+          line-height: 38px;
+        }
+        tbody{
+          tr{
+            line-height: 38px;
+            td{
+              font-size:14px;
+              font-weight:400;
+              color:rgba(19,19,19,1);
+            }
+          }
+          .noData{
+            color: #ccc;
+            text-align: center;
+            td{
+              padding: 60px 0;
+              i{
+                  font-size: 60px;
+                  color: #ccc;
+              }
+              p{
+                color: #ccc;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

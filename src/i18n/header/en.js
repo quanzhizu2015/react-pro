@@ -1,0 +1,33 @@
+export default {
+    login: 'Login',
+    register: 'Register',
+    wallet: 'Assets',
+    safe: 'Settings',
+    logout: 'Log out',
+    market: 'Markets',
+    usdkEx: 'Spot',
+    upCoin: 'Auto List',
+    subscribe: 'DTOS',
+    c2c: 'Exchange',
+    transaction: 'Futures',
+    usdtBank: 'Crypto Bank',
+    option: 'Option',
+    active: 'Dividends',
+    help: 'Support',
+    newHelp: 'Tutorial',
+    addBlock: 'Community',
+    whitePaper: 'White Paper',
+    interestsBonus: 'Dividends',
+    Referral: 'Referral',
+    borrow: 'Borrow',
+    lending: 'Lend',
+    loanDetail: 'Loan Details',
+    tradeGame: 'Simulated Trading Contest',
+    homeTitle: 'GoodToken: Bitcoin | Cryptocurrency Futures and Options Exchange',
+    homeKeywords: 'GoodToken exchange, cryptocurrency exchange, cryptocurrency futures trading, cryptocurrency options trading, cryptocurrency derivatives trading, cryptocurrency loan',
+    homeContent: "GoodToken, the next generation crypto derivatives trading platform, designed by a team of world's top financial practitioners and engineers. FOTA has brought about revolutionary changes in the form of its five core competitive advantages: Measure-Completeness, STAMP, F.B.I, portfolio cross-margin and rich derivative instruments.",
+    // helpUrl: 'https://funcoinsupport.zendesk.com/hc/en-us', // FUNCOIN
+    helpUrl: 'https://goodtoken.zendesk.com/hc/zh-cn', // OAK
+    Appname: 'APP',
+    Appcontent: 'download app'
+}
